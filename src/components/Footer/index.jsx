@@ -54,7 +54,7 @@ const Footer = () => {
         </S.NavWrap>
         <S.InfoWrap>
           <S.Ubi>
-            FRIOSUR S.C.A. <br />
+           <b> FRIOSUR S.C.A.</b> <br />
             Pol. Industrial “El Manchon”,
             <br />
             c/ San Roque 40,
@@ -83,11 +83,11 @@ const Footer = () => {
         {/* --------------//--INFO2-- --------*/}
         <S.InfoWrap>
           <S.Hour>
-            Horarios de oficinas, de lunes a viernes,
+            Horarios de oficinas,de lunes a viernes,
             <br />
             de 8:00 a 13:30 y de 16:00 a 19:00. <br />
             <br />
-            954 156 725 / 959 302 314  (Sevilla / Huelva). <br />{" "}
+            954 156 725 / 959 302 314 (Sevilla / Huelva). <br />{" "}
             info@friosursca.com
           </S.Hour>
         </S.InfoWrap>

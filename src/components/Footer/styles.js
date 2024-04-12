@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
   background-color: black;
   display: flex;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   height: auto;
@@ -20,6 +20,7 @@ export const Container1 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  font-size: 24px;
 `;
 
 export const Logo = styled.div`
@@ -50,6 +51,7 @@ export const Container2 = styled.div`
   /* border: 10px dotted fuchsia; */
   flex-direction: row;
   margin-bottom: 5rem;
+  font-size: 24px;
 `;
 
 export const NavWrap = styled.div`
@@ -76,6 +78,7 @@ export const Container3 = styled.div`
   /* border: 10px dotted yellow; */
   flex-direction: row;
   margin-right: 4rem;
+  font-size: 24px;
 `;
 
 export const Navbar = styled.ul`

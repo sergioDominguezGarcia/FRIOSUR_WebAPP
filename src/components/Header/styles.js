@@ -2,14 +2,20 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   align-items: center;
-  background-color: #78997d;
-  /* border: solid 1px blue; */
+  background-color: ${(props) =>
+    props.isScrolled ? "rgba(255, 255, 255, 0.25)" : "#78997d"};
+  backdrop-filter: blur(3.5px);
+  width: 100%;
+  position: fixed;
   color: #fff;
   display: flex;
   font-family: k2d;
   height: 167px;
   justify-content: space-between;
+  transition: background-color 0.4s ease;
 `;
+
+
 
 export const Logo = styled.div`
   align-items: center;

@@ -2,20 +2,20 @@ import { memo } from "react";
 import * as S from "./styles";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import background from "../../assets/images/background.png";
+import Soluciones from "../../assets/images/Soluciones.png";
 
-const Home = () => {
+const Solutions = () => {
  
   return (
-    <S.HomeContainer>
+    <S.Container>
       <Header />
-      
+
       <S.Back>
-        <img src={background} alt="" />
+        <img src={Soluciones} alt="" />
       </S.Back>
       <Footer />
-    </S.HomeContainer>
+    </S.Container>
   );
 };
 
-export default memo(Home);
+export default memo(Solutions);
