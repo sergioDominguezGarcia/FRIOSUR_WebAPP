@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   align-items: center;
-  background-color: ${(props) =>
-    props.isScrolled ? "rgba(255, 255, 255, 0.25)" : "#78997d"};
-  backdrop-filter: blur(3.5px);
+  background-color: rgba(68, 104, 68, 0.2);
+  backdrop-filter: blur(8px);
   width: 100%;
   position: fixed;
   color: #fff;
@@ -30,13 +29,16 @@ export const Navbar = styled.ul`
   /* border: 5px solid red; */
   display: flex;
   font-size: 32px;
+  font-weight:600;
   height: 100%;
   width: 74%;
   list-style: none;
+  
 `;
 
 export const NavLink = styled.li`
-  align-items: center;
+  /* align-content: center; */
+  align-items:center;
   /* border: 2px solid blue; */
   display: flex;
   justify-content: space-around;
@@ -48,7 +50,7 @@ export const Link = styled.a`
   align-content: center;
   border-radius: 15px;
   /* border: 2px solid white; */
-  color: #fff;
+  color: rgba(68, 104, 68, 1);
   text-decoration: none;
   margin: 5px;
   padding: 0.5rem;
@@ -57,8 +59,8 @@ export const Link = styled.a`
   cursor: pointer;
   transition: 0.5s all ease;
   &:hover {
-    color: #dcdcdc;
-    background-color: #446844;
+
+    background-color: rgba(68, 104, 68, 0.4);
     transition: 0.5s all ease;
   }
 `;

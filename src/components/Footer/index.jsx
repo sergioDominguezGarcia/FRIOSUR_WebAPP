@@ -54,7 +54,7 @@ const Footer = () => {
         </S.NavWrap>
         <S.InfoWrap>
           <S.Ubi>
-           <b> FRIOSUR S.C.A.</b> <br />
+            <b> FRIOSUR S.C.A.</b> <br />
             Pol. Industrial “El Manchon”,
             <br />
             c/ San Roque 40,

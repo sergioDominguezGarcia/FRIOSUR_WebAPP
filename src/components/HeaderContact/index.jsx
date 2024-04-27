@@ -1,8 +1,8 @@
 import { memo, useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import * as S from "./styles";
-import Logo_BLANCO from "../../assets/images/Logo_BLANCO.png";
-const Header = () => {
+import Logo_FRIOSUR from "../../assets/images/Logo_FRIOSUR.png";
+const HeaderContact = () => {
   // Change color when scrolling
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,14 +31,14 @@ const Header = () => {
     navigate("/solutions");
   }, [navigate]);
 
-    const handleGoToContact = useCallback(() => {
-      navigate("/contact");
-    }, [navigate]);
+  const handleGoToContact = useCallback(() => {
+    navigate("/contact");
+  }, [navigate]);
 
   return (
     <S.HeaderContainer isScrolled={isScrolled}>
       <S.Logo>
-        <img src={Logo_BLANCO} alt="" onClick={handleGoToHome} />
+        <img src={Logo_FRIOSUR} alt="" onClick={handleGoToHome} />
       </S.Logo>
 
       <S.Navbar>
@@ -59,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default memo(Header);
+export default memo(HeaderContact);

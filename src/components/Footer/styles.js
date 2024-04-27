@@ -29,12 +29,9 @@ export const Logo = styled.div`
   height: 129px;
   width: 206px;
   margin-bottom: 50px;
-
 `;
 
 export const Media = styled.div`
-
-
   display: flex;
   /* justify-content: flex-start; */
 `;
@@ -61,16 +58,6 @@ export const NavWrap = styled.div`
   margin-bottom: 3rem;
   justify-content: flex-start;
   /* width: 100%; */
-`;
-
-export const InfoWrap = styled.div`
-  display: flex;
-  /* border: 2px solid white; */
-  flex-direction: column;
-  color: white;
-  /* border: 5px dotted aliceblue; */
-  justify-content: space-around;
-  /* width: auto; */
 `;
 
 export const Container3 = styled.div`
@@ -122,11 +109,20 @@ export const Link = styled.a`
   transition: 0.5s all ease;
 `;
 
+export const InfoWrap = styled.div`
+  display: flex;
+  /* border: 2px solid white; */
+  flex-direction: column;
+  color: white;
+  /* border: 5px dotted aliceblue; */
+  justify-content: space-around;
+  /* width: auto; */
+`;
+
 export const Ubi = styled.a`
   text-align: left;
   font-weight: 500;
   margin-top: 0rem;
-
 
   color: #fff;
   text-decoration: none;
