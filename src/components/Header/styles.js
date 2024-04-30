@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const Header = styled.div`
   align-items: center;
-  background-color: ${(props) =>
-    props.isScrolled ? "rgba(255, 255, 255, 0.25)" : "#78997d"};
-  backdrop-filter: blur(3.5px);
-  width: 100%;
+  /* background-color: ${(props) =>
+    props.isScrolled ? 'rgba(255, 255, 255, 0.25)' : '#78997d'}; */
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(11.7px);
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 167px;
   position: fixed;
   color: #fff;
-  display: flex;
   font-family: k2d;
-  height: 167px;
   justify-content: space-between;
   transition: background-color 0.4s ease;
-`;
-
-
+`
 
 export const Logo = styled.div`
   align-items: center;
@@ -33,6 +33,7 @@ export const Navbar = styled.ul`
   height: 100%;
   width: 74%;
   list-style: none;
+  
 `;
 
 export const NavLink = styled.li`

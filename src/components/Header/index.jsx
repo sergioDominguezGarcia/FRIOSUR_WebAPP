@@ -36,7 +36,7 @@ const Header = () => {
     }, [navigate]);
 
   return (
-    <S.HeaderContainer isScrolled={isScrolled}>
+    <S.Header isScrolled={isScrolled}>
       <S.Logo>
         <img src={Logo_BLANCO} alt="" onClick={handleGoToHome} />
       </S.Logo>
@@ -55,7 +55,7 @@ const Header = () => {
           <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>
         </S.NavLink>
       </S.Navbar>
-    </S.HeaderContainer>
+    </S.Header>
   );
 };
 

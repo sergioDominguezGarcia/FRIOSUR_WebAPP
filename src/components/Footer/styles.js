@@ -6,12 +6,13 @@ export const FooterContainer = styled.div`
   position: static;
   bottom: 0;
   width: 100%;
+  max-width: 100%;
   height: auto;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
-`;
+`
 
 export const Container1 = styled.div`
   /* border: 5px dotted red; */

@@ -37,7 +37,7 @@ export const ContactUs = () => {
         className="label"
         type="email"
         name="user_email"
-        m
+        
         placeholder="EMAIL..."
       />
       <label></label>
