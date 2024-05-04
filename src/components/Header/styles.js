@@ -15,6 +15,9 @@ export const Header = styled.div`
   font-family: k2d;
   justify-content: space-between;
   transition: background-color 0.4s ease;
+  @media (max-width: 1026px) {
+    max-height: 137px;
+  }
 `
 
 export const Logo = styled.div`
@@ -23,7 +26,10 @@ export const Logo = styled.div`
   height: 129px;
   width: 206px;
   margin-left: 45px;
-`;
+  @media (max-width: 1026px) {
+    margin-left: 25px;
+  }
+`
 
 export const Navbar = styled.ul`
   align-content: space-around;
@@ -33,8 +39,11 @@ export const Navbar = styled.ul`
   height: 100%;
   width: 74%;
   list-style: none;
-  
-`;
+  @media (max-width: 1026px) {
+    font-size: 23px;
+    align-content: start;
+  }
+`
 
 export const NavLink = styled.li`
   align-items: center;
