@@ -82,7 +82,10 @@ export const Text = styled.a`
   cursor: pointer;
   transition: 0.5s all ease;
   margin-left: 3.5rem;
-`;
+  `;
+
+export const InputWrap = styled.div``;
+export const CustomButton = styled(Button)``;
 
 // export const MailForm = styled.div`
 //   display: flex;
@@ -113,7 +116,5 @@ export const Text = styled.a`
 //   height: 55px;
 // `;
 
-export const InputWrap = styled.div``;
-export const CustomButton = styled(Button)``;
 
 

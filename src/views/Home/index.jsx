@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import * as S from './styles'
+import * as S from '../styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import background from '../../assets/images/background.png'
@@ -10,7 +10,13 @@ import map from '../../assets/images/map.png'
 import Line from '../../assets/images/Line.png'
 import clients from '../../assets/images/clients.png'
 import reseña from '../../assets/images/reseña.png'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  const navigate = useNavigate();
+  const handleGoToContact = () => {
+      navigate('/contact')
+      window.scrollTo(0, 0)
+    };
   return (
     <S.HomeContainer>
       <Header />
@@ -104,10 +110,9 @@ const Home = () => {
           </S.Boxx>
           {/* <--------SECTION 4 -------> */}
           <S.Boxx>
-
-            <img src={reseña} width="95%"  alt="" />
+            <img src={reseña} width="95%" alt="" />
           </S.Boxx>
-          
+
           {/* <--------SECTION 5 -------> */}
           <S.Boxx>
             <S.HBox>
@@ -115,8 +120,8 @@ const Home = () => {
               <S.H2Green>HOY MISMO CON NOSOTROS Y PIDE </S.H2Green>
               <S.H2Green bold="600"> MÁS INFORMACIÓN</S.H2Green>
             </S.HBox>
-            <S.StyledLink>INFORMACIÓN</S.StyledLink>
-            <br/>
+            <S.StyledLink onClick={handleGoToContact}>INFORMACIÓN</S.StyledLink>
+            <br />
             <br />
           </S.Boxx>
         </S.Section3>

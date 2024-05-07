@@ -1,10 +1,12 @@
-import React from "react";
-import { memo } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "../../views/Home";
 import Solutions from "../../views/Soluciones";
 import Contact from "../../views/Contact";
 const Router = () => {
+  
+
+
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +16,7 @@ const Router = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 };
 
-export default memo(Router);
+export default Router;

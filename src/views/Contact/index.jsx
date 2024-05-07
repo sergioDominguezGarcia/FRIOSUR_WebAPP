@@ -1,7 +1,7 @@
 import { memo } from "react";
 import * as S from "./styles";
 
-import HeaderContact from "../../components/HeaderContact";
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import mapa from "../../assets/images/mapa.png";
 import ContactUs from "../../components/ContactoForm";
@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <S.ContactContainer>
-        <HeaderContact />
+        <Header />
         <S.Content>
           <S.H1>CONTACTA HOY MISMO</S.H1>
           <S.TextWrap>

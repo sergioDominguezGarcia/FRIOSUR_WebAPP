@@ -1,42 +1,29 @@
-import { memo, useState, useEffect, useCallback } from "react";
+import { memo,  useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import * as S from "./styles";
 import Logo_BLANCO from "../../assets/images/Logo_BLANCO.png";
 const Header = () => {
   // Change color when scrolling
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 60) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const navigate = useNavigate();
   const handleGoToHome = useCallback(() => {
     navigate("/home");
+    window.scrollTo(0, 0)
   }, [navigate]);
 
   const handleGoToSolutions = useCallback(() => {
     navigate("/solutions");
+    window.scrollTo(0, 0)
   }, [navigate]);
 
     const handleGoToContact = useCallback(() => {
       navigate("/contact");
+      window.scrollTo(0, 0)
     }, [navigate]);
 
   return (
-    <S.Header isScrolled={isScrolled}>
+    <S.Header>
       <S.Logo>
         <img src={Logo_BLANCO} alt="" onClick={handleGoToHome} />
       </S.Logo>

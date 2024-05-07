@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   align-items: center;
-  /* background-color: ${(props) =>
-    props.isScrolled ? 'rgba(255, 255, 255, 0.25)' : '#78997d'}; */
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: #78997dd4;
   backdrop-filter: blur(11.7px);
   display: flex;
   width: 100vw;

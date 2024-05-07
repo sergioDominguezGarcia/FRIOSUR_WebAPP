@@ -1,14 +1,16 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export const HomeContainer = styled.div`
   box-sizing: border-box;
+
 `
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   /* max-width: 100%; */
   overflow-x: hidden;
+  padding: 0 5% 0 5%;
 `
 export const SectionWithBackground = styled.div`
   background-image: url(${(props) => props.background});
@@ -22,14 +24,16 @@ export const SectionWithBackground = styled.div`
   justify-content: space-between;
   gap: 1rem;
   padding: 2.5rem;
-
-  /* border: 4px dashed greenyellow; */
   @media (max-width: 1326px) {
     flex-direction: column;
     padding: 1.5rem;
-    align-items: center;
-
+    align-items: center;    
   }
+  /* border: 4px dashed greenyellow; */
+`
+export const SectionBackground = styled(SectionWithBackground)`
+  align-content: center;
+  justify-content: center;
 `
 export const Box = styled.div`
   align-content: center;
@@ -53,6 +57,25 @@ export const Box2 = styled(Box)`
     margin-top: 5rem;
   }
 `
+export const Box4 = styled(Box)`
+  width: auto;
+  min-width: 60vw;
+  height: 60vh;
+`
+export const Box6 = styled(Box4)`
+  height: auto;
+  width: 90%;
+`
+export const Boxx = styled(Box)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  max-width: 98%;
+  margin-top: 0;
+  padding: 4rem;
+  /* border: 2px solid red; */
+`
 export const TextBox = styled.div`
   display: flex;
   flex-direction: row;
@@ -63,8 +86,38 @@ export const TextBox = styled.div`
     flex-direction: row;
     width: 90%;
     align-items: stretch;
-    /* border: 2px dashed greenyellow; */
   }
+  /* border: 2px dashed greenyellow; */
+`
+export const Text = styled(TextBox)`
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+`
+export const List = styled.ul`
+  width: 80%;
+  /* border: 2px dashed greenyellow; */
+`
+export const List2 = styled(List)`
+  width: 100%;
+`
+export const Li = styled.li`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+`
+export const Li2 = styled(Li)`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+
+  color: #698669;
 `
 export const TextBoxR = styled(TextBox)`
   flex-direction: row;
@@ -117,6 +170,8 @@ export const Section = styled.div`
   width: 100%;
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
+    /* align-content: center; */
+  align-items: center;
 `
 export const Box3 = styled.div`
   align-items: center;
@@ -134,12 +189,12 @@ export const UpperRow = styled.div`
 
     justify-content: space-around;
     /* border: 2px solid purple; */
-  `  
+`  
 export const BottomRow = styled.div`
     padding-bottom: 2rem;
-  `
+`
 export const ABox = styled.div`
-  `    
+`    
 export const Box5 = styled.div`
   margin-top: 6rem;
   align-items: center;
@@ -150,10 +205,11 @@ export const Box5 = styled.div`
   width: 100vw;
   /* border: 2px solid purple; */
 `
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
   background: #446844;
   color: #ffffff;
-  max-width: 415px;
+  cursor: pointer;
+  /* max-width: 455px; */
   text-decoration: none;
   border: 3px solid #d9d9d9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -188,7 +244,7 @@ export const H1 = styled.a`
 `
 export const H2 = styled.a`
   color: #ffffff;
-  flex-direction: column;
+  /* flex-direction: column; */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -199,18 +255,9 @@ export const Section3 = styled(Section)`
   display: flex;
   background-color: #ffffff;
   flex-flow: column;
+  margin-top: 6rem;
 
   /* border: 4px solid greenyellow; */
-`
-export const Boxx = styled(Box)`
-  display: flex;
-  justify-content: center;
-  /* border: 2px solid greenyellow; */
-  width: 100%;
-  /* height: 100%; */
-  max-width: 98%;
-  margin-top: 0;
-  /* padding: 2rem; */
 `
 export const StyledLink2 = styled(StyledLink)`
   background: #ffffff;
@@ -225,13 +272,8 @@ export const StyledLink2 = styled(StyledLink)`
   
   }
 `
-
 export const H2Green = styled(H2)`
   color: rgba(68, 104, 68, 1);
-  width: auto;
-  /* border: 3px solid red; */
-
-
   font-weight: ${(props) => (props.bold ? '900' : '600')};
 `
 export const Img = styled.div`
@@ -239,8 +281,7 @@ export const Img = styled.div`
   display: flex;
   align-items: center;
   flex-flow: column;
-  /* width: 60%; */
-  /* border: 3px solid #446844; */
+  width: 100%;
 `
 export const HBox = styled.div`
 margin: 4rem;
@@ -248,8 +289,12 @@ gap: 0.7rem;
 display: flex;
 flex-flow: row wrap;
 width: 40%;
-/* border: 3px solid red; */
 justify-content: center;
-`;
+`
+export const H2Box = styled(HBox)`
+  margin: 1rem;
+  width: 90%;
+  text-align: center;
+`
 
 // export const Section = styled.div``;
