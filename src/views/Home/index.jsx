@@ -3,6 +3,7 @@ import * as S from '../styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import background from '../../assets/images/background.png'
+import FlipCard from '../../components/FlipCard'
 import climate from '../../assets/images/climate.png'
 import maintenance from '../../assets/images/maintenance.png'
 import snowflake from '../../assets/images/snowflake.png'
@@ -12,11 +13,11 @@ import clients from '../../assets/images/clients.png'
 import reseña from '../../assets/images/reseña.png'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const handleGoToContact = () => {
-      navigate('/contact')
-      window.scrollTo(0, 0)
-    };
+    navigate('/contact')
+    window.scrollTo(0, 0)
+  }
   return (
     <S.HomeContainer>
       <Header />
@@ -51,20 +52,41 @@ const Home = () => {
         <S.Section>
           <S.UpperRow>
             <S.Box3>
-              <S.H2>FRÍO</S.H2>
-              <img src={snowflake} width="200rem" alt="" />
-              <S.ABox>
-                <S.A>
-                  <b>Analizar y solventar </b>problemas de{' '}
-                  <b>diseños y mantenimiento</b> de instalaciones de
-                  refrigeración industrial <b>nos permite dar soluciones </b>{' '}
-                  más <br />
-                  <b>profesionales y ajustadas del mercado.</b>
-                </S.A>
-              </S.ABox>
+              <FlipCard
+                headerContent={
+                  
+                  <>
+                    <S.H2>FRÍO INDUSTRIAL</S.H2>
+                    <img src={snowflake} width="200rem" alt="" />
+                    </>
+                  
+                }
+                frontContent={
+                  <S.ABox>
+                    <S.A>
+                      Nos enorgullecemos de ofrecer las{' '}
+                      <b>mejores soluciones </b>de <b>refrigeración industrial</b> del
+                      mercado, respaldadas por una amplia <b>experiencia de más de
+                      30 años</b> que, junto con nuestro equipo de personas
+                      <b> cualificadas,</b> tenemos un <b>compromiso inquebrantable con la
+                      excelencia.</b> 
+                    </S.A>
+                  </S.ABox>
+                }
+                backContent={
+                  <S.ABox>
+                    <S.A>
+                      Somos <b>líderes en diseño, instalación y mantenimiento</b> de
+                      <b>instalaciones frigoríficas industriales, cámaras de
+                      congelación, túneles de enfriamiento y sistemas de
+                      refrigeración para salas de manipulación.</b>
+                    </S.A>
+                  </S.ABox>
+                }
+              />
             </S.Box3>
             <S.Box3>
-              <S.H2>CLIMA</S.H2>
+              <S.H2>FRÍO COMERCIAL Y CLIMA</S.H2>
               <img src={climate} width="200rem" alt="" />
               <S.ABox>
                 <S.A>

@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-// import { Link } from 'react-router-dom'
 
 export const HomeContainer = styled.div`
   box-sizing: border-box;
-
 `
 export const Content = styled.div`
   display: flex;
@@ -27,7 +25,7 @@ export const SectionWithBackground = styled.div`
   @media (max-width: 1326px) {
     flex-direction: column;
     padding: 1.5rem;
-    align-items: center;    
+    align-items: center;
   }
   /* border: 4px dashed greenyellow; */
 `
@@ -142,6 +140,8 @@ export const Tittle = styled.a`
     /* align-items: stretch; */
   }
 `
+export const ABox = styled.div``
+
 export const A = styled.a`
   color: #ffffff;
   font-family: 'Montserrat';
@@ -165,12 +165,19 @@ export const A = styled.a`
     line-height: 60px;
   }
 `
+export const Afront = styled(A)`
+  transform: perspective(500px) rotateY(0deg);
+`
+export const Aback = styled(A)`
+  transform: perspective(500px) rotateY(180deg);
+`
+
 export const Section = styled.div`
   display: flex;
   width: 100%;
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
-    /* align-content: center; */
+  /* align-content: center; */
   align-items: center;
 `
 export const Box3 = styled.div`
@@ -180,21 +187,26 @@ export const Box3 = styled.div`
   flex-flow: column wrap;
   justify-content: center;
   width: 24%;
+  height: auto;
   padding: 2.5rem;
-  /* border: 2px solid purple; */
   margin-top: 6rem;
+
+
+
+
+  /* border: 2px solid purple; */
 `
 export const UpperRow = styled.div`
-    display: flex;
-
-    justify-content: space-around;
-    /* border: 2px solid purple; */
-`  
-export const BottomRow = styled.div`
-    padding-bottom: 2rem;
+  display: flex;
+  
+  justify-content: space-around;
+  /* border: 2px solid purple; */
+  position: relative;
 `
-export const ABox = styled.div`
-`    
+export const BottomRow = styled.div`
+  padding-bottom: 2rem;
+  margin-top: 6rem;
+`
 export const Box5 = styled.div`
   margin-top: 6rem;
   align-items: center;
@@ -228,10 +240,9 @@ export const StyledLink = styled.a`
   @media (max-width: 1326px) {
     font-size: 2.8rem;
   }
-  &:hover{
+  &:hover {
     background: #ffffff;
     color: #446844;
-  
   }
 `
 export const H1 = styled.a`
@@ -266,10 +277,9 @@ export const StyledLink2 = styled(StyledLink)`
   box-shadow: none;
   margin: 6rem;
 
-  &:hover{
+  &:hover {
     background: #446844;
     color: #ffffff;
-  
   }
 `
 export const H2Green = styled(H2)`
@@ -284,17 +294,21 @@ export const Img = styled.div`
   width: 100%;
 `
 export const HBox = styled.div`
-margin: 4rem;
-gap: 0.7rem;
-display: flex;
-flex-flow: row wrap;
-width: 40%;
-justify-content: center;
+  margin: 4rem;
+  gap: 0.7rem;
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+  justify-content: center;
 `
 export const H2Box = styled(HBox)`
+  
   margin: 1rem;
   width: 90%;
   text-align: center;
 `
 
-// export const Section = styled.div``;
+
+// export const HeaderCard = styled.div`
+//   position: relative;
+// `
