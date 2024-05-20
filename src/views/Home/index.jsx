@@ -54,48 +54,67 @@ const Home = () => {
             <S.Box3>
               <FlipCard
                 headerContent={
-                  
                   <>
                     <S.H2>FRÍO INDUSTRIAL</S.H2>
                     <img src={snowflake} width="200rem" alt="" />
-                    </>
-                  
+                  </>
                 }
                 frontContent={
                   <S.ABox>
                     <S.A>
                       Nos enorgullecemos de ofrecer las{' '}
-                      <b>mejores soluciones </b>de <b>refrigeración industrial</b> del
-                      mercado, respaldadas por una amplia <b>experiencia de más de
-                      30 años</b> que, junto con nuestro equipo de personas
-                      <b> cualificadas,</b> tenemos un <b>compromiso inquebrantable con la
-                      excelencia.</b> 
+                      <b>mejores soluciones </b>de{' '}
+                      <b>refrigeración industrial</b> del mercado, respaldadas
+                      por una amplia <b>experiencia de más de 30 años</b> que,
+                      junto con nuestro equipo de personas
+                      <b> cualificadas,</b> tenemos un{' '}
+                      <b>compromiso inquebrantable con la excelencia.</b>
                     </S.A>
                   </S.ABox>
                 }
                 backContent={
                   <S.ABox>
                     <S.A>
-                      Somos <b>líderes en diseño, instalación y mantenimiento</b> de
-                      <b>instalaciones frigoríficas industriales, cámaras de
-                      congelación, túneles de enfriamiento y sistemas de
-                      refrigeración para salas de manipulación.</b>
+                      Somos{' '}
+                      <b>líderes en diseño, instalación y mantenimiento</b> de
+                      <b>
+                        instalaciones frigoríficas industriales, cámaras de
+                        congelación, túneles de enfriamiento y sistemas de
+                        refrigeración para salas de manipulación.
+                      </b>
                     </S.A>
                   </S.ABox>
                 }
               />
             </S.Box3>
             <S.Box3>
-              <S.H2>FRÍO COMERCIAL Y CLIMA</S.H2>
-              <img src={climate} width="200rem" alt="" />
-              <S.ABox>
-                <S.A>
-                  <b>Estudio, diseño, ejecución </b>y<b> puesta en marcha </b>
-                  de instalaciones de{' '}
-                  <b>aire acondicionado, climatización COMERCIAL </b>y
-                  refrigeración de aire a<b> nivel INDUSTRIAL.</b>
-                </S.A>
-              </S.ABox>
+              <FlipCard
+                headerContent={
+                  <>
+                    <S.H2>FRÍO COMERCIAL Y CLIMA</S.H2>
+                    <img src={climate} width="200rem" alt="" />
+                  </>
+                }
+                frontContent={
+                  <S.ABox>
+                    <S.A>
+                      Ofrecemos las mejores soluciones en Climatización y Frío
+                      Comercial para supermercados e hipermercados, respaldadas
+                      por nuestra amplia experiencia en el sector.
+                    </S.A>
+                  </S.ABox>
+                }
+                backContent={
+                  <S.ABox>
+                    <S.A>
+                      Nos comprometemos con la eficiencia energética y el uso de
+                      gases refrigerantes naturales, como el CO2 y el amoniaco,
+                      mediante un constante enfoque en la formación y la
+                      innovación.
+                    </S.A>
+                  </S.ABox>
+                }
+              />
             </S.Box3>
           </S.UpperRow>
           <S.BottomRow>
@@ -154,3 +173,4 @@ const Home = () => {
 }
 
 export default memo(Home)
+{/*  */}

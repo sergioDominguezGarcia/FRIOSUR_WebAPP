@@ -8,7 +8,9 @@ export const Content = styled.div`
   flex-direction: column;
   /* max-width: 100%; */
   overflow-x: hidden;
-  padding: 0 5% 0 5%;
+  /* padding: 0 5% 0 5%; */
+  margin: 0 auto;
+  width: 1440px;
 `
 export const SectionWithBackground = styled.div`
   background-image: url(${(props) => props.background});
@@ -191,21 +193,21 @@ export const Box3 = styled.div`
   padding: 2.5rem;
   margin-top: 6rem;
 
-
-
-
   /* border: 2px solid purple; */
 `
 export const UpperRow = styled.div`
   display: flex;
-  
+  width: 100%;
+  height: 50vh;
   justify-content: space-around;
   /* border: 2px solid purple; */
-  position: relative;
+  /* margin: 0rem 5rem 0rem 5rem; */
+  /* position: relative; */
 `
 export const BottomRow = styled.div`
   padding-bottom: 2rem;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
+  /* border: 2px solid greenyellow; */
 `
 export const Box5 = styled.div`
   margin-top: 6rem;
@@ -302,13 +304,72 @@ export const HBox = styled.div`
   justify-content: center;
 `
 export const H2Box = styled(HBox)`
-  
   margin: 1rem;
   width: 90%;
   text-align: center;
 `
 
+export const Agreen = styled(A)`
+  font-size: 30px;
+  color: rgba(68, 104, 68, 1);
+  font-weight: 550;
+  text-align: center;
+  line-height: 30px;
+`
+export const Atitle = styled(A)`
+  font-size: 35px;
+  color: rgba(68, 104, 68, 1);
+  font-weight: 650;
+  text-align: center;
+  line-height: 35px;
+`
 
-// export const HeaderCard = styled.div`
-//   position: relative;
-// `
+export const Sphere = styled.div`
+  /* border: 3px solid greenyellow; */
+`
+
+export const Roulette = styled.div`
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1500px;
+  width: 100%;
+
+  /* border: 1px solid greenyellow; */
+`
+
+export const Upper = styled.div`
+  display: flex;
+  width: 90%;
+  height: 30%;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0rem 6rem 0rem 6rem;
+  /* margin-bottom: 5%; */
+  top: 0px;
+
+  /* border: 2px solid red; */
+`
+export const Mid = styled.div`
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: auto 0; */
+  /* border: 1px solid red; */
+`
+
+export const Bottom = styled.div`
+  display: flex;
+  width: 90%;
+  height: 30%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+  padding: 0rem 6rem 0rem 6rem;
+  /* border: 2px solid red; */
+`
+

@@ -4,44 +4,51 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-margin-top: 12rem;
 `
 export const Container = styled.div`
-  perspective: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
+  justify-content: center;
+  max-height: 200px;
+  max-width: 2000px;
+  perspective: 1000px;
   position: absolute;
-  /* border: 1px solid greenyellow; */
+  align-items: center;
+
+  /* border: 3px dotted red; */
 `
 export const CardWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 10rem;
+  align-items: center;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 
   &:hover {
     transform: rotateY(180deg);
   }
+  /* border: 3px solid greenyellow; */
 `
 export const Card = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 40rem;
+  height: 70%;
   display: flex;
   align-items: center;
+
   justify-content: center;
   backface-visibility: hidden;
 `
 export const Front = styled(Card)`
   position: absolute;
-  margin-top: 30px;
+  align-content: center;
+  /* border: 3px solid purple; */
 `
 export const Back = styled(Card)`
   transform: rotateY(180deg);
+  align-content: center;
 `
 export const CardHeader = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 `
