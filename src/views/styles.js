@@ -65,6 +65,9 @@ export const Box4 = styled(Box)`
 export const Box6 = styled(Box4)`
   height: auto;
   width: 90%;
+  margin-top: 0px;
+  padding: 2rem;
+  /* border: 1px solid red; */
 `
 export const Boxx = styled(Box)`
   display: flex;
@@ -92,8 +95,9 @@ export const TextBox = styled.div`
 export const Text = styled(TextBox)`
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   align-items: center;
+  /* border: 2px dashed greenyellow; */
 `
 export const List = styled.ul`
   width: 80%;
@@ -177,8 +181,11 @@ export const Aback = styled(A)`
 export const Section = styled.div`
   display: flex;
   width: 100%;
+  height: auto;
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
+  
+  justify-content: space-around;
   /* align-content: center; */
   align-items: center;
 `
@@ -217,6 +224,7 @@ export const Box5 = styled.div`
   justify-content: center;
   max-width: 100%;
   width: 100vw;
+  margin-top: 20rem;
   /* border: 2px solid purple; */
 `
 export const StyledLink = styled.a`
@@ -307,6 +315,7 @@ export const H2Box = styled(HBox)`
   margin: 1rem;
   width: 90%;
   text-align: center;
+  gap: 70px;
 `
 
 export const Agreen = styled(A)`
@@ -330,12 +339,13 @@ export const Sphere = styled.div`
 
 export const Roulette = styled.div`
   background-color: #ffffff;
+  /* border: 5px solid white; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 1500px;
   width: 100%;
-
+  
   /* border: 1px solid greenyellow; */
 `
 

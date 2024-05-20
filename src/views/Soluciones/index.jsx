@@ -58,7 +58,9 @@ const Solutions = () => {
               </S.H2Box>
             </S.Text>
           </S.Box6>
+        </S.Section>
 
+        <S.Section3>
           <S.Roulette>
             <S.Upper>
               <S.Sphere>
@@ -143,18 +145,33 @@ const Solutions = () => {
               </S.Sphere>
             </S.Bottom>
           </S.Roulette>
-
+        </S.Section3>
+        <S.Section>
           <S.Box6>
             <S.Text>
               <S.Tittle bold>A MODO DE EJEMPLO...</S.Tittle>
-              <S.A></S.A>
               <S.H2Box>
+              <S.A>
+                Necesitas 5 cámaras para la conservación de producto a +2ºC.
+                Además necesitarás dos túneles de congelados, donde el producto
+                entrará y deberá salir ultra congelado a -20ºC en dos horas.
+              </S.A>
                 <S.H2>Aunque sólo tienes una nave vacía</S.H2>
+                <S.A>
+                  Nostros nos encagamos de todo, concretamos una reuníon,
+                  tomamos medidas del sitio, definimos de forma exaustiva tu
+                  método de trabajo y nos adaptamos a ello. 
+                </S.A>
+                <S.A>Diseñamos la
+                  instalación frigorífica necesaria y hacemos un estudio de tu
+                  negocio, para optimizar al máximo el rendimeinto de tu
+                  espacio. </S.A>
+                <S.A>Esto te asegura un entorno totalmente funcional y
+                  preparado para el volumen de trabajo que asumes.</S.A>
               </S.H2Box>
             </S.Text>
           </S.Box6>
         </S.Section>
-
         <S.Section3>
           <S.Boxx>
             <S.H1>NOS ENCARGAMOS DE:</S.H1>
