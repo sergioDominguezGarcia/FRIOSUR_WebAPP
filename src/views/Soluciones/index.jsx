@@ -27,7 +27,8 @@ const Solutions = () => {
           <S.Box4>
             <S.Text>
               <S.Tittle bold> SOLUCIONES </S.Tittle>
-              <S.A>Optimizadas para tu negocio, servicio 24/7</S.A>
+              <S.SeparatorWhite />
+              <S.A ><b>Optimizadas para tu negocio, servicio 24/7</b></S.A>
             </S.Text>
           </S.Box4>
         </S.SectionBackground>
@@ -36,7 +37,7 @@ const Solutions = () => {
         <S.Section>
           <S.Box6>
             <S.Text>
-              <S.Tittle bold>CONSULTORÍA TÉCNICA</S.Tittle>
+              <S.H2 bold>CONSULTORÍA TÉCNICA</S.H2>
               <S.List>
                 <S.Li>
                   Evita <b>roturas</b> de válvulas, <b>fugas</b> de gas
@@ -151,23 +152,27 @@ const Solutions = () => {
             <S.Text>
               <S.Tittle bold>A MODO DE EJEMPLO...</S.Tittle>
               <S.H2Box>
-              <S.A>
-                Necesitas 5 cámaras para la conservación de producto a +2ºC.
-                Además necesitarás dos túneles de congelados, donde el producto
-                entrará y deberá salir ultra congelado a -20ºC en dos horas.
-              </S.A>
+                <S.A>
+                  Necesitas 5 cámaras para la conservación de producto a +2ºC.
+                  Además necesitarás dos túneles de congelados, donde el
+                  producto entrará y deberá salir ultra congelado a -20ºC en dos
+                  horas.
+                </S.A>
                 <S.H2>Aunque sólo tienes una nave vacía</S.H2>
                 <S.A>
                   Nostros nos encagamos de todo, concretamos una reuníon,
                   tomamos medidas del sitio, definimos de forma exaustiva tu
-                  método de trabajo y nos adaptamos a ello. 
+                  método de trabajo y nos adaptamos a ello.
                 </S.A>
-                <S.A>Diseñamos la
-                  instalación frigorífica necesaria y hacemos un estudio de tu
-                  negocio, para optimizar al máximo el rendimeinto de tu
-                  espacio. </S.A>
-                <S.A>Esto te asegura un entorno totalmente funcional y
-                  preparado para el volumen de trabajo que asumes.</S.A>
+                <S.A>
+                  Diseñamos la instalación frigorífica necesaria y hacemos un
+                  estudio de tu negocio, para optimizar al máximo el rendimeinto
+                  de tu espacio.{' '}
+                </S.A>
+                <S.A>
+                  Esto te asegura un entorno totalmente funcional y preparado
+                  para el volumen de trabajo que asumes.
+                </S.A>
               </S.H2Box>
             </S.Text>
           </S.Box6>

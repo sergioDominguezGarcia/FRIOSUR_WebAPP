@@ -61,7 +61,7 @@ const Home = () => {
                 }
                 frontContent={
                   <S.ABox>
-                    <S.A>
+                    <S.Acard>
                       Nos enorgullecemos de ofrecer las{' '}
                       <b>mejores soluciones </b>de{' '}
                       <b>refrigeración industrial</b> del mercado, respaldadas
@@ -69,12 +69,12 @@ const Home = () => {
                       junto con nuestro equipo de personas
                       <b> cualificadas,</b> tenemos un{' '}
                       <b>compromiso inquebrantable con la excelencia.</b>
-                    </S.A>
+                    </S.Acard>
                   </S.ABox>
                 }
                 backContent={
                   <S.ABox>
-                    <S.A>
+                    <S.Acard>
                       Somos{' '}
                       <b>líderes en diseño, instalación y mantenimiento</b> de
                       <b>
@@ -82,7 +82,7 @@ const Home = () => {
                         congelación, túneles de enfriamiento y sistemas de
                         refrigeración para salas de manipulación.
                       </b>
-                    </S.A>
+                    </S.Acard>
                   </S.ABox>
                 }
               />
@@ -97,21 +97,21 @@ const Home = () => {
                 }
                 frontContent={
                   <S.ABox>
-                    <S.A>
+                    <S.Acard>
                       Ofrecemos las mejores soluciones en Climatización y Frío
                       Comercial para supermercados e hipermercados, respaldadas
                       por nuestra amplia experiencia en el sector.
-                    </S.A>
+                    </S.Acard>
                   </S.ABox>
                 }
                 backContent={
                   <S.ABox>
-                    <S.A>
+                    <S.Acard>
                       Nos comprometemos con la eficiencia energética y el uso de
                       gases refrigerantes naturales, como el CO2 y el amoniaco,
                       mediante un constante enfoque en la formación y la
                       innovación.
-                    </S.A>
+                    </S.Acard>
                   </S.ABox>
                 }
               />
@@ -173,4 +173,3 @@ const Home = () => {
 }
 
 export default memo(Home)
-{/*  */}

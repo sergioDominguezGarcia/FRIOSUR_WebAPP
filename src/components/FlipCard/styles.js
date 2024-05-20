@@ -4,7 +4,7 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-margin-top: 12rem;
+  margin-top: 12rem;
 `
 export const Container = styled.div`
   perspective: 1000px;
@@ -41,7 +41,7 @@ export const Back = styled(Card)`
   transform: rotateY(180deg);
 `
 export const CardHeader = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 `

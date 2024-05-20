@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from "../../views/Home";
 import Solutions from "../../views/Soluciones";
 import Contact from "../../views/Contact";
+import Friosur from '../../views/Friosur';
 const Router = () => {
   
 
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/friosur" element={<Friosur />} />
       </Routes>
     </BrowserRouter>
   )

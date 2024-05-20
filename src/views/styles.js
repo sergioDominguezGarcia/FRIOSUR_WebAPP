@@ -101,12 +101,15 @@ export const Text = styled(TextBox)`
 `
 export const List = styled.ul`
   width: 80%;
+
   /* border: 2px dashed greenyellow; */
 `
 export const List2 = styled(List)`
   width: 100%;
+
 `
 export const Li = styled.li`
+  margin-top: 2rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -184,10 +187,11 @@ export const Section = styled.div`
   height: auto;
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
-  
+
   justify-content: space-around;
   /* align-content: center; */
   align-items: center;
+
 `
 export const Box3 = styled.div`
   align-items: center;
@@ -207,14 +211,23 @@ export const UpperRow = styled.div`
   width: 100%;
   height: 50vh;
   justify-content: space-around;
-  /* border: 2px solid purple; */
   /* margin: 0rem 5rem 0rem 5rem; */
   /* position: relative; */
+  /* border: 2px solid purple; */
+  @media (max-width: 1321px) {
+    height: 700px;
+  }
 `
 export const BottomRow = styled.div`
   padding-bottom: 2rem;
+  display: flex;
+  width: 100%;
   /* margin-top: 6rem; */
   /* border: 2px solid greenyellow; */
+  justify-content: center;
+  @media (max-width: 1321px) {
+    height: 1100px;
+  }
 `
 export const Box5 = styled.div`
   margin-top: 6rem;
@@ -317,7 +330,6 @@ export const H2Box = styled(HBox)`
   text-align: center;
   gap: 70px;
 `
-
 export const Agreen = styled(A)`
   font-size: 30px;
   color: rgba(68, 104, 68, 1);
@@ -333,10 +345,24 @@ export const Atitle = styled(A)`
   line-height: 35px;
 `
 
+export const Acard = styled(A)`
+  @media (max-width: 1715px) {
+    flex-direction: row;
+    max-width: 100%;
+    align-items: stretch;
+    margin-top: 1rem;
+    font-size: 34px;
+    line-height: 45px;
+  }
+`
+
+
+// SOLUTIONS
+
+
 export const Sphere = styled.div`
   /* border: 3px solid greenyellow; */
 `
-
 export const Roulette = styled.div`
   background-color: #ffffff;
   /* border: 5px solid white; */
@@ -383,3 +409,29 @@ export const Bottom = styled.div`
   /* border: 2px solid red; */
 `
 
+// FRIOSUR
+
+export const SeparatorGreen = styled.div`
+  border-top: 2px solid #446844;
+  width: 80%;
+  margin: 4rem 0rem 4rem 0rem;
+`
+export const SeparatorWhite = styled(SeparatorGreen)`
+  border-top: 2px solid #ffffff;
+  margin: 2rem 0rem 2rem 0rem;
+  width: 35%;
+`
+export const TextFrio = styled(Text)`
+  text-align: center;
+
+`
+export const H2Boxfrio = styled(H2Box)`
+  text-align: center;
+  width: 80%;
+  /* border: 2px solid red; */
+
+`
+export const Afrio = styled(A)`
+  text-align: center;
+  line-height: 50px;
+`

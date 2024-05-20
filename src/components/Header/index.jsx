@@ -1,26 +1,30 @@
-import { memo,  useCallback } from "react";
-import { useNavigate } from "react-router-dom";
-import * as S from "./styles";
-import Logo_BLANCO from "../../assets/images/Logo_BLANCO.png";
+import { memo, useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
+import * as S from './styles'
+import Logo_BLANCO from '../../assets/images/Logo_BLANCO.png'
 const Header = () => {
   // Change color when scrolling
 
-
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const handleGoToHome = useCallback(() => {
-    navigate("/home");
+    navigate('/home')
     window.scrollTo(0, 0)
-  }, [navigate]);
+  }, [navigate])
 
   const handleGoToSolutions = useCallback(() => {
-    navigate("/solutions");
+    navigate('/solutions')
     window.scrollTo(0, 0)
-  }, [navigate]);
+  }, [navigate])
 
-    const handleGoToContact = useCallback(() => {
-      navigate("/contact");
-      window.scrollTo(0, 0)
-    }, [navigate]);
+  const handleGoToContact = useCallback(() => {
+    navigate('/contact')
+    window.scrollTo(0, 0)
+  }, [navigate])
+
+  const handleGoToFriosur = useCallback(() => {
+    navigate('/friosur')
+    window.scrollTo(0, 0)
+  }, [navigate])
 
   return (
     <S.Header>
@@ -36,14 +40,14 @@ const Header = () => {
           <S.Link onClick={handleGoToSolutions}>SOLUCIONES</S.Link>
         </S.NavLink>
         <S.NavLink>
-          <S.Link>FRIOSUR</S.Link>
+          <S.Link onClick={handleGoToFriosur}>FRIOSUR</S.Link>
         </S.NavLink>
         <S.NavLink>
           <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>
         </S.NavLink>
       </S.Navbar>
     </S.Header>
-  );
-};
+  )
+}
 
-export default memo(Header);
+export default memo(Header)
