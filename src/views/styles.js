@@ -44,7 +44,7 @@ export const Box = styled.div`
   align-content: center;
   align-items: center;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: space-around;
   text-align: left;
   padding: 1rem;
@@ -94,6 +94,7 @@ export const Boxx = styled(Box)`
   max-width: 98%;
   margin-top: 0rem;
   padding: 4rem;
+  flex-wrap: wrap;
   /* border: 2px solid red; */
   @media (max-width: 900px) {
     height: 22rem;
@@ -101,7 +102,7 @@ export const Boxx = styled(Box)`
 `
 export const TextBox = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
   gap: 1rem;
@@ -266,8 +267,8 @@ export const Section = styled.div`
 `
 export const Section3 = styled(Section)`
   background-color: #ffffff;
-  flex-direction: column;
-  /* margin-top: 6rem; */
+  flex-flow: column;
+  margin-top: 6rem;
   /* border: 4px solid greenyellow; */
   justify-content: center;
   @media screen and (max-width: 900px) {

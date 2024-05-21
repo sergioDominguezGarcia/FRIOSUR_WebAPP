@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import * as S from '../styles'
+import * as S from './styles'
 import Header from '../../components/Header'
 // import Footer from '../../components/Footer'
 import background from '../../assets/images/background.png'
@@ -25,7 +25,6 @@ const Home = () => {
         {/* <--------SECTION 1 -------> */}
         <S.SectionWithBackground background={background}>
           <S.Box>
-            {/* <S.A>Frío Industrial | Mantenimiento</S.A>  */}
             <S.TextBox>
               <S.Tittle> LA </S.Tittle>
               <S.Tittle bold> SOLUCIÓN </S.Tittle>
@@ -137,8 +136,8 @@ const Home = () => {
         <S.Section3>
           <S.Boxx>
             <S.StyledLink2>SOLUCIONES</S.StyledLink2>
-       
-            <S.H2Green bold >POSICIONAMIENTO</S.H2Green>
+
+            <S.H2Green bold>POSICIONAMIENTO</S.H2Green>
             <img src={map} width="70%" alt="" />
             <S.Img>
               <img src={Line} width="95%" alt="" />
@@ -147,15 +146,17 @@ const Home = () => {
           <S.Boxx>
             <S.H1>CLIENTES</S.H1>
             <S.HBox>
-              <S.H2Green>Que confian en <b></b></S.H2Green> 
-              <S.H2Green bold="600" > FRIOSUR </S.H2Green>
+              <S.H2Green>
+                Que confian en <b></b>
+              </S.H2Green>
+              <S.H2Green bold="600"> FRIOSUR </S.H2Green>
               <S.H2Green>y reseñas de intalaciones</S.H2Green>
             </S.HBox>
             <img src={clients} width="95%" alt="" />
           </S.Boxx>
           {/* <--------SECTION 4 -------> */}
-            <img src={reseña} width="80%" alt="" />
-
+          <S.BoxReseña><img src={reseña} width="80%" alt="" /></S.BoxReseña>
+        
 
           {/* <--------SECTION 5 -------> */}
           <S.Boxx>
@@ -164,7 +165,9 @@ const Home = () => {
               <S.H2Green>HOY MISMO CON NOSOTROS Y PIDE </S.H2Green>
               <S.H2Green bold="600"> MÁS INFORMACIÓN</S.H2Green>
             </S.HBox>
-            <S.StyledLink3 onClick={handleGoToContact}>INFORMACIÓN</S.StyledLink3>
+            <S.StyledLink3 onClick={handleGoToContact}>
+              INFORMACIÓN
+            </S.StyledLink3>
             <br />
             <br />
           </S.Boxx>

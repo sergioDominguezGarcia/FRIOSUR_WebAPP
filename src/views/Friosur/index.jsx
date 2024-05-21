@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import * as S from '../styles'
+import * as S from './styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
@@ -7,14 +7,14 @@ import back3 from '../../assets/images/back3.png'
 import star from '../../assets/images/star.png'
 import imgBottom from '../../assets/images/imgBottom.png'
 
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 const Friosur = () => {
-  const navigate = useNavigate()
-  const handleGoToContact = () => {
-    navigate('/contact')
-    window.scrollTo(0, 0)
-  }
+  // const navigate = useNavigate()
+  // const handleGoToContact = () => {
+  //   navigate('/contact')
+  //   window.scrollTo(0, 0)
+  // }
 
   return (
     <S.HomeContainer>
