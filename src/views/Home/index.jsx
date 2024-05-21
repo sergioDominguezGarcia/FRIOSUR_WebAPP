@@ -39,8 +39,6 @@ const Home = () => {
               <S.StyledLink>SABER MÁS</S.StyledLink>
               <S.A>
                 Enfocados en el <b>sector Alimentario</b>
-                <br />
-                <br />
                 También abarcamos otros mercados, ya sea a nivel
                 <b> Comercial </b> o <b> Industrial </b>
               </S.A>
@@ -56,7 +54,7 @@ const Home = () => {
                 headerContent={
                   <>
                     <S.H2>FRÍO INDUSTRIAL</S.H2>
-                    <img src={snowflake} width="200rem" alt="" />
+                    <img src={snowflake} width="100rem" alt="" />
                   </>
                 }
                 frontContent={
@@ -92,23 +90,28 @@ const Home = () => {
                 headerContent={
                   <>
                     <S.H2>FRÍO COMERCIAL Y CLIMA</S.H2>
-                    <img src={climate} width="200rem" alt="" />
+                    <img src={climate} width="100rem" alt="" />
                   </>
                 }
                 frontContent={
                   <S.ABox>
                     <S.Acard>
-                      Ofrecemos las mejores soluciones en Climatización y Frío
-                      Comercial para supermercados e hipermercados, respaldadas
-                      por nuestra amplia experiencia en el sector.
+                      Ofrecemos las <b>mejores soluciones</b> en{' '}
+                      <b>Climatización y Frío Comercial </b>
+                      para supermercados e hipermercados, respaldadas por
+                      nuestra amplia <b>experiencia en el sector.</b>
                     </S.Acard>
                   </S.ABox>
                 }
                 backContent={
                   <S.ABox>
                     <S.Acard>
-                      Nos comprometemos con la eficiencia energética y el uso de
-                      gases refrigerantes naturales, como el CO2 y el amoniaco,
+                      Nos comprometemos con la <b>eficiencia energética</b> y el
+                      uso de
+                      <b>
+                        gases refrigerantes naturales, como el CO2 y el
+                        amoniaco,
+                      </b>
                       mediante un constante enfoque en la formación y la
                       innovación.
                     </S.Acard>
@@ -120,12 +123,12 @@ const Home = () => {
           <S.BottomRow>
             <S.Box5>
               <S.H2>MANTENIMIENTO</S.H2>
-              <img src={maintenance} width="200rem" alt="" />
+              <img src={maintenance} width="100rem" alt="" />
               <S.ABox>
-                <S.A>
+                <S.Acard>
                   Asistencia técnica <b>24 horas</b> al día <b>365 días</b> del
                   año
-                </S.A>
+                </S.Acard>
               </S.ABox>
             </S.Box5>
           </S.BottomRow>
@@ -134,25 +137,25 @@ const Home = () => {
         <S.Section3>
           <S.Boxx>
             <S.StyledLink2>SOLUCIONES</S.StyledLink2>
-            <S.H2Green>POSICIONAMIENTO</S.H2Green>
-            <img src={map} width="95%" alt="" />
+       
+            <S.H2Green bold >POSICIONAMIENTO</S.H2Green>
+            <img src={map} width="70%" alt="" />
             <S.Img>
-              <img src={Line} width="100%" alt="" />
+              <img src={Line} width="95%" alt="" />
             </S.Img>
           </S.Boxx>
           <S.Boxx>
             <S.H1>CLIENTES</S.H1>
             <S.HBox>
-              <S.H2Green>Que confian en </S.H2Green>
-              <S.H2Green bold="600"> FRIOSUR</S.H2Green>
+              <S.H2Green>Que confian en <b></b></S.H2Green> 
+              <S.H2Green bold="600" > FRIOSUR </S.H2Green>
               <S.H2Green>y reseñas de intalaciones</S.H2Green>
             </S.HBox>
-            <img src={clients} width="100%" alt="" />
+            <img src={clients} width="95%" alt="" />
           </S.Boxx>
           {/* <--------SECTION 4 -------> */}
-          <S.Boxx>
-            <img src={reseña} width="95%" alt="" />
-          </S.Boxx>
+            <img src={reseña} width="80%" alt="" />
+
 
           {/* <--------SECTION 5 -------> */}
           <S.Boxx>
@@ -161,13 +164,13 @@ const Home = () => {
               <S.H2Green>HOY MISMO CON NOSOTROS Y PIDE </S.H2Green>
               <S.H2Green bold="600"> MÁS INFORMACIÓN</S.H2Green>
             </S.HBox>
-            <S.StyledLink onClick={handleGoToContact}>INFORMACIÓN</S.StyledLink>
+            <S.StyledLink3 onClick={handleGoToContact}>INFORMACIÓN</S.StyledLink3>
             <br />
             <br />
           </S.Boxx>
         </S.Section3>
       </S.Content>
-      <Footer />
+      {/* <Footer /> */}
     </S.HomeContainer>
   )
 }

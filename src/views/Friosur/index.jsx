@@ -38,12 +38,13 @@ const Friosur = () => {
               <S.H2 bold>FRIOSUR SCDAD. COOPERATIVA ANDALUZA</S.H2>
               <S.H2Boxfrio>
                 <S.Afrio>
-                  <b>Friosur</b>, una empresa con mas de 30 años en el sector del <b>Frío
-                  Industrial y la Climatización industrial.</b>
+                  <b>Friosur</b>, una empresa con mas de 30 años en el sector
+                  del <b>Frío Industrial y la Climatización industrial.</b>
                 </S.Afrio>
 
                 <S.Afrio>
-                <b>Con sede en Sevilla,</b> nuestra empresa está enfocada en la
+                  <b>Con sede en Sevilla,</b> nuestra empresa está enfocada en
+                  la
                   <b>producción alimenticia.</b>
                 </S.Afrio>
               </S.H2Boxfrio>
@@ -54,7 +55,7 @@ const Friosur = () => {
         <S.Section3>
           <S.H2Green bold>EN CONTINUO DESARROLLO</S.H2Green>
           <S.Img>
-            <img src={imgBottom} alt="" />
+            <img src={imgBottom} width="50%" alt="" />
           </S.Img>
           <S.Box6>
             <S.Text>
@@ -74,14 +75,14 @@ const Friosur = () => {
                   y mantenimiento de las instalaciones en su <b> nueva obra.</b>
                 </S.Agreen>
                 <S.Img>
-                  <img src={star} alt="" />
+                  <img src={star} width="50%" alt="" />
                 </S.Img>
                 <S.Agreen>
                   Contamos con un equipo humano cualificado, trabajando siempre
                   con materiales de máxima calidad y con marcas de primer nivel.
                 </S.Agreen>
                 <S.Img>
-                  <img src={star} alt="" />
+                  <img src={star} width="50%" alt="" />
                 </S.Img>
                 <S.Agreen>
                   <b>INNOVACIÓN y CALIDAD,</b> valores fundamentales de una

@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   position: static;
   bottom: 0;
   width: 100%;
-  max-width: 100%;
+
   height: auto;
   flex-direction: row;
   align-items: center;
@@ -115,8 +115,8 @@ export const InfoWrap = styled.div`
   /* border: 2px solid white; */
   flex-direction: column;
   color: white;
-  /* border: 5px dotted aliceblue; */
-  justify-content: space-around;
+  border: 5px dotted aliceblue;
+  justify-content: space-between;
   /* width: auto; */
 `;
 

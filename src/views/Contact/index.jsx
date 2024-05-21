@@ -75,8 +75,8 @@ const Contact = () => {
           <S.Map>
             <img src={mapa} alt="" />
           </S.Map>
+        {/* <Footer /> */}
         </S.Content>
-        <Footer />
       </S.ContactContainer>
     </>
   );

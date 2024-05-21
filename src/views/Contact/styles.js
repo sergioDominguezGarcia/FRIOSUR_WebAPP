@@ -6,16 +6,20 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`;
+  margin: 0 auto;
+  border: none;
+  /* border: 2px solid red; */
+`
 export const Content = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
+  margin: 0 auto;
   margin-top: 200px;
   flex-direction: column;
   align-items: center;
   /* border: 3px solid red; */
   /* justify-content: space-between; */
-`;
+`
 
 export const Map = styled.div`
   width: 90%;

@@ -15,15 +15,17 @@ export const Header = styled.div`
   justify-content: space-between;
   transition: background-color 0.4s ease;
   @media (max-width: 1026px) {
-    max-height: 137px;
+    max-height: 70px;
+    
   }
 `
 
 export const Logo = styled.div`
   align-items: center;
   display: flex;
-  height: 129px;
-  width: 206px;
+  
+  
+  
   margin-left: 45px;
   @media (max-width: 1026px) {
     margin-left: 25px;
@@ -34,12 +36,12 @@ export const Navbar = styled.ul`
   align-content: space-around;
   /* border: 5px solid red; */
   display: flex;
-  font-size: 32px;
+  font-size: 30px;
   height: 100%;
   width: 74%;
   list-style: none;
   @media (max-width: 1026px) {
-    font-size: 23px;
+    font-size: 10px;
     align-content: start;
   }
 `
