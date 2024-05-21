@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import * as S from '../styles'
 import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+// import Footer from '../../components/Footer'
 import background from '../../assets/images/background.png'
 import FlipCard from '../../components/FlipCard'
 import climate from '../../assets/images/climate.png'

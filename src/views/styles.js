@@ -124,27 +124,33 @@ export const TextBox = styled.div`
 
 export const Text = styled(TextBox)`
   justify-content: center;
+  display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 
   @media (max-width: 900px) {
-    width: 50%;
-    
+    width: 80%;
+
     /* text-align: center; */
   }
 
   /* border: 2px dashed greenyellow; */
 `
 export const List = styled.ul`
-  /* width: 80%; */
+  width: 100%;
   margin-top: 0rem;
 
   /* border: 2px dashed greenyellow; */
 `
 export const List2 = styled(List)`
+  
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  border: 2px dashed red;
   @media screen and (max-width: 900px) {
+    
   }
 `
 export const Li = styled.li`
@@ -166,7 +172,7 @@ export const Li2 = styled(Li)`
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 45px;
+  /* line-height: 45px; */
 
   color: #698669;
   @media screen and (max-width: 900px) {
@@ -361,7 +367,6 @@ export const StyledLink3 = styled(StyledLink)`
   height: 5rem;
   @media (max-width: 1326px) {
     font-size: 16px;
-    
   }
 `
 export const StyledLink4 = styled(StyledLink)`
@@ -420,7 +425,7 @@ export const StyledLink2 = styled(StyledLink)`
   margin-bottom: 8rem;
   font-size: 3rem;
   height: 7rem;
-  width:auto;
+  width: auto;
   @media screen and (max-width: 900px) {
     margin: 0rem;
     font-size: 1rem;
@@ -446,6 +451,9 @@ export const H2Green = styled(H2)`
 export const H2solutions = styled(H2Green)`
   font-size: 30px;
   line-height: 45px;
+    @media screen and (max-width: 900px) {
+    font-size: 20px;
+  }
 `
 
 export const Img = styled.div`
