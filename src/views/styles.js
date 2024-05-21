@@ -76,7 +76,7 @@ export const Box4 = styled(Box)`
   width: 100%;
   /* min-width: 60vw; */
   height: 60vh;
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 `
 export const Box6 = styled(Box4)`
   height: auto;

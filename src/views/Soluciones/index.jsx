@@ -20,7 +20,7 @@ const Solutions = () => {
 
   return (
     <S.HomeContainer>
-      {/* <Header /> */}
+      <Header />
       <S.Content>
         {/* <--------SECTION 1 -------> */}
         <S.SectionBackground background={solutionsImg}>
