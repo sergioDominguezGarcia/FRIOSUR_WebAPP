@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import * as S from './styles'
 import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+// import Footer from '../../components/Footer'
 
 import back3 from '../../assets/images/back3.png'
 import star from '../../assets/images/star.png'
@@ -97,7 +97,7 @@ const Friosur = () => {
           </S.Box6>
         </S.Section3>
       </S.Content>
-      <Footer />
+      {/* <Footer /> */}
     </S.HomeContainer>
   )
 }

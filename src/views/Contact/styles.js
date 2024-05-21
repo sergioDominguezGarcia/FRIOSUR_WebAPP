@@ -8,22 +8,25 @@ export const ContactContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   border: none;
+  /* overflow-x: hidden; */
   /* border: 2px solid red; */
 `
 export const Content = styled.div`
   display: flex;
-  /* width: 100%; */
-  margin: 0 auto;
-  margin-top: 200px;
   flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10rem;
+
   align-items: center;
-  /* border: 3px solid red; */
-  /* justify-content: space-between; */
+  max-width: 1440px;
+  @media screen and (max-width: 768px) {
+    margin-top: 8rem;
+  }
 `
 
 export const Map = styled.div`
   width: 90%;
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 100px;
   img {
     width: 100%;
@@ -35,21 +38,24 @@ export const Map = styled.div`
 
 export const H1 = styled.h1`
   color: #446844;
-  font-family: "Montserrat";
-  font-size: 64px;
+  font-family: 'Montserrat';
+  font-size: 50px;
   font-weight: 800;
   line-height: 78px;
-  width: 100%;
-`;
+  @media screen and (max-width: 768px) {
+    font-size: 27px;
+    line-height: 0px;
+  }
+`
 
 export const TextWrap = styled.div`
-  /* border: 3px solid red; */
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
-
-  width: 95%;
+  /* align-items: center; */
+  justify-content: center;
+  /* align-items: center;ç */
+  /* width: 95%; */
+  /* border: 3px solid greenyellow; */
 
 `;
 
@@ -57,6 +63,7 @@ export const Column1 = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: left;
   /* border: 3px solid greenyellow; */
   /* align-items: center; */
 `;
@@ -65,30 +72,41 @@ export const Column2 = styled.div`
   display: flex;
   flex-direction: column;
   /* border: 3px solid greenyellow; */
-  padding-left:rem;
-`;
+  padding-left: rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`
 
 export const Text = styled.a`
-  font-family: "K2D";
+  font-family: 'K2D';
   font-style: normal;
   font-weight: 200;
   text-align: left;
   margin-top: 0rem;
   font-size: 24px;
   line-height: 31px;
-  padding: 2px;
+
   color: black;
   text-decoration: none;
-  margin: 3px;
-  padding: 0.5rem;
-  height: auto;
-  width: auto;
+
+
+
   cursor: pointer;
   transition: 0.5s all ease;
-  margin-left: 3.5rem;
-  `;
+  margin-left: 1.5rem;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+`
 
-export const InputWrap = styled.div``;
+export const InputWrap = styled.div`
+
+  @media screen and (max-width: 768px) {
+
+  }
+`
 export const CustomButton = styled(Button)``;
 
 // export const MailForm = styled.div`

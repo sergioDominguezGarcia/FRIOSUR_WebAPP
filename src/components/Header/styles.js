@@ -36,7 +36,7 @@ export const Navbar = styled.ul`
   display: flex;
   font-size: 30px;
   height: 100%;
-  width: 74%;
+  width: 100%;
   list-style: none;
   @media (max-width: 1026px) {
     font-size: 15px;
@@ -46,11 +46,16 @@ export const Navbar = styled.ul`
 
 export const NavLink = styled.li`
   align-items: center;
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin: 5px;
+  @media (max-width: 1026px) {
+    font-size: 15px;
+    align-content: start;
+    margin: 0px;
+  }
+  /* border: 2px solid blue; */
 `
 
 export const Link = styled.a`
@@ -69,5 +74,9 @@ export const Link = styled.a`
     color: #dcdcdc;
     background-color: #446844;
     transition: 0.5s all ease;
+  }
+  @media (max-width: 1026px) {
+    padding: 0rem;
+    margin: 3px;
   }
 `

@@ -378,7 +378,7 @@ export const List2 = styled(List)`
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
   @media screen and (max-width: 900px) {
   }
 `

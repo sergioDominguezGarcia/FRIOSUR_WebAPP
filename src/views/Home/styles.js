@@ -11,7 +11,6 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 1440px;
   border: none;
-
   justify-content: center;
 `
 export const SectionWithBackground = styled.div`
@@ -333,7 +332,6 @@ export const BottomRow = styled.div`
 `
 export const H1 = styled.a`
   color: #446844;
-
   font-family: Montserrat;
   font-weight: 800;
   font-style: normal;
