@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Header = styled.div`
   align-items: center;
@@ -15,21 +15,19 @@ export const Header = styled.div`
   justify-content: space-between;
   transition: background-color 0.4s ease;
   @media (max-width: 1026px) {
-    max-height: 70px;
-    
+    max-height: 100px;
   }
 `
 
 export const Logo = styled.div`
   align-items: center;
   display: flex;
-  
-  
-  
   margin-left: 45px;
-  @media (max-width: 1026px) {
-    margin-left: 25px;
-  }
+    img {
+    width: 80%;
+    max-width: 200px;
+    }
+  
 `
 
 export const Navbar = styled.ul`
@@ -41,7 +39,7 @@ export const Navbar = styled.ul`
   width: 74%;
   list-style: none;
   @media (max-width: 1026px) {
-    font-size: 10px;
+    font-size: 15px;
     align-content: start;
   }
 `
@@ -53,7 +51,7 @@ export const NavLink = styled.li`
   justify-content: space-around;
   width: 100%;
   margin: 5px;
-`;
+`
 
 export const Link = styled.a`
   align-content: center;
@@ -72,4 +70,4 @@ export const Link = styled.a`
     background-color: #446844;
     transition: 0.5s all ease;
   }
-`;
+`
