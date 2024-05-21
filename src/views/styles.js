@@ -80,9 +80,11 @@ export const Box4 = styled(Box)`
 `
 export const Box6 = styled(Box4)`
   height: auto;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 0px;
-  padding: 2rem;
+  /* padding: 2rem; */
   /* border: 1px solid red; */
 `
 export const Boxx = styled(Box)`
@@ -101,7 +103,7 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
+
   gap: 1rem;
   width: 100%;
   /* border: 1px solid red; */
@@ -110,28 +112,28 @@ export const TextBox = styled.div`
   }
   @media (max-width: 900px) {
     width: 100%;
-    /* text-align: center; */
+
   }
 
   @media (max-width: 870px) {
-    flex-direction: row;
+
     width: 90%;
-    align-items: stretch;
+  
   }
   /* border: 2px dashed greenyellow; */
 `
 // SOLUTIONS
 
 export const Text = styled(TextBox)`
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   align-items: center;
-
+  margin: 0 auto;
   @media (max-width: 900px) {
-    width: 80%;
-
+    width: 100%;
+    /* height: 50%; */
     /* text-align: center; */
   }
 
@@ -264,12 +266,13 @@ export const Section = styled.div`
 `
 export const Section3 = styled(Section)`
   background-color: #ffffff;
-  flex-flow: column;
+  flex-direction: column;
   /* margin-top: 6rem; */
   /* border: 4px solid greenyellow; */
+  justify-content: center;
   @media screen and (max-width: 900px) {
-    width: 100%;
-
+    width: 98%;
+    margin: 0 auto;
     margin-top: 0rem;
   }
 `
@@ -466,6 +469,10 @@ export const Img = styled.div`
 export const Img2 = styled(Img)`
   margin-top: 1rem;
 `
+export const Img3 = styled(Img)`
+  margin-top: 0rem;
+
+`
 export const HBox = styled.div`
   margin: 4rem;
   /* gap: 0.7rem; */
@@ -634,13 +641,19 @@ export const SeparatorWhite = styled(SeparatorGreen)`
 `
 export const TextFrio = styled(Text)`
   text-align: center;
+  display: flex;
+  flex-direction: column;
 `
 export const H2Boxfrio = styled(H2Box)`
+  display: flex;
+
+  justify-content: center;
+
   text-align: center;
-  width: 80%;
-  /* border: 2px solid red; */
+  width: 100%;
+
 `
 export const Afrio = styled(A)`
   text-align: center;
-  line-height: 50px;
+  /* line-height: 20px; */
 `

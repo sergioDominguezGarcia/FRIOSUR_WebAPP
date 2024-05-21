@@ -54,9 +54,9 @@ const Friosur = () => {
 
         <S.Section3>
           <S.H2Green bold>EN CONTINUO DESARROLLO</S.H2Green>
-          <S.Img>
+          <S.Img3>
             <img src={imgBottom} width="50%" alt="" />
-          </S.Img>
+          </S.Img3>
           <S.Box6>
             <S.Text>
               <S.H2Boxfrio>
@@ -74,16 +74,20 @@ const Friosur = () => {
                   La <b>ejecución total</b>, como la puesta en marcha, revisión
                   y mantenimiento de las instalaciones en su <b> nueva obra.</b>
                 </S.Agreen>
-                <S.Img>
-                  <img src={star} width="50%" alt="" />
-                </S.Img>
+                  </S.H2Boxfrio>
+                <S.Img3>
+                  <img src={star} width="45px" alt="" />
+                </S.Img3>
+                  <S.H2Boxfrio>
                 <S.Agreen>
                   Contamos con un equipo humano cualificado, trabajando siempre
                   con materiales de máxima calidad y con marcas de primer nivel.
                 </S.Agreen>
-                <S.Img>
-                  <img src={star} width="50%" alt="" />
-                </S.Img>
+                  </S.H2Boxfrio>
+                <S.Img3>
+                  <img src={star} width="45px" alt="" />
+                </S.Img3>
+                <S.H2Boxfrio>
                 <S.Agreen>
                   <b>INNOVACIÓN y CALIDAD,</b> valores fundamentales de una
                   empresa que apuesta por la máxima competitividad. 
