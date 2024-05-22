@@ -4,6 +4,7 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
   /* margin-top: 12rem; */
 `
 export const Container = styled.div`
@@ -54,4 +55,5 @@ export const CardHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `

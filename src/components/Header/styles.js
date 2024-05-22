@@ -15,19 +15,26 @@ export const Header = styled.div`
   justify-content: space-between;
   transition: background-color 0.4s ease;
   @media (max-width: 1026px) {
-    max-height: 100px;
+    /* max-height: 100px; */
   }
 `
 
 export const Logo = styled.div`
   align-items: center;
   display: flex;
-  margin-left: 45px;
-    img {
+  margin-left: 35px;
+  img {
     width: 80%;
     max-width: 200px;
+    min-width: 100px;
+  }
+  @media (max-width: 1026px) {
+    margin-left: 10px;
+    img {
+      width: 60%;
     }
-  
+  }
+
 `
 
 export const Navbar = styled.ul`
@@ -38,10 +45,33 @@ export const Navbar = styled.ul`
   height: 100%;
   width: 100%;
   list-style: none;
+  transition: transform 0.3s ease;
   @media (max-width: 1026px) {
     font-size: 15px;
-    align-content: start;
+    width: 80%;
+    height: 60px;
   }
+  @media (max-width: 570px) {
+    width: 100%;
+    margin-right: 10px;
+    font-size: 11px;
+  }
+  /* @media (max-width: 1200px) {
+    position: fixed;
+    font-size: 25px;
+    right: 0;
+    margin-left: 45px;
+    top: 0;
+    margin-top: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #446844;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transform: ${({ menuOpen }) =>
+    menuOpen ? 'translateX(0)' : 'translateX(100%)'};
+  } */
 `
 
 export const NavLink = styled.li`
@@ -49,13 +79,15 @@ export const NavLink = styled.li`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 5px;
+  /* margin: 5px 35px 5px 0px; */
   @media (max-width: 1026px) {
-    font-size: 15px;
-    align-content: start;
-    margin: 0px;
+    /* font-size: 15px; */
+    /* align-content: start;
+    margin: 0px; */
   }
-  /* border: 2px solid blue; */
+  @media (max-width: 1200px) {
+    /* margin-top: 50px; */
+  } /* border: 2px solid blue; */
 `
 
 export const Link = styled.a`
@@ -78,5 +110,29 @@ export const Link = styled.a`
   @media (max-width: 1026px) {
     padding: 0rem;
     margin: 3px;
+    
   }
+`
+
+export const CloseIcon = styled.div`
+  /* position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff; */
+  /* @media (min-width: 1201px) {
+    display: none;
+  } */
+`
+export const HamburgerIcon = styled.div`
+  /* display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 45px;
+  } */
 `

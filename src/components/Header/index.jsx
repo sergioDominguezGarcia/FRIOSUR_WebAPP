@@ -2,10 +2,14 @@ import { memo, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './styles'
 import Logo_BLANCO from '../../assets/images/Logo_BLANCO.png'
+// import { FaBars, FaTimes } from 'react-icons/fa'
+
+
 const Header = () => {
   // Change color when scrolling
-
+  // const [menuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
+
   const handleGoToHome = useCallback(() => {
     navigate('/home')
     window.scrollTo(0, 0)
@@ -26,13 +30,27 @@ const Header = () => {
     window.scrollTo(0, 0)
   }, [navigate])
 
+    // const toggleMenu = () => {
+    //   setMenuOpen(!menuOpen)
+    // }
+
+    //   const closeMenu = () => {
+    //     setMenuOpen(false)
+    //   }
   return (
     <S.Header>
       <S.Logo>
         <img src={Logo_BLANCO} width alt="" onClick={handleGoToHome} />
       </S.Logo>
 
-      <S.Navbar>
+      {/* <S.HamburgerIcon onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </S.HamburgerIcon> */}
+
+      <S.Navbar
+      // menuOpen={menuOpen}
+      >
+        {/* <S.CloseIcon onClick={closeMenu} /> */}
         <S.NavLink>
           <S.Link onClick={handleGoToHome}>INICIO</S.Link>
         </S.NavLink>

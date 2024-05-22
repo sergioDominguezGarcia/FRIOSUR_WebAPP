@@ -37,3 +37,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #78997d; /* Color del scrollbar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* Fondo de la pista del scrollbar */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin; /* Ancho del scrollbar */
+  scrollbar-color: #78997d #f1f1f1; /* Color del thumb y del track */
+}
