@@ -1,10 +1,10 @@
 import { Body, CardHeader, Container, CardWrapper, Front, Back } from './styles'
 
-export const FlipCard = ({ headerContent, frontContent, backContent }) => {
+export const SphereCard = ({ headerContent, frontContent, backContent }) => {
   return (
     <Body>
       <Container>
-          <CardHeader>{headerContent}</CardHeader>
+        <CardHeader>{headerContent}</CardHeader>
         <CardWrapper>
           <Front>{frontContent}</Front>
           <Back>{backContent}</Back>
@@ -13,5 +13,4 @@ export const FlipCard = ({ headerContent, frontContent, backContent }) => {
     </Body>
   )
 }
-
-export default FlipCard
+export default SphereCard

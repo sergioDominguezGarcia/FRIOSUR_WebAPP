@@ -4,6 +4,8 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 5px solid greenyellow; */
+ 
   
   /* margin-top: 12rem; */
 `

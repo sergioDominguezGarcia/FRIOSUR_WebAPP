@@ -12,7 +12,7 @@ export const Container = styled.div`
   max-height: 200px;
   max-width: 2000px;
   perspective: 1000px;
-  position: absolute;
+  /* position: absolute; */
   align-items: center;
 
   /* border: 3px dotted red; */
@@ -30,22 +30,28 @@ export const CardWrapper = styled.div`
   /* border: 3px solid greenyellow; */
 `
 export const Card = styled.div`
-  width: 40rem;
-  height: 70%;
+  max-width: 35rem;
+  height: 40%;
   display: flex;
   align-items: center;
-
   justify-content: center;
   backface-visibility: hidden;
+  @media screen and (max-width: 1100px) {
+    max-width: 70rem;
+    height: 30%;
+  }
 `
 export const Front = styled(Card)`
-  position: absolute;
+  /* position: relative; */
   align-content: center;
-  /* border: 3px solid purple; */
-`
+  flex-direction: column;
+  gap: 2rem;
+  `
 export const Back = styled(Card)`
   transform: rotateY(180deg);
+  /* border: 3px solid purple; */
   align-content: center;
+  
 `
 export const CardHeader = styled.div`
   display: flex;

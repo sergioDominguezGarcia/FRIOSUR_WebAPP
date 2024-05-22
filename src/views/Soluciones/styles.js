@@ -4,8 +4,8 @@ export const HomeContainer = styled.div`
   max-width: 100%;
   overflow-x: hidden;
   /* box-sizing: border-box; */
-  `
-  
+`
+
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ export const Boxx = styled(Box)`
   margin-top: 0rem;
   padding: 4rem;
   flex-wrap: wrap;
-  
+
   /* border: 2px solid red; */
   @media (max-width: 900px) {
     height: 22rem;
@@ -97,9 +97,7 @@ export const Box6 = styled(Box4)`
   /* border: 1px solid red; */
 `
 export const BoxSolutions = styled(Boxx)`
-
-
-@media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     height: auto;
   }
 `
@@ -199,6 +197,7 @@ export const Section = styled.div`
   /* align-content: center; */
   align-items: center;
 `
+
 export const Section3 = styled(Section)`
   background-color: #ffffff;
   flex-flow: column;
@@ -233,7 +232,6 @@ export const StyledLink = styled.a`
   box-sizing: border-box;
   @media (max-width: 1326px) {
     font-size: 1rem;
-    
   }
   &:hover {
     background: #ffffff;
@@ -245,7 +243,6 @@ export const StyledLink4 = styled(StyledLink)`
   height: 5rem;
   font-size: 16px;
   @media (max-width: 1326px) {
-    
     font-size: 10px;
     height: 20%;
     width: 25%;
@@ -266,7 +263,6 @@ export const H1 = styled.a`
   }
 `
 export const H1solutions = styled(H1)`
-  
   font-size: 48px;
   @media screen and (max-width: 900px) {
     font-size: 28px;
@@ -347,11 +343,11 @@ export const Img = styled.div`
 `
 export const Img2 = styled(Img)`
   margin: 1rem 0rem 5rem 0rem;
-  img{
-    width: 50%;  
+  img {
+    width: 50%;
   }
-    @media screen and (max-width: 900px) {
-      margin: 0rem 0rem 1rem 0rem;
+  @media screen and (max-width: 900px) {
+    margin: 0rem 0rem 1rem 0rem;
   }
 `
 export const Li = styled.li`
@@ -396,4 +392,76 @@ export const List2 = styled(List)`
   }
 `
 
+//  ESTILOS SPHERECARD
+export const SphereSection = styled.section`
+  display: flex;
+  width: 100%;
+`
 
+export const Container = styled.div`
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 1rem;
+  /* border: 1px solid red; */
+
+  @media screen and (max-width: 1100px) {
+    margin-top: 0rem;
+  }
+`
+export const Sphere = styled.div`
+  /* border: 3px solid greenyellow; */
+  width: 100%;
+  margin: 3rem;
+  flex-grow: 2;
+  img {
+    width: 20%;
+  }
+  @media screen and (max-width: 1100px) {
+    max-width: 45%;
+    margin: 0rem;
+    img {
+      width: 40%;
+    }
+  }
+`
+
+  export const Sphere2 = styled(Sphere)`
+    flex-grow: 1; /* Calcula el ancho del elemento */
+    margin: 0rem;
+    max-width: 50%;
+
+    @media screen and (max-width: 1100px) {
+      max-width: 45%;
+      /* margin: 3rem; */
+    }
+  `
+
+
+export const Agreen = styled(A)`
+  font-size: 18px;
+  color: rgba(68, 104, 68, 1);
+  font-weight: 550;
+  text-align: center;
+  line-height: 30px;
+
+  text-align: center;
+  @media screen and (max-width: 1100px) {
+    font-size: 10px;
+  }
+`
+export const Atitle = styled(A)`
+  font-size: 35px;
+  color: rgba(68, 104, 68, 1);
+  font-weight: 650;
+  text-align: center;
+  line-height: 35px;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 20px;
+  }
+`
