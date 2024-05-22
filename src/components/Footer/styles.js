@@ -1,169 +1,182 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
   background-color: black;
   display: flex;
   position: static;
   bottom: 0;
-  width: 100%;
-  height: auto;
+
   flex-direction: row;
-  align-items: center;
+
   justify-content: space-between;
-  padding-bottom: 10px;
+  gap: 1rem;
+  padding: 10px;
+  @media (max-width: 880px) {
+  }
 `
 
 export const Container1 = styled.div`
-  /* border: 5px dotted red; */
-  height: 100%;
-  margin: 5rem;
+  display: flex;
+
+  width: 33%;
+  gap: 1rem;    
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-size: 24px;
-`;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
 
 export const Logo = styled.div`
-  align-items: center;
   display: flex;
-  height: 129px;
-  width: 206px;
-  margin-bottom: 50px;
-`;
+  width: 200px;
+  img {
+    width: 70%;
+    margin: 0.5rem;
+  }
+  @media (max-width: 768px) {
+
+    img {
+      width: 50%;
+    }
+  }
+`
 
 export const Media = styled.div`
   display: flex;
-  /* justify-content: flex-start; */
-`;
+  gap: 0.5rem;
+  
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+`
 export const MediaLogo = styled.div`
+  justify-content: center;
   align-items: center;
   display: flex;
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
   height: 44px;
-  width: 44px;
-`;
+  width: 84px;
+  img {
+    width: 60%;
+    
+  }
+  @media (max-width: 768px) {
+    /* height: 30px; */
+    /* width: 30px; */
+  }
+`
 
 export const Container2 = styled.div`
-  width: auto;
-  /* border: 10px dotted fuchsia; */
-  flex-direction: row;
-  margin-bottom: 5rem;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+
   font-size: 24px;
-`;
+  /* border: 2px dotted purple; */
+  @media (max-width: 768px) {
+  }
+`
 
 export const NavWrap = styled.div`
-  /* border-bottom: 1px solid white; */
   display: flex;
   flex-direction: row;
-  margin-bottom: 3rem;
-  justify-content: flex-start;
-  /* width: 100%; */
-`;
+  text-align: left;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+`
 
 export const Container3 = styled.div`
-  width: auto;
-  /* border: 10px dotted yellow; */
-  flex-direction: row;
-  margin-right: 4rem;
-  font-size: 24px;
-`;
+  width: 33%;
 
-export const Navbar = styled.ul`
-  align-items: center;
-  /* border: 3px solid pink; */
+  flex-direction: row;
+  /* border: 2px dotted yellowgreen; */
+  @media (max-width: 768px) {
+  }
+`
+
+export const Navbar = styled.a`  
   display: flex;
   flex-direction: column;
-  font-size: 24px;
   height: 100%;
-  justify-content: space-around;
   list-style: none;
-  /* margin-left: 10rem; */
-  /* margin-right: 10rem; */
-  padding: 0.5rem;
   width: auto;
-`;
+  margin-bottom: 2rem;
+  @media (max-width: 768px) {
+
+  }
+`
+export const SeparatorWhite = styled.div`
+  width: 80%;
+  border-top: 1px solid #ffffff;
+
+  margin-bottom: 1rem;
+`
 
 export const NavLink = styled.li`
-  /* align-items: center; */
-  justify-content: flex-start;
-
-  /* border: 2px solid blue; */
   display: flex;
   width: 100%;
-  margin: 2px;
-`;
+`
 
 export const Link = styled.a`
-  /* justify-content: center; */
-
   font-weight: 400;
-  border-radius: 10px;
-  /* border: 2px solid white; */
   color: #fff;
-  text-decoration: none;
-  margin-bottom: 3px;
-  /* padding: 0.5rem; */
   height: auto;
   width: auto;
   cursor: pointer;
   transition: 0.5s all ease;
-`;
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+`
 
 export const InfoWrap = styled.div`
   display: flex;
-  /* border: 2px solid white; */
   flex-direction: column;
   color: white;
-  border: 5px dotted aliceblue;
   justify-content: space-between;
-  /* width: auto; */
-`;
+  @media (max-width: 768px) {
+
+  }
+`
 
 export const Ubi = styled.a`
   text-align: left;
   font-weight: 500;
   margin-top: 0rem;
-
   color: #fff;
-  text-decoration: none;
-  margin: 3px;
-  /* padding: 0.5rem; */
+  font-size: 16px;
   height: auto;
   width: auto;
   cursor: pointer;
   transition: 0.5s all ease;
-`;
+
+  @media (max-width: 840px) {
+    font-size: 10px;
+  }
+`
 
 export const Hour = styled.a`
   display: flex;
   align-items: flex-start;
   text-align: left;
-
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 16px;
   border-radius: 10px;
-
   color: #fff;
   text-decoration: none;
-  margin-bottom: 2rem;
-  /* padding: 0.5rem; */
+  /* margin-bottom: 2rem; */
   height: auto;
-  width: auto;
+  width: 100%;
   cursor: pointer;
   transition: 0.5s all ease;
-`;
 
-// export const  = styled.div`
-
-// // `;
-// export const  = styled.div`
-
-// // `;
-// export const  = styled.div`
-
-// // `;
-// export const  = styled.div`
-
-// // `;
-// export const  = styled.div`
-
-// // `;
+  @media (max-width: 840px) {
+    font-size: 10px;
+  }
+`

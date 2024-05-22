@@ -52,6 +52,9 @@ const Footer = () => {
             </S.NavLink>
           </S.Navbar>
         </S.NavWrap>
+
+        <S.SeparatorWhite />
+
         <S.InfoWrap>
           <S.Ubi>
             <b> FRIOSUR S.C.A.</b> <br />
@@ -62,7 +65,7 @@ const Footer = () => {
           </S.Ubi>
         </S.InfoWrap>
       </S.Container2>
-      {/* //---------Container3------------- */}{" "}
+      {/* //---------Container3------------- */}{' '}
       <S.Container3>
         <S.NavWrap>
           <S.Navbar>
@@ -81,19 +84,20 @@ const Footer = () => {
           </S.Navbar>
         </S.NavWrap>
         {/* --------------//--INFO2-- --------*/}
+        <S.SeparatorWhite />
         <S.InfoWrap>
           <S.Hour>
             Horarios de oficinas,de lunes a viernes,
             <br />
             de 8:00 a 13:30 y de 16:00 a 19:00. <br />
             <br />
-            954 156 725 / 959 302 314 (Sevilla / Huelva). <br />{" "}
+            954 156 725 / 959 302 314 (Sevilla / Huelva). <br />{' '}
             info@friosursca.com
           </S.Hour>
         </S.InfoWrap>
       </S.Container3>
     </S.FooterContainer>
-  );
+  )
 };
 
 export default memo(Footer);

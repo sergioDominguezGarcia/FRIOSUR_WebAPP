@@ -16,7 +16,7 @@ export const Content = styled.div`
   flex-direction: column;
   margin: 0 auto;
   margin-top: 10rem;
-
+  padding: 1rem;
   align-items: center;
   max-width: 1440px;
   @media screen and (max-width: 768px) {
@@ -29,10 +29,13 @@ export const Map = styled.div`
   margin-top: 40px;
   margin-bottom: 100px;
   img {
-    width: 100%;
+    width: 85%;
     height: auto;
     object-fit: cover;
     /* Ajusta el tamaño de la imagen */
+  }
+    @media screen and (max-width: 768px) {
+    
   }
 `;
 
@@ -46,11 +49,16 @@ export const H1 = styled.h1`
     font-size: 27px;
     line-height: 0px;
   }
+    @media screen and (max-width: 390px) {
+    font-size: 25px;
+    
+  }
 `
 
 export const TextWrap = styled.div`
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
   /* align-items: center; */
   justify-content: center;
   /* align-items: center;ç */

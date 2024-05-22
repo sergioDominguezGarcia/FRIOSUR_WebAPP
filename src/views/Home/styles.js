@@ -460,7 +460,6 @@ export const Img = styled.div`
   /* width: 100%; */
     img {
     width: 100%;
-
   }
     @media screen and (max-width: 1200px) {
     /* width: 40%; */
