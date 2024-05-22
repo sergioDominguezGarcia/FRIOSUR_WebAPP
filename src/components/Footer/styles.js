@@ -47,22 +47,20 @@ export const Logo = styled.div`
 
 export const Media = styled.div`
   display: flex;
-  /* gap: 0.5rem; */
-  
+  margin-top: 20px;   
   @media (max-width: 768px) {
     margin-top: 20px;
   }
 `
 export const MediaLogo = styled.div`
-  justify-content: center;
-  align-items: center;
   display: flex;
+  justify-content: left;
+  align-items: left;
   /* margin-right: 0.5rem; */
   height: 44px;
   width: 80px;
   img {
     width: 60%;
-    
   }
   @media (max-width: 768px) {
     /* height: 30px; */

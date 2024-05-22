@@ -4,14 +4,14 @@ export const HomeContainer = styled.div`
   max-width: 100%;
   overflow-x: hidden;
   /* box-sizing: border-box; */
-`
+  `
+  
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1440px;
   border: none;
-
   justify-content: center;
 `
 export const SeparatorGreen = styled.div`
@@ -70,10 +70,10 @@ export const Boxx = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 98%;
   margin-top: 0rem;
   padding: 4rem;
   flex-wrap: wrap;
+  
   /* border: 2px solid red; */
   @media (max-width: 900px) {
     height: 22rem;
@@ -97,8 +97,10 @@ export const Box6 = styled(Box4)`
   /* border: 1px solid red; */
 `
 export const BoxSolutions = styled(Boxx)`
-  @media screen and (max-width: 900px) {
-    height: 40rem;
+
+
+@media screen and (max-width: 900px) {
+    height: auto;
   }
 `
 export const TextBox = styled.div`
@@ -127,7 +129,9 @@ export const Text = styled(TextBox)`
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding: 2rem;
   margin: 0 auto;
+
   @media (max-width: 900px) {
     width: 100%;
     /* height: 50%; */
@@ -169,15 +173,11 @@ export const A = styled.a`
   left: 4.4rem;
   line-height: 44px;
   text-align: left;
-  /* width: 50%; */
   max-width: 80%;
-  /* border: 2px solid purple; */
   justify-content: center;
-
   @media (max-width: 1340px) {
     flex-direction: row;
     max-width: 100%;
-    /* align-items: stretch; */
     margin-top: 1rem;
     font-size: 36px;
     line-height: 45px;
@@ -202,7 +202,7 @@ export const Section = styled.div`
 export const Section3 = styled(Section)`
   background-color: #ffffff;
   flex-flow: column;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   /* border: 4px solid greenyellow; */
   justify-content: center;
   @media screen and (max-width: 900px) {
@@ -216,7 +216,6 @@ export const StyledLink = styled.a`
   width: 70%;
   color: #ffffff;
   cursor: pointer;
-  /* max-width: 455px; */
   text-decoration: none;
   border: 3px solid #d9d9d9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -234,6 +233,7 @@ export const StyledLink = styled.a`
   box-sizing: border-box;
   @media (max-width: 1326px) {
     font-size: 1rem;
+    
   }
   &:hover {
     background: #ffffff;
@@ -241,12 +241,15 @@ export const StyledLink = styled.a`
   }
 `
 export const StyledLink4 = styled(StyledLink)`
-  width: 30%;
+  width: 20%;
   height: 5rem;
-  margin-top: 4rem;
+  font-size: 16px;
   @media (max-width: 1326px) {
-    width: 100%;
-    line-height: 25px;
+    
+    font-size: 10px;
+    height: 20%;
+    width: 25%;
+    line-height: 15px;
   }
 `
 export const H1 = styled.a`
@@ -263,6 +266,7 @@ export const H1 = styled.a`
   }
 `
 export const H1solutions = styled(H1)`
+  
   font-size: 48px;
   @media screen and (max-width: 900px) {
     font-size: 28px;
@@ -274,7 +278,7 @@ export const H2 = styled.a`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 78px;
   @media screen and (max-width: 1326px) {
     font-size: 50px;
@@ -304,6 +308,8 @@ export const H2Green = styled(H2)`
 export const H2solutions = styled(H2Green)`
   font-size: 30px;
   line-height: 45px;
+  padding: 0.5rem;
+  text-align: center;
   @media screen and (max-width: 900px) {
     font-size: 20px;
   }
@@ -327,7 +333,7 @@ export const H2Box = styled(HBox)`
   width: 90%;
   text-align: center;
   gap: 70px;
-  text-align: center;
+  font-size: 60px;
   @media screen and (max-width: 900px) {
     gap: 40px;
   }
@@ -340,7 +346,13 @@ export const Img = styled.div`
   /* width: 100%; */
 `
 export const Img2 = styled(Img)`
-  margin-top: 1rem;
+  margin: 1rem 0rem 5rem 0rem;
+  img{
+    width: 50%;  
+  }
+    @media screen and (max-width: 900px) {
+      margin: 0rem 0rem 1rem 0rem;
+  }
 `
 export const Li = styled.li`
   margin-top: 2rem;
@@ -369,7 +381,7 @@ export const Li2 = styled(Li)`
   }
 `
 export const List = styled.ul`
-  width: 100%;
+  width: 90%;
   margin-top: 0rem;
 
   /* border: 2px dashed greenyellow; */
@@ -377,7 +389,8 @@ export const List = styled.ul`
 export const List2 = styled(List)`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 85%;
+
   /* border: 2px dashed red; */
   @media screen and (max-width: 900px) {
   }

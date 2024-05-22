@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import * as S from './styles'
 import Header from '../../components/Header'
-// import Footer from '../../components/Footer'
+import Footer from '../../components/Footer'
 
 import back3 from '../../assets/images/back3.png'
 import star from '../../assets/images/star.png'
@@ -21,7 +21,7 @@ const Friosur = () => {
       <Header />
       <S.Content>
         {/* <--------SECTION 1 -------> */}
-        <S.SectionBackground background={back3}>
+        <S.SectionWithBackground background={back3}>
           <S.Box4>
             <S.Text>
               <S.Tittle bold> FRIOSUR </S.Tittle>
@@ -29,7 +29,7 @@ const Friosur = () => {
               <S.A>Enfocados en el frío industrial de tu negocio</S.A>
             </S.Text>
           </S.Box4>
-        </S.SectionBackground>
+        </S.SectionWithBackground>
 
         {/* <--------SECTION 2 -------> */}
         <S.Section>
@@ -97,7 +97,7 @@ const Friosur = () => {
           </S.Box6>
         </S.Section3>
       </S.Content>
-      {/* <Footer /> */}
+      <Footer />
     </S.HomeContainer>
   )
 }
