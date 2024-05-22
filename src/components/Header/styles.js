@@ -29,9 +29,9 @@ export const Logo = styled.div`
     min-width: 100px;
   }
   @media (max-width: 1026px) {
-    margin-left: 10px;
+    margin-left: 8px;
     img {
-      width: 60%;
+      width: 40%;
     }
   }
 
@@ -45,16 +45,19 @@ export const Navbar = styled.ul`
   height: 100%;
   width: 100%;
   list-style: none;
+  font-weight: 600;
   transition: transform 0.3s ease;
   @media (max-width: 1026px) {
     font-size: 15px;
     width: 80%;
     height: 60px;
+    font-weight: 600;
   }
   @media (max-width: 570px) {
     width: 100%;
     margin-right: 10px;
     font-size: 11px;
+    font-weight: 600;
   }
   /* @media (max-width: 1200px) {
     position: fixed;
