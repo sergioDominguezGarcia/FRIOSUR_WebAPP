@@ -5,7 +5,7 @@ export const Header = styled.div`
   align-items: center;
   /* background-color: rgba(255, 255, 255, 0.3); */
   background-color: #78997dd4;
-  backdrop-filter: blur(11.7px);
+  backdrop-filter: blur(3.7px);
   display: flex;
   width: 100vw;
   max-width: 100%;
@@ -13,25 +13,33 @@ export const Header = styled.div`
   position: fixed;
   color: #fff;
   font-family: k2d;
-  justify-content: space-between;
+  justify-content: center;
   transition: background-color 0.4s ease;
   @media (max-width: 1026px) {
     /* max-height: 100px; */
   }
+`
+export const HeaderContent = styled(Header)`
+  position: static;
+  width: 1440px;
+  justify-content: space-between;
+  /* border: 5px solid red; */
+  background-color: #78997d00;
+  backdrop-filter: none;  
 `
 
 export const Logo = styled.div`
   align-items: center;
   display: flex;
   /* margin-left: 25px; */
-  margin: 10px ;
+  margin: 12px ;
     img {
-    width: 80%;
+    width: 65%;
     max-width: 200px;
     min-width: 100px;
   }
   @media (max-width: 1026px) {
-    margin-left: 8px;
+    margin-left: 12px;
     img {
       width: 40%;
     }

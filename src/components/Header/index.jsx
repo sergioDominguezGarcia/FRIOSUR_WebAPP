@@ -39,6 +39,7 @@ const Header = () => {
     //   }
   return (
     <S.Header>
+      <S.HeaderContent>
       <S.Logo>
         <img src={Logo_BLANCO} width alt="" onClick={handleGoToHome} />
       </S.Logo>
@@ -64,6 +65,7 @@ const Header = () => {
           <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>
         </S.NavLink>
       </S.Navbar>
+      </S.HeaderContent>
     </S.Header>
   )
 }

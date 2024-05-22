@@ -411,6 +411,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1100px) {
     margin-top: 0rem;
+    height: 85vh;
   }
 `
 export const Sphere = styled.div`
@@ -452,6 +453,7 @@ export const Agreen = styled(A)`
   text-align: center;
   @media screen and (max-width: 1100px) {
     font-size: 10px;
+    line-height: 14px;
   }
 `
 export const Atitle = styled(A)`
