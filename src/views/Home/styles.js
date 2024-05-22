@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+const breakpoints = {
+  mobile: '900px',
+  tablet: '1326px',
+}
+
 export const HomeContainer = styled.div`
   max-width: 100%;
   overflow-x: hidden;
@@ -35,7 +40,7 @@ export const SectionWithBackground = styled.div`
   }
   /* border: 4px dashed greenyellow; */
 `
-export const Box = styled.div`
+const BoxBase = styled.div`
   align-content: center;
   align-items: center;
   display: flex;
@@ -43,55 +48,82 @@ export const Box = styled.div`
   justify-content: space-around;
   text-align: left;
   padding: 1rem;
+`
+
+export const Box = styled(BoxBase)`
   margin-top: 12rem;
   width: 40%;
-  @media (max-width: 1326px) {
+
+  @media (max-width: ${breakpoints.tablet}) {
     width: 90%;
     margin-top: 10rem;
-    padding: 0px;
+    padding: 0;
   }
-  @media (max-width: 900px) {
+
+  @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
     margin-top: 5rem;
   }
-  /* border: 2px solid greenyellow; */
 `
+
 export const Box2 = styled(Box)`
   @media (max-width: 1326px) {
     width: 90%;
     margin-top: 5rem;
+    
   }
   @media (max-width: 900px) {
     margin-top: 1rem;
   }
 `
-export const Box3 = styled.div`
+export const Box3 = styled(BoxBase)`
+  width: 100%;
+  justify-content: center;
   align-items: center;
+  margin-top: 0rem;
   text-align: center;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  width: 24%;
-  height: auto;
-  padding: 2.5rem;
-  margin-top: 6rem;
-  @media (max-width: 900px) {
-    margin-top: 2rem;
+  /* position: relative; */
+  gap: 1rem;
+  /* border: 2px solid red; */
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 90%;
+    margin-top: 12rem;
   }
-  /* border: 2px solid purple; */
+
+
 `
-export const Box5 = styled.div`
-  margin-top: 6rem;
-  align-items: center;
-  display: flex;
+export const Box4 = styled(Box3)`
+
+@media (max-width: ${breakpoints.mobile}) {
+  padding: 2rem;
+  margin-top: 16rem;
+}
+    @media (max-width: 560px) {
+    margin-top: 20rem;
+  }
+/* border: 2px solid pink; */
+`
+
+export const Box5 = styled(BoxBase)`
   flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  width: 100vw;
   margin-top: 20rem;
-  /* border: 2px solid purple; */
-  @media (max-width: 900px) {
-    margin-top: 10rem;
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 80%;
+    /* margin-top: 3rem; */
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    margin-top: 6rem;
+  }
+      @media (max-width: 560px) {
+    margin-top: 4rem;
+  }
+      @media (max-width: 390px) {
+    margin-top: 6rem;
   }
 `
 export const Boxx = styled(Box)`
@@ -101,16 +133,16 @@ export const Boxx = styled(Box)`
   width: 100%;
   /* max-width: 98%; */
   margin-top: 0rem;
-  padding: 4rem;
+  /* padding: 4rem; */
   /* flex-wrap: wrap; */
   /* border: 2px solid red; */
   @media (max-width: 900px) {
-    height: 22rem;
+    /* height: 22rem; */
     flex-direction: column;
   }
 `
 export const BoxReseña = styled(Boxx)`
-  padding: 0rem;
+  padding: 1rem;
 `
 export const Tittle = styled.a`
   color: #ffffff;
@@ -138,11 +170,12 @@ export const TextBox = styled.div`
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  @media (max-width: 1325px) {
+  @media (max-width: 1326px) {
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    
   }
   @media (max-width: 900px) {
   }
@@ -159,6 +192,7 @@ export const TextBoxR = styled(TextBox)`
   @media (max-width: 1326px) {
     justify-content: center;
     align-items: center;
+    
   }
 `
 export const StyledLink = styled.a`
@@ -184,6 +218,7 @@ export const StyledLink = styled.a`
   box-sizing: border-box;
   @media (max-width: 1326px) {
     font-size: 1rem;
+    max-width: 15rem;
   }
   &:hover {
     background: #ffffff;
@@ -200,6 +235,10 @@ export const StyledLink2 = styled(StyledLink)`
   font-size: 3rem;
   height: 7rem;
   width: auto;
+  @media (max-width: 1326px) {
+    font-size: 2rem;
+    max-width: 20rem;
+  }
   @media screen and (max-width: 900px) {
     margin: 0rem;
     font-size: 1rem;
@@ -225,7 +264,7 @@ export const A = styled.a`
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
-  left: 4.4rem;
+  /* left: 4.4rem; */
   line-height: 44px;
   text-align: left;
   /* width: 50%; */
@@ -233,11 +272,12 @@ export const A = styled.a`
   /* border: 2px solid purple; */
   justify-content: center;
 
-  @media (max-width: 1340px) {
+  @media (max-width: 1326px) {
     flex-direction: row;
     max-width: 100%;
+    text-align: center;
     /* align-items: stretch; */
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     font-size: 36px;
     line-height: 45px;
   }
@@ -253,15 +293,16 @@ export const Acard = styled(A)`
   /* border: 1px solid red; */
   @media (max-width: 1326px) {
     flex-direction: row;
-    max-width: 100%;
-    align-items: stretch;
-    margin-top: 1rem;
-    font-size: 30px;
-    line-height: 45px;
+    
+    /* align-items: stretch; */
+    /* margin-top: 1rem; */
+    
+    /* line-height: 25px; */
   }
   @media screen and (max-width: 1060px) {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 18px;
+    /* line-height: 30px; */
+    
   }
 
   @media screen and (max-width: 900px) {
@@ -271,51 +312,68 @@ export const Acard = styled(A)`
   }
 `
 export const ABox = styled.div`
-  padding: 2rem;
-  /* border : 2px solid red; */
+  padding: 1.5rem;
+  margin-top: 17em;
+  
   @media (max-width: 900px) {
     padding: 1.5rem;
     margin-top: 0rem;
   }
+    @media (max-width: 560px) {
+    margin-top: 4rem;
+  }
+  /* border : 2px solid red; */
 `
-export const Section = styled.div`
+export const ABox2 = styled(ABox)`
+  /* margin-top: 1em; */
+`
+export const ABox3 = styled(ABox)`
+  margin-top: 1rem;
+    @media (max-width: 390px) {
+    margin-top: 0rem;
+  }
+`
+export const Section = styled.section`
   display: flex;
   width: 100%;
   /* height: 100%; */
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
-
+  
   justify-content: space-around;
   /* align-content: center; */
   align-items: center;
+  /* border: 4px solid greenyellow; */
 `
 export const Section3 = styled(Section)`
   background-color: #ffffff;
   flex-flow: column;
   margin-top: 6rem;
-  /* border: 4px solid greenyellow; */
   justify-content: center;
   @media screen and (max-width: 900px) {
-    width: 98%;
+    /* width: 98%; */
     margin: 0 auto;
     margin-top: 0rem;
   }
+  /* border: 4px solid greenyellow; */
 `
 export const UpperRow = styled.div`
   display: flex;
+  position: relative;
   width: 100%;
-  height: 50%;
+  margin-top: 3rem;
   justify-content: space-around;
-  /* border: 2px solid purple; */
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-    height: 45rem;
+    margin-top: 0rem;
+    /* height: 75%; */
     justify-content: space-between;
   }
+  /* border: 2px solid purple; */
 `
 export const BottomRow = styled.div`
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   display: flex;
   width: 100%;
   /* margin-top: 6rem; */
@@ -323,7 +381,7 @@ export const BottomRow = styled.div`
   margin-top: 6rem;
   justify-content: center;
   @media screen and (max-width: 1060px) {
-    margin-top: 3rem;
+    /* margin-top: 4rem; */
   }
 
   @media screen and (max-width: 900px) {
@@ -335,11 +393,15 @@ export const H1 = styled.a`
   font-family: Montserrat;
   font-weight: 800;
   font-style: normal;
-  font-size: 80px;
+  font-size: 5em;
   line-height: 125px;
+
+    @media screen and (max-width: 1326px) {
+    font-size: 4em;
+  }
   @media screen and (max-width: 768px) {
-    font-size: 30px;
-    ine-height: 0px;
+    font-size: 40px;
+    line-height: 20px;
   }
 `
 
@@ -350,9 +412,9 @@ export const H2 = styled.a`
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 78px;
+  /* line-height: 78px; */
   @media screen and (max-width: 1326px) {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 30px;
   }
 
@@ -368,17 +430,17 @@ export const H2 = styled.a`
 `
 export const H2Green = styled(H2)`
   font-size: 60px;
-  /* letter-spacing: 0.1em; */
-  margin-bottom: 4rem;
+
+  margin-bottom: 2em;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {
-    font-size: 20px;
+    font-size: 30px;
   }
 `  
 export const HBox = styled.div`
   margin: 4rem;
-  /* gap: 0.7rem; */
+  gap: 0.7rem;
   display: flex;
   flex-flow: row wrap;
   width: 70%;
@@ -386,14 +448,21 @@ export const HBox = styled.div`
   /* border: 1px solid red; */
   text-align: center;
   @media screen and (max-width: 900px) {
-    margin: 2rem;
+    /* margin: 2rem; */
     width: 80%;
   }
 `
 export const Img = styled.div`
-  margin-top: 8rem;
+  margin: 2.5rem;
   display: flex;
   align-items: center;
   flex-flow: column;
   /* width: 100%; */
+    img {
+    width: 100%;
+
+  }
+    @media screen and (max-width: 1200px) {
+    /* width: 40%; */
+  }
 `

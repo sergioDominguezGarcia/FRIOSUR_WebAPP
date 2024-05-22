@@ -4,16 +4,19 @@ export const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12rem;
+  /* margin-top: 12rem; */
 `
 export const Container = styled.div`
   perspective: 1000px;
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   max-width: 600px;
   position: absolute;
+  @media (max-width: 900px) {
+    height: 60%;
+  }
   /* border: 1px solid greenyellow; */
 `
 export const CardWrapper = styled.div`
