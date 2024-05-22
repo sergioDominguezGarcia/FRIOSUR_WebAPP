@@ -10,8 +10,9 @@ export const FooterContainer = styled.div`
 
   justify-content: space-between;
   gap: 1rem;
-  padding: 10px;
+  padding: 50px;
   @media (max-width: 880px) {
+    padding: 10px;
   }
 `
 
@@ -46,7 +47,7 @@ export const Logo = styled.div`
 
 export const Media = styled.div`
   display: flex;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
   
   @media (max-width: 768px) {
     margin-top: 20px;
@@ -58,7 +59,7 @@ export const MediaLogo = styled.div`
   display: flex;
   /* margin-right: 0.5rem; */
   height: 44px;
-  width: 84px;
+  width: 80px;
   img {
     width: 60%;
     
