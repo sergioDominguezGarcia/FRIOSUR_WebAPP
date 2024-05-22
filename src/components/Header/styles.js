@@ -44,6 +44,7 @@ export const Navbar = styled.ul`
   font-size: 30px;
   height: 100%;
   width: 100%;
+  text-shadow: 1px 1px 2px #666666;
   list-style: none;
   font-weight: 600;
   transition: transform 0.3s ease;
