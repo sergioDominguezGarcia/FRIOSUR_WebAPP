@@ -82,7 +82,7 @@ export const Box3 = styled(BoxBase)`
   align-items: center;
   margin-top: 0rem;
   text-align: center;
-  /* position: relative; */
+    /* position: relative; */
   gap: 1rem;
   /* border: 2px solid red; */
   @media (max-width: ${breakpoints.mobile}) {
@@ -92,6 +92,20 @@ export const Box3 = styled(BoxBase)`
 
 
 `
+export const CardBox = styled.div`
+  width: 100%;
+  height: 500px;
+  max-width: 600px;
+  /* border: 5px solid greenyellow; */
+  padding: 20px; /* Ajusta el padding según sea necesario */
+  box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`
+
+
 export const Box4 = styled(Box3)`
 
 @media (max-width: ${breakpoints.mobile}) {
@@ -106,10 +120,12 @@ export const Box4 = styled(Box3)`
 
 export const Box5 = styled(BoxBase)`
   flex-direction: column;
-  margin-top: 20rem;
-  width: 100%;
+  margin-bottom: 6rem;
+  width: 35%;
+  background-color: #f9f9f9;
+  border-radius: 15px;
   text-align: center;
-
+  /* border: 2px solid pink; */
   @media (max-width: ${breakpoints.tablet}) {
     width: 80%;
     /* margin-top: 3rem; */
@@ -119,10 +135,10 @@ export const Box5 = styled(BoxBase)`
     width: 100%;
     margin-top: 6rem;
   }
-      @media (max-width: 560px) {
+  @media (max-width: 560px) {
     margin-top: 4rem;
   }
-      @media (max-width: 390px) {
+  @media (max-width: 390px) {
     margin-top: 6rem;
   }
 `
@@ -289,20 +305,19 @@ export const A = styled.a`
 `
 export const Acard = styled(A)`
   font-size: 20px;
-
-  /* border: 1px solid red; */
+  color: #698669;
+  font-weight: 500;
   @media (max-width: 1326px) {
     flex-direction: row;
-    
+
     /* align-items: stretch; */
     /* margin-top: 1rem; */
-    
+
     /* line-height: 25px; */
   }
   @media screen and (max-width: 1060px) {
     font-size: 18px;
     /* line-height: 30px; */
-    
   }
 
   @media screen and (max-width: 900px) {
@@ -313,14 +328,14 @@ export const Acard = styled(A)`
 `
 export const ABox = styled.div`
   padding: 1.5rem;
-  margin-top: 17em;
+  /* margin-top: 17em; */
   
   @media (max-width: 900px) {
     padding: 1.5rem;
     margin-top: 0rem;
   }
     @media (max-width: 560px) {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
   /* border : 2px solid red; */
 `
@@ -404,7 +419,6 @@ export const H1 = styled.a`
     line-height: 20px;
   }
 `
-
 export const H2 = styled.a`
   color: #ffffff;
   /* flex-direction: column; */
@@ -417,20 +431,24 @@ export const H2 = styled.a`
     font-size: 30px;
     line-height: 30px;
   }
-
   @media screen and (max-width: 1060px) {
     font-size: 30px;
     line-height: 30px;
   }
-
   @media screen and (max-width: 900px) {
     font-size: 20px;
     line-height: 30px;
   }
+  `
+
+export const H2g = styled(H2)`
+  color: #698669
 `
+
+
 export const H2Green = styled(H2)`
   font-size: 60px;
-
+  
   margin-bottom: 2em;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
