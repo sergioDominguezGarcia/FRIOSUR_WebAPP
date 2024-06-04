@@ -13,6 +13,7 @@
   import clients from '../../assets/images/clients.png'
   import reseña from '../../assets/images/reseña.png'
   import { useNavigate } from 'react-router-dom'
+  import MapComponent from '../../components/Map'
   const Home = () => {
     const navigate = useNavigate()
     const handleGoToContact = () => {
@@ -95,14 +96,16 @@
                         </S.Acard>
                       </S.ABox>
                     }
-                    />
-                    </S.CardBox>
+                  />
+                </S.CardBox>
               </S.Box3>
               <S.Box4>
                 <FlipCard
                   headerContent={
                     <>
-                      <S.H2g>FRÍO COMERCIAL <br /> Y CLIMA</S.H2g>
+                      <S.H2g>
+                        FRÍO COMERCIAL <br /> Y CLIMA
+                      </S.H2g>
                       <img src={climate} width="200px" alt="Icono de clima" />
                     </>
                   }
@@ -154,11 +157,10 @@
           <S.Section3>
             <S.Boxx>
               <S.StyledLink2 href="#solutions">SOLUCIONES</S.StyledLink2>
-
+              {/* <--------MAPA INTERACTIVO -------> */}
               <S.H2Green bold>POSICIONAMIENTO</S.H2Green>
-              <S.Img>
-                <img src={map} width="70%" alt="Mapa de posicionamiento" />
-              </S.Img>
+              
+              <MapComponent />
 
               <S.Img>
                 <img src={Line} width="95%" alt="Línea divisoria" />

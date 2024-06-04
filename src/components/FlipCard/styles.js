@@ -13,7 +13,7 @@ export const Container = styled.div`
   perspective: 1000px;
   background-color: #F9F9F9;
   height: 40%;
-  min-height: 620px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

@@ -1,0 +1,52 @@
+
+.str0 {
+  stroke: black;
+  stroke-width: 15;
+}
+
+.fil0 {
+  fill: #476c47;
+  transition: 0.3s;
+}
+
+.fil0:hover{
+  fill: #385438;
+}
+
+.map-container {
+  position: relative;
+}
+
+.map-area {
+  fill: #476c47;
+  stroke: #333;
+  transition: fill 0.3s;
+  transition: 0.3s;
+}
+
+.map-area:hover {
+  fill: #aaa;
+  
+}
+
+.dropdown {
+  
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+
+transition: 0.3s;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.dropdown h2 {
+  margin: 0 0 10px;
+}
+
+.dropdown img {
+  max-width: 50%;
+  height: auto;
+  transition: 0.3s;
+}
+

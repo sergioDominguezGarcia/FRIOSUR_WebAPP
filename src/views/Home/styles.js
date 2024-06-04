@@ -120,7 +120,7 @@ export const Box4 = styled(Box3)`
 
 export const Box5 = styled(BoxBase)`
   flex-direction: column;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   width: 35%;
   background-color: #f9f9f9;
   border-radius: 15px;
@@ -307,11 +307,12 @@ export const Acard = styled(A)`
   font-size: 20px;
   color: #698669;
   font-weight: 500;
+  line-height: 30px;
   @media (max-width: 1326px) {
     flex-direction: row;
 
     /* align-items: stretch; */
-    /* margin-top: 1rem; */
+
 
     /* line-height: 25px; */
   }
@@ -328,7 +329,7 @@ export const Acard = styled(A)`
 `
 export const ABox = styled.div`
   padding: 1.5rem;
-  /* margin-top: 17em; */
+     margin-top: 1rem;
   
   @media (max-width: 900px) {
     padding: 1.5rem;
@@ -447,9 +448,9 @@ export const H2g = styled(H2)`
 
 
 export const H2Green = styled(H2)`
-  font-size: 60px;
+  font-size: 50px;
   
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {
