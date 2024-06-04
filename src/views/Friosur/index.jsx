@@ -2,7 +2,7 @@ import { memo } from 'react'
 import * as S from './styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-
+  import { useNavigate } from 'react-router-dom'
 import back3 from '../../assets/images/back3.png'
 import star from '../../assets/images/star.png'
 import imgBottom from '../../assets/images/imgBottom.png'
@@ -10,11 +10,11 @@ import imgBottom from '../../assets/images/imgBottom.png'
 // import { useNavigate } from 'react-router-dom'
 
 const Friosur = () => {
-  // const navigate = useNavigate()
-  // const handleGoToContact = () => {
-  //   navigate('/contact')
-  //   window.scrollTo(0, 0)
-  // }
+    const navigate = useNavigate()
+    const handleGoToContact = () => {
+      navigate('/contact')
+      window.scrollTo(0, 0)
+    }
 
   return (
     <S.HomeContainer>
@@ -24,7 +24,7 @@ const Friosur = () => {
         <S.SectionWithBackground background={back3}>
           <S.Box4>
             <S.Text>
-              <S.Tittle bold> FRIOSUR </S.Tittle>
+              <S.Tittle bold> EMPRESA </S.Tittle>
               <S.SeparatorWhite />
               <S.A>Enfocados en el frío industrial de tu negocio</S.A>
             </S.Text>
@@ -58,48 +58,72 @@ const Friosur = () => {
             <img src={imgBottom} width="50%" alt="" />
           </S.Img3>
           <S.Box6>
-            <S.Text>
-              <S.H2Boxfrio>
+            <S.H2Boxfrio>
+              <S.Text>
                 <S.Agreen>
                   Haciendo frente a las <b>nuevas tecnologías</b> que aparecen
                   en el mercado actual.
                 </S.Agreen>
+              </S.Text>
+              <S.Text>
                 <S.Agreen>
                   Gracias a la <b>experiencia adquirida</b> a través de nuestros
                   clientes, <b>Friosur ofrece</b> los{' '}
                   <b>estudios de proyectos</b> eficaces que necesitas.
                 </S.Agreen>
-                <S.SeparatorGreen />
-                <S.Agreen>
-                  La <b>ejecución total</b>, como la puesta en marcha, revisión
-                  y mantenimiento de las instalaciones en su <b> nueva obra.</b>
-                </S.Agreen>
-                  </S.H2Boxfrio>
-                <S.Img3>
-                  <img src={star} width="45px" alt="" />
-                </S.Img3>
-                  <S.H2Boxfrio>
-                <S.Agreen>
-                  Contamos con un equipo humano cualificado, trabajando siempre
-                  con materiales de máxima calidad y con marcas de primer nivel.
-                </S.Agreen>
-                  </S.H2Boxfrio>
-                <S.Img3>
-                  <img src={star} width="45px" alt="" />
-                </S.Img3>
-                <S.H2Boxfrio>
-                <S.Agreen>
-                  <b>INNOVACIÓN y CALIDAD,</b> valores fundamentales de una
-                  empresa que apuesta por la máxima competitividad. 
-                </S.Agreen>
-              </S.H2Boxfrio>
-            </S.Text>
+              </S.Text>
+            </S.H2Boxfrio>
           </S.Box6>
+        </S.Section3>
+        {/* background imageeeeeeeeeeeeeeeee */}
+        <S.SectionWithBackground background={back3}>
+          <S.Box4>
+            <S.Text>
+              <S.Tittle bold> EJECUCIÓN TOTAL </S.Tittle>
+              <S.SeparatorWhite />
+              <S.Afrio>
+                Como la puesta en marcha, revisión y mantenimiento de las
+                instalaciones en su <b> nueva obra.</b>
+              </S.Afrio>
+            </S.Text>
+          </S.Box4>
+        </S.SectionWithBackground>
+
+        <S.Section3>
+          <S.StarBox>
+            <S.Text>
+              <S.Agreen>
+                Contamos con un equipo humano cualificado, trabajando siempre
+                con materiales de máxima calidad y con marcas de primer nivel.
+              </S.Agreen>
+            </S.Text>
+
+            <S.Text>
+              <S.Agreen>
+                <b>INNOVACIÓN y CALIDAD,</b> valores fundamentales de una
+                empresa que apuesta por la máxima competitividad. 
+              </S.Agreen>
+            </S.Text>
+            <S.Img4>
+              <img src={star} width="45px" alt="" />
+            </S.Img4>
+            <S.Text>
+              <S.Agreen>
+                <b>CONTACTA </b>HOY MISMO CON NOSOTROS <br /> Y SOLICITA
+                <b> MÁS INFOMACIÓN</b>
+              </S.Agreen>
+              <S.StyledLink3 onClick={handleGoToContact}>
+                MÁS INFORMACIÓN
+              </S.StyledLink3>
+            </S.Text>
+          </S.StarBox>
         </S.Section3>
       </S.Content>
       <Footer />
     </S.HomeContainer>
   )
 }
+
+
 
 export default memo(Friosur)

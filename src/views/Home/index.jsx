@@ -200,7 +200,7 @@
                 <S.H2Green bold="600"> MÁS INFORMACIÓN</S.H2Green>
               </S.HBox>
               <S.StyledLink3 onClick={handleGoToContact}>
-                INFORMACIÓN
+                MÁS INFORMACIÓN
               </S.StyledLink3>
               <br />
               <br />

@@ -100,6 +100,8 @@ export const Text = styled(TextBox)`
   justify-content: center;
   flex-direction: column;
   width: 80%;
+  /* margin:  34rem 0rem 4rem 0rem; */
+  
   align-items: center;
   margin: 0 auto;
   @media (max-width: 900px) {
@@ -172,6 +174,17 @@ export const H2Boxfrio = styled(H2Box)`
   text-align: center;
   width: 90%;
 `
+export const StarBox = styled.div`
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+`
+
+
 export const A = styled.a`
   color: #ffffff;
   font-family: 'Montserrat';
@@ -207,7 +220,7 @@ export const Agreen = styled(A)`
   color: rgba(68, 104, 68, 1);
   font-weight: 550;
   text-align: center;
-  line-height: 30px;
+  line-height: 36px;
   text-align: center;
   @media screen and (max-width: 900px) {
     font-size: 15px;
@@ -242,7 +255,10 @@ export const Img = styled.div`
 `
 
 export const Img3 = styled(Img)`
-  margin-top: 0rem;
+  margin:  1rem 0rem 1rem 0rem;
+`
+export const Img4 = styled(Img)`
+  margin:  1rem 0rem 1rem 0rem;
 `
 
 export const SeparatorGreen = styled.div`
@@ -269,5 +285,37 @@ export const Tittle = styled.a`
   @media (max-width: 900px) {
     font-size: 30px;
     line-height: 50px;
+  }
+`
+
+export const StyledLink3 = styled.a`
+  background: #446844;
+  width: auto;
+  color: #ffffff;
+  cursor: pointer;
+  /* max-width: 455px; */
+  text-decoration: none;
+  border: 3px solid #d9d9d9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  max-height: 77px;
+  margin: 40px;
+  padding: 1.5rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 10px;
+  letter-spacing: 0.16em;
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+  @media (max-width: 1326px) {
+    font-size: 1rem;
+    max-width: 15rem;
+  }
+  &:hover {
+    background: #ffffff;
+    color: #446844;
   }
 `
