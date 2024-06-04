@@ -59,7 +59,7 @@ const Header = () => {
             <S.Link onClick={handleGoToSolutions}>SOLUCIONES</S.Link>
           </S.NavLink>
           <S.NavLink>
-            <S.Link onClick={handleGoToFriosur}>FRIOSUR</S.Link>
+            <S.Link onClick={handleGoToFriosur}>EMPRESA</S.Link>
           </S.NavLink>
           <S.NavLink>
             <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>

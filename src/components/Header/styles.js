@@ -110,10 +110,11 @@ export const NavLink = styled.li`
 `
 
 export const Link = styled.a`
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
   text-decoration: none;
   width: auto;
+  padding: 0.5em;
   cursor: pointer;
   transition: 0.5s all ease;
   &:hover {
