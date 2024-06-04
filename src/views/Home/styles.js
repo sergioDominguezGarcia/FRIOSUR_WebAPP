@@ -409,7 +409,7 @@ export const H1 = styled.a`
   font-family: Montserrat;
   font-weight: 800;
   font-style: normal;
-  font-size: 5em;
+  font-size: 50px;
   line-height: 125px;
 
     @media screen and (max-width: 1326px) {
