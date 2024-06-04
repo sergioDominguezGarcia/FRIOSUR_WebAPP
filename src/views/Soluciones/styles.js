@@ -97,8 +97,10 @@ export const Box6 = styled(Box4)`
   /* border: 1px solid red; */
 `
 export const BoxSolutions = styled(Boxx)`
+
   @media screen and (max-width: 900px) {
     height: auto;
+  
   }
 `
 export const TextBox = styled.div`
@@ -190,7 +192,8 @@ export const Section = styled.div`
   display: flex;
   width: 100%;
   /* height: 100%; */
-  background-color: rgba(105, 134, 105, 1);
+  background-color: #f9f9f9;
+ 
   flex-flow: column;
 
   justify-content: space-around;
@@ -199,7 +202,7 @@ export const Section = styled.div`
 `
 
 export const Section3 = styled(Section)`
-  background-color: #ffffff;
+  background-color: #698669;
   flex-flow: column;
   /* margin-top: 6rem; */
   /* border: 4px solid greenyellow; */
@@ -264,6 +267,8 @@ export const H1 = styled.a`
 `
 export const H1solutions = styled(H1)`
   font-size: 48px;
+  color: #ffffff;
+  text-align: left;
   @media screen and (max-width: 900px) {
     font-size: 28px;
   }
@@ -293,7 +298,7 @@ export const H2 = styled.a`
 `
 export const H2Green = styled(H2)`
   font-size: 60px;
-  /* letter-spacing: 0.1em; */
+  text-align: center;
   margin-bottom: 4rem;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};

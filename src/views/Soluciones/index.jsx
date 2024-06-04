@@ -39,30 +39,12 @@ const Solutions = () => {
         <S.Section>
           <S.Box6>
             <S.Text>
-              <S.H2 bold>CONSULTORÍA TÉCNICA</S.H2>
-              <S.List>
-                <S.Li>
-                  Evita <b>roturas</b> de válvulas, <b>fugas</b> de gas
-                  refrigerante,
-                  <b> derivación</b> de resistencias eléctricas,
-                  <b> sobre tensión </b>en bobinados de compresores, etc...
-                </S.Li>
-                <S.Li>
-                  Estas cámaras de refrigeración funcionan 24 horas al día, así
-                  que al<b> trabajar con constantes cambios</b> de presión y de
-                  estados de gases en los circuitos frigoríficos, están
-                  afectadas por continuas <b>vibraciones y fuerzas.</b>
-                </S.Li>
-              </S.List>
-              <S.H2Box>
-                <S.H2>
-                  <b>¡¡Esto va a provocar el desgaste de tu instalación!!</b>
-                </S.H2>
-              </S.H2Box>
+              <S.H2Green bold>SOLUCIONES DE CLIMATICACIÓN INDUSTRIAL</S.H2Green>
             </S.Text>
           </S.Box6>
         </S.Section>
 
+        {/* <--------Sphere section -------> */}
         <S.SphereSection>
           <DoubleSection
             leftContent={
@@ -157,52 +139,23 @@ const Solutions = () => {
           />
         </S.SphereSection>
 
-        <S.Section>
-          <S.Box6>
-            <S.Text>
-              <S.Tittle bold>A MODO DE EJEMPLO...</S.Tittle>
-              <S.H2Box>
-                <S.A>
-                  Necesitas 5 cámaras para la conservación de producto a +2ºC.
-                  Además necesitarás dos túneles de congelados, donde el
-                  producto entrará y deberá salir ultra congelado a -20ºC en dos
-                  horas.
-                </S.A>
-                <S.H2>Aunque sólo tienes una nave vacía</S.H2>
-                <S.A>
-                  Nostros nos encagamos de todo, concretamos una reuníon,
-                  tomamos medidas del sitio, definimos de forma exaustiva tu
-                  método de trabajo y nos adaptamos a ello.
-                </S.A>
-                <S.A>
-                  Diseñamos la instalación frigorífica necesaria y hacemos un
-                  estudio de tu negocio, para optimizar al máximo el rendimeinto
-                  de tu espacio.{' '}
-                </S.A>
-                <S.A>
-                  Esto te asegura un entorno totalmente funcional y preparado
-                  para el volumen de trabajo que asumes.
-                </S.A>
-              </S.H2Box>
-            </S.Text>
-          </S.Box6>
-        </S.Section>
         <S.Section3>
           <S.BoxSolutions>
             <S.H1solutions>NOS ENCARGAMOS DE:</S.H1solutions>
             <S.Text>
-              <S.List2>
-                <S.Li2>Compresores</S.Li2>
-                <S.Li2>Evaporadores</S.Li2>
-                <S.Li2>Tuberías</S.Li2>
-                <S.Li2>Valvulería</S.Li2>
-                <S.Li2>Paneles frigoríficos</S.Li2>
-                <S.Li2>Puertas</S.Li2>
-                <S.Li2>
+              <S.List>
+                <S.Li>Las maniobras necesarias del autómata, que cumpa con la legislación actual</S.Li>
+                <S.Li>Compresores</S.Li>
+                <S.Li>Evaporadores</S.Li>
+                <S.Li>Tuberías</S.Li>
+                <S.Li>Valvulería</S.Li>
+                <S.Li>Paneles frigoríficos</S.Li>
+                <S.Li>Puertas</S.Li>
+                <S.Li>
                   Maniobras necesarias del automata, que cumpla con la
                   legislación actual.
-                </S.Li2>
-              </S.List2>
+                </S.Li>
+              </S.List>
             </S.Text>
           </S.BoxSolutions>
           <S.BoxSolutions>
