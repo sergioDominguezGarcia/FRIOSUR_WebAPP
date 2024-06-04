@@ -201,15 +201,30 @@ export const A = styled.a`
 `
 export const Section = styled.div`
   display: flex;
-  width: 100%;
-  /* height: 100%; */
+  width: 80%;
   background-color: #f9f9f9;
- 
   flex-flow: column;
-
   justify-content: space-around;
-  /* align-content: center; */
   align-items: center;
+  margin: 0 auto;
+`
+export const SectionOval = styled.div`
+  
+  justify-content: center;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+`
+export const Oval = styled.div`
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 4rem;
+  border-radius: 50%;
+  width: 70%;
+  background-color: #698669;
+  flex-wrap: wrap;
+  ;
 `
 
 export const Section3 = styled(Section)`
@@ -217,6 +232,7 @@ export const Section3 = styled(Section)`
   flex-flow: column;
   /* margin-top: 6rem; */
   /* border: 4px solid greenyellow; */
+  width: 100%;
   justify-content: center;
   @media screen and (max-width: 900px) {
     width: 98%;
@@ -253,9 +269,20 @@ export const StyledLink = styled.a`
   }
 `
 export const StyledLink4 = styled(StyledLink)`
-  width: 20%;
-  height: 5rem;
-  font-size: 16px;
+  background-color: #d9d9d9;
+  background: #ffffff;
+  color: #446844;
+  border: 3px solid #446844;
+  box-shadow: none;
+  /* margin-top: 6rem; */
+  margin-bottom: 8rem;
+  font-size: 2rem;
+  height: 4rem;
+  width: auto;
+  &:hover {
+    background: #446844;
+    color: #ffffff;
+  }
   @media (max-width: 1326px) {
     font-size: 10px;
     height: 20%;
@@ -284,6 +311,11 @@ export const H1solutions = styled(H1)`
   @media screen and (max-width: 900px) {
     font-size: 28px;
   }
+`
+export const H1solutionsW = styled(H1solutions)`
+  color: #446844;
+  text-align: center;
+  padding: 0rem 8rem 0rem 8rem;
 `
 export const H2 = styled.a`
   color: #ffffff;
@@ -328,6 +360,10 @@ export const H2solutions = styled(H2Green)`
     font-size: 20px;
   }
 `
+export const H2oval = styled(H2solutions)`
+  font-size: 20px;
+`
+
 export const HBox = styled.div`
   margin: 4rem;
   /* gap: 0.7rem; */
@@ -360,7 +396,8 @@ export const Img = styled.div`
   /* width: 100%; */
 `
 export const Img2 = styled(Img)`
-  margin: 1rem 0rem 5rem 0rem;
+  margin: 6rem 0rem 6rem 0rem;
+  
   img {
     width: 50%;
   }

@@ -55,7 +55,7 @@ const Solutions = () => {
                 Ofrecemos servicios completos de climatización para empresas de
                 todos los tamaños, incluyendo:{' '}
               </S.H1solutions>
-              
+
               <S.H2solutions>
                 <b>
                   Instalación y diseño de aire acondicionado Sistemas HVAC
@@ -160,7 +160,7 @@ const Solutions = () => {
             mode="mode2"
           />
         </S.SphereSection>
-
+        {/* <------- section 3 -------> */}
         <S.Section3>
           <S.BoxSolutions>
             <S.H1solutions>NOS ENCARGAMOS DE:</S.H1solutions>
@@ -183,23 +183,37 @@ const Solutions = () => {
               </S.List>
             </S.Text>
           </S.BoxSolutions>
-          <S.BoxSolutions>
-            <S.H1solutions>MANTENIMIENTO</S.H1solutions>
-            <S.Text>
-              <S.H2solutions>
-                Una solución optimizada para tu negocio, un servicio 24/7, que
-                te asegura la conservación de tu género y que no pierdas dinero
-                cuando estos cambios ocurran.
-              </S.H2solutions>
-              <S.Img2>
-                <img src={Mask} alt="" />
-              </S.Img2>
-              <S.StyledLink4 onClick={handleGoToContact}>
-                CONTACTAR AHORA
-              </S.StyledLink4>
-            </S.Text>
-          </S.BoxSolutions>
         </S.Section3>
+        {/* <------- section 4 -------> */}
+        <S.Section>
+          <S.BoxSolutions>
+            <S.H1solutionsW>
+              Garantizamos soluciones profesionales y ajustadas a las
+              necesidades de cada cliente.
+            </S.H1solutionsW>
+          </S.BoxSolutions>
+        </S.Section>
+        <S.SectionOval>
+          <S.Oval>
+            <S.H2oval>
+              Una solución optimizada para tu negocio, un servicio 24/7, <br />{' '}
+              que te asegura la conservación de tu género y que no pierdas
+              dinero <br />
+              cuando estos cambios ocurran.
+            </S.H2oval>
+          </S.Oval>
+        </S.SectionOval>
+        <S.Section>
+          <S.Img2>
+            <img src={Mask} alt="" />
+          </S.Img2>
+          <S.H2Green>
+            CONTACTA HOY MISMO CON NOSOTROS <br />Y SOLICITA MÁS INFOMACIÓN
+          </S.H2Green>
+          <S.StyledLink4 onClick={handleGoToContact}>
+            CONTACTAR AHORA
+          </S.StyledLink4>
+        </S.Section>
       </S.Content>
       <Footer />
     </S.HomeContainer>
