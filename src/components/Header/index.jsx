@@ -1,7 +1,7 @@
 import { memo, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as S from './styles'
-import Logo_BLANCO from '../../assets/images/Logo_BLANCO.png'
+import Logo_FRIOSUR from '../../assets/images/Logo_FRIOSUR.png'
 // import { FaBars, FaTimes } from 'react-icons/fa'
 
 
@@ -40,31 +40,31 @@ const Header = () => {
   return (
     <S.Header>
       <S.HeaderContent>
-      <S.Logo>
-        <img src={Logo_BLANCO} width alt="" onClick={handleGoToHome} />
-      </S.Logo>
+        <S.Logo>
+          <img src={Logo_FRIOSUR} width alt="" onClick={handleGoToHome} />
+        </S.Logo>
 
-      {/* <S.HamburgerIcon onClick={toggleMenu}>
+        {/* <S.HamburgerIcon onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </S.HamburgerIcon> */}
 
-      <S.Navbar
-      // menuOpen={menuOpen}
-      >
-        {/* <S.CloseIcon onClick={closeMenu} /> */}
-        <S.NavLink>
-          <S.Link onClick={handleGoToHome}>INICIO</S.Link>
-        </S.NavLink>
-        <S.NavLink>
-          <S.Link onClick={handleGoToSolutions}>SOLUCIONES</S.Link>
-        </S.NavLink>
-        <S.NavLink>
-          <S.Link onClick={handleGoToFriosur}>FRIOSUR</S.Link>
-        </S.NavLink>
-        <S.NavLink>
-          <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>
-        </S.NavLink>
-      </S.Navbar>
+        <S.Navbar
+        // menuOpen={menuOpen}
+        >
+          {/* <S.CloseIcon onClick={closeMenu} /> */}
+          <S.NavLink>
+            <S.Link onClick={handleGoToHome}>INICIO</S.Link>
+          </S.NavLink>
+          <S.NavLink>
+            <S.Link onClick={handleGoToSolutions}>SOLUCIONES</S.Link>
+          </S.NavLink>
+          <S.NavLink>
+            <S.Link onClick={handleGoToFriosur}>FRIOSUR</S.Link>
+          </S.NavLink>
+          <S.NavLink>
+            <S.Link onClick={handleGoToContact}>CONTACTO</S.Link>
+          </S.NavLink>
+        </S.Navbar>
       </S.HeaderContent>
     </S.Header>
   )
