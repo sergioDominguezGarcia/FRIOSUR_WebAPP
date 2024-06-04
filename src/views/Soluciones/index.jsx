@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import DoubleSection from '../../components/DoubleSection'
 import solutionsImg from '../../assets/images/solutionsImg.png'
+import Section2img from '../../assets/images/Section2img.png'
 import img1 from '../../assets/images/img1.png'
 import img2 from '../../assets/images/img2.png'
 import img3 from '../../assets/images/img3.png'
@@ -26,10 +27,10 @@ const Solutions = () => {
         <S.SectionBackground background={solutionsImg}>
           <S.Box4>
             <S.Text>
-              <S.Tittle bold> SOLUCIONES </S.Tittle>
+              <S.Tittle bold> SERVICIOS </S.Tittle>
               <S.SeparatorWhite />
               <S.A>
-                <b>Optimizadas para tu negocio, servicio 24/7</b>
+                <b>OptimizadOs para tu negocio, servicio 24/7</b>
               </S.A>
             </S.Text>
           </S.Box4>
@@ -39,10 +40,31 @@ const Solutions = () => {
         <S.Section>
           <S.Box6>
             <S.Text>
-              <S.H2Green bold>SOLUCIONES DE CLIMATICACIÓN INDUSTRIAL</S.H2Green>
+              <S.H2Green bold>
+                SOLUCIONES DE <br /> CLIMATIZACIÓN INDUSTRIAL
+              </S.H2Green>
             </S.Text>
           </S.Box6>
         </S.Section>
+        {/* <--------SECTION img-------> */}
+        <S.SectionBackground2 background={Section2img}>
+          <S.Box4>
+            <S.Text2>
+              <S.H1solutions bold>
+                {' '}
+                Ofrecemos servicios completos de climatización para empresas de
+                todos los tamaños, incluyendo:{' '}
+              </S.H1solutions>
+              
+              <S.H2solutions>
+                <b>
+                  Instalación y diseño de aire acondicionado Sistemas HVAC
+                  comerciales Refrigeración industrial de aire
+                </b>
+              </S.H2solutions>
+            </S.Text2>
+          </S.Box4>
+        </S.SectionBackground2>
 
         {/* <--------Sphere section -------> */}
         <S.SphereSection>
@@ -144,7 +166,10 @@ const Solutions = () => {
             <S.H1solutions>NOS ENCARGAMOS DE:</S.H1solutions>
             <S.Text>
               <S.List>
-                <S.Li>Las maniobras necesarias del autómata, que cumpa con la legislación actual</S.Li>
+                <S.Li>
+                  Las maniobras necesarias del autómata, que cumpa con la
+                  legislación actual
+                </S.Li>
                 <S.Li>Compresores</S.Li>
                 <S.Li>Evaporadores</S.Li>
                 <S.Li>Tuberías</S.Li>

@@ -5,7 +5,6 @@ export const HomeContainer = styled.div`
   overflow-x: hidden;
   /* box-sizing: border-box; */
 `
-
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,7 +43,14 @@ export const SectionWithBackground = styled.div`
 export const SectionBackground = styled(SectionWithBackground)`
   align-content: center;
   justify-content: center;
+  
 `
+export const SectionBackground2 = styled(SectionBackground)`
+  max-height: 70rem;
+  padding: 4rem;
+
+`
+
 export const Box = styled.div`
   align-content: center;
   align-items: center;
@@ -82,9 +88,10 @@ export const Boxx = styled(Box)`
 export const Box4 = styled(Box)`
   display: flex;
   justify-content: center;
+  
   width: 100%;
   /* min-width: 60vw; */
-  height: 60vh;
+  /* height: 60vh; */
   /* border: 2px solid greenyellow; */
 `
 export const Box6 = styled(Box4)`
@@ -123,6 +130,7 @@ export const TextBox = styled.div`
   }
   /* border: 2px dashed greenyellow; */
 `
+
 export const Text = styled(TextBox)`
   display: flex;
   justify-content: center;
@@ -139,6 +147,9 @@ export const Text = styled(TextBox)`
   }
 
   /* border: 2px dashed greenyellow; */
+`
+export const Text2 = styled(Text)`
+padding: 0rem;
 `
 export const Tittle = styled.a`
   color: #ffffff;
@@ -269,6 +280,7 @@ export const H1solutions = styled(H1)`
   font-size: 48px;
   color: #ffffff;
   text-align: left;
+  line-height: 60px;
   @media screen and (max-width: 900px) {
     font-size: 28px;
   }
@@ -297,7 +309,7 @@ export const H2 = styled.a`
   }
 `
 export const H2Green = styled(H2)`
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 4rem;
   color: rgba(68, 104, 68, 1);
@@ -309,6 +321,7 @@ export const H2Green = styled(H2)`
 export const H2solutions = styled(H2Green)`
   font-size: 30px;
   line-height: 45px;
+  color:  #f9f9f9;
   padding: 0.5rem;
   text-align: center;
   @media screen and (max-width: 900px) {
