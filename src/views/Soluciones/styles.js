@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
 export const HomeContainer = styled.div`
   max-width: 100%;
@@ -396,6 +396,7 @@ export const List2 = styled(List)`
 export const SphereSection = styled.section`
   display: flex;
   width: 100%;
+  flex-direction:column ;
 `
 
 export const Container = styled.div`
@@ -447,10 +448,22 @@ export const Agreen = styled(A)`
   font-size: 18px;
   color: rgba(68, 104, 68, 1);
   font-weight: 550;
-  text-align: center;
+
   line-height: 30px;
 
   text-align: center;
+  ${(props) =>
+    props.mode === 'mode1' &&
+    css`
+      color: #ffffff;
+      text-align: left;
+    `}
+  ${(props) =>
+    props.mode === 'mode2' &&
+    css`
+      color: rgba(68, 104, 68, 1);
+      text-align: right;
+    `}
   @media screen and (max-width: 1100px) {
     font-size: 10px;
     line-height: 14px;
@@ -460,9 +473,20 @@ export const Atitle = styled(A)`
   font-size: 35px;
   color: rgba(68, 104, 68, 1);
   font-weight: 650;
-  text-align: center;
+  
   line-height: 35px;
-
+  ${(props) =>
+    props.mode === 'mode1' &&
+    css`
+      color: #ffffff;
+      text-align: left;
+    `}
+  ${(props) =>
+    props.mode === 'mode2' &&
+    css`
+      color: rgba(68, 104, 68, 1);
+      text-align: right;
+    `}
   @media screen and (max-width: 1100px) {
     font-size: 20px;
   }
