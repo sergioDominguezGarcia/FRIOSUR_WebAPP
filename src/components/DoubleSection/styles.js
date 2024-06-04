@@ -27,7 +27,7 @@ export const Column = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  text-align: ${(props) => (props.mode === 'mode1' ? 'left' : 'right')};
   ${(props) =>
     props.mode === 'mode1' &&
     css`

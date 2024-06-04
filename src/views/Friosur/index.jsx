@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
   import { useNavigate } from 'react-router-dom'
 import back3 from '../../assets/images/back3.png'
+import back4 from '../../assets/images/back4.png'
 import star from '../../assets/images/star.png'
 import imgBottom from '../../assets/images/imgBottom.png'
 
@@ -76,7 +77,7 @@ const Friosur = () => {
           </S.Box6>
         </S.Section3>
         {/* background imageeeeeeeeeeeeeeeee */}
-        <S.SectionWithBackground background={back3}>
+        <S.SectionWithBackground background={back4}>
           <S.Box4>
             <S.Text>
               <S.Tittle bold> EJECUCIÓN TOTAL </S.Tittle>
@@ -101,7 +102,7 @@ const Friosur = () => {
             <S.Text>
               <S.Agreen>
                 <b>INNOVACIÓN y CALIDAD,</b> valores fundamentales de una
-                empresa que apuesta por la máxima competitividad. 
+                empresa que apuesta por la máxima competitividad.
               </S.Agreen>
             </S.Text>
             <S.Img4>

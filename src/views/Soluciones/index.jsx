@@ -19,6 +19,7 @@ const Solutions = () => {
     window.scrollTo(0, 0)
   }
 
+
   return (
     <S.HomeContainer>
       <Header />
@@ -70,18 +71,20 @@ const Solutions = () => {
         <S.SphereSection>
           <DoubleSection
             leftContent={
-              <S.Text>
-                <S.Atitle mode="mode1">ESTUDIO TÉCNICO</S.Atitle>
-                <S.Agreen mode="mode1">
-                  Nuestro enfoque se centra en garantizar el mayor rendimiento y
-                  fiabilidad de los sistemas. Estamos capacitados para
-                  implementar los nuevos gases refrigerantes tipo A2L, a gases
-                  naturales, como el amoniaco, CO2 y glicoles. Ofrecemos
-                  soluciones personalizadas para cada diseño y cálculo de
-                  sistemas frigoríficos, adaptados a las necesidades de cada
-                  cliente.
-                </S.Agreen>
-              </S.Text>
+              <div>
+                <S.Text>
+                  <S.Atitle mode="mode1">ESTUDIO TÉCNICO</S.Atitle>
+                  <S.Agreen mode="mode1">
+                    Nuestro enfoque se centra en garantizar el mayor rendimiento
+                    y fiabilidad de los sistemas. Estamos capacitados para
+                    implementar los nuevos gases refrigerantes tipo A2L, a gases
+                    naturales, como el amoniaco, CO2 y glicoles. Ofrecemos
+                    soluciones personalizadas para cada diseño y cálculo de
+                    sistemas frigoríficos, adaptados a las necesidades de cada
+                    cliente.
+                  </S.Agreen>
+                </S.Text>
+              </div>
             }
             rightContent={
               <>
@@ -98,7 +101,7 @@ const Solutions = () => {
             }
             rightContent={
               <S.Text>
-                <S.Atitle mode="mode2">ESTUDIO TÉCNICO</S.Atitle>
+                <S.Atitle mode="mode2">MONTAJE</S.Atitle>
                 <S.Agreen mode="mode2">
                   En Friosur, nos destacamos por ofrecer los mejores montajes de
                   instalaciones frigoríficas por varias razones. Contamos con un
