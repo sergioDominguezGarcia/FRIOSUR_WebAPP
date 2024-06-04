@@ -94,7 +94,7 @@ const Solutions = () => {
             }
             rightContent={
               <S.Text>
-                <S.Atitle mode="mode2">MONTAJE</S.Atitle>
+                <S.Atitle mode="mode2">ESTUDIO TÉCNICO</S.Atitle>
                 <S.Agreen mode="mode2">
                   En Friosur, nos destacamos por ofrecer los mejores montajes de
                   instalaciones frigoríficas por varias razones. Contamos con un
@@ -112,15 +112,16 @@ const Solutions = () => {
           <DoubleSection
             leftContent={
               <S.Text>
-                <S.Atitle mode="mode1">MANTENIMIENTO</S.Atitle>
+                <S.Atitle mode="mode1">PUESTA EN MARCHA</S.Atitle>
                 <S.Agreen mode="mode1">
-                  En Friosur, nos comprometemos a garantizar el funcionamiento
-                  óptimo de tus equipos e instalaciones. Realizamos revisiones
-                  exhaustivas, con ajustes precisos y limpiezas meticulosa para
-                  prevenir cualquier posible fallo, maximizando la eficiencia
-                  energética. En caso de incidencias, nuestro equipo técnico
-                  altamente capacitado actúa con eficacia para resolver
-                  cualquier problema en el menor tiempo posible.
+                  Nuestro equipo de expertos no solo se encarga de instalar los
+                  sistemas con precisión, sino que también realiza pruebas
+                  exhaustivas para garantizar un funcionamiento óptimo desde el
+                  inicio del ciclo de una instalación. Además, ofrecemos un
+                  servicio de seguimiento post-instalación para asegurarnos a
+                  largo plazo. En Friosur nos comprometemos a superar las
+                  expectativas de nuestros clientes en cada proyecto, brindando
+                  puestas en marcha que son sinónimo de calidad y confiabilidad.
                 </S.Agreen>
               </S.Text>
             }
@@ -139,7 +140,7 @@ const Solutions = () => {
             }
             rightContent={
               <S.Text>
-                <S.Atitle mode="mode2">MONTAJE</S.Atitle>
+                <S.Atitle mode="mode2">MANTENIMIENTO</S.Atitle>
                 <S.Agreen mode="mode2">
                   En Friosur, nos destacamos por ofrecer los mejores montajes de
                   instalaciones frigoríficas por varias razones. Contamos con un
