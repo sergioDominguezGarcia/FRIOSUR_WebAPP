@@ -4,6 +4,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import DoubleSection from '../../components/DoubleSection'
 import solutionsImg from '../../assets/images/solutionsImg.png'
+import ExpandableText from '../../components/ExpandButton'
 import Section2img from '../../assets/images/Section2img.png'
 import img1 from '../../assets/images/img1.png'
 import img2 from '../../assets/images/img2.png'
@@ -18,7 +19,6 @@ const Solutions = () => {
     navigate('/contact')
     window.scrollTo(0, 0)
   }
-
 
   return (
     <S.HomeContainer>
@@ -70,29 +70,36 @@ const Solutions = () => {
         {/* <--------Sphere section -------> */}
         <S.SphereSection>
           <DoubleSection
-            leftContent={
-              <div>
-                <S.Text>
-                  <S.Atitle mode="mode1">ESTUDIO TÉCNICO</S.Atitle>
-                  <S.Agreen mode="mode1">
-                    Nuestro enfoque se centra en garantizar el mayor rendimiento
-                    y fiabilidad de los sistemas. Estamos capacitados para
-                    implementar los nuevos gases refrigerantes tipo A2L, a gases
-                    naturales, como el amoniaco, CO2 y glicoles. Ofrecemos
-                    soluciones personalizadas para cada diseño y cálculo de
-                    sistemas frigoríficos, adaptados a las necesidades de cada
-                    cliente.
-                  </S.Agreen>
-                </S.Text>
-              </div>
-            }
-            rightContent={
-              <>
-                <img src={img1} width="300px" alt="" />
-              </>
-            }
+            leftContent={<div />} // Empty div to utilize ExpandableText
+            rightContent={<img src={img1} width="300px" alt="" />}
             mode="mode1"
+            leftInitialText={
+              <S.Text>
+                <S.Atitle mode="mode1">ESTUDIO TÉCNICO</S.Atitle>
+                <S.Agreen mode="mode1">
+                  Nuestro enfoque se centra en garantizar el mayor rendimiento y
+                  fiabilidad de los sistemas. Estamos capacitados para
+                  implementar los nuevos gases refrigerantes tipo A2L, a gases
+                  naturales, como el amoniaco, CO2 y glicoles.
+                </S.Agreen>
+              </S.Text>
+            }
+            leftFullText={
+              <S.Text>
+                <S.Atitle mode="mode1">ESTUDIO TÉCNICO</S.Atitle>
+                <S.Agreen mode="mode1">
+                  Nuestro enfoque se centra en garantizar el mayor rendimiento y
+                  fiabilidad de los sistemas. Estamos capacitados para
+                  implementar los nuevos gases refrigerantes tipo A2L, a gases
+                  naturales, como el amoniaco, CO2 y glicoles. Ofrecemos
+                  soluciones personalizadas para cada diseño y cálculo de
+                  sistemas frigoríficos, adaptados a las necesidades de cada
+                  cliente.
+                </S.Agreen>
+              </S.Text>
+            }
           />
+
           <DoubleSection
             leftContent={
               <>

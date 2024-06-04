@@ -1,15 +1,39 @@
 import React from 'react'
 import {Section, Column}  from "./styles"
+import ExpandableText from '../ExpandButton'
 
-export const DoubleSection = ({ leftContent, rightContent, mode }) => {
-  
+
+
+export const DoubleSection = ({
+  leftContent,
+  rightContent,
+  mode,
+  leftInitialText,
+  leftFullText,
+  rightInitialText,
+  rightFullText,
+}) => {
   return (
     <Section mode={mode}>
-      <Column className="column left-column" mode={mode}>
-        {leftContent}
+      <Column mode={mode}>
+        {React.isValidElement(leftContent) && leftContent.type === 'div' ? (
+          <ExpandableText
+            initialText={leftInitialText}
+            fullText={leftFullText}
+          />
+        ) : (
+          leftContent
+        )}
       </Column>
-      <Column className="column right-column" mode={mode}>
-        {rightContent}
+      <Column mode={mode}>
+        {React.isValidElement(rightContent) && rightContent.type === 'div' ? (
+          <ExpandableText
+            initialText={rightInitialText}
+            fullText={rightFullText}
+          />
+        ) : (
+          rightContent
+        )}
       </Column>
     </Section>
   )

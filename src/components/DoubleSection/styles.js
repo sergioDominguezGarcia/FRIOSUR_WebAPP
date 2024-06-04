@@ -28,6 +28,7 @@ export const Column = styled.div`
   align-items: center;
   justify-content: center;
   text-align: ${(props) => (props.mode === 'mode1' ? 'left' : 'right')};
+
   ${(props) =>
     props.mode === 'mode1' &&
     css`
@@ -35,19 +36,11 @@ export const Column = styled.div`
         justify-content: flex-start;
         text-align: left;
       }
-      &.right-column img {
-        max-width: 100%;
-        height: auto;
-      }
     `}
 
   ${(props) =>
     props.mode === 'mode2' &&
     css`
-      &.left-column img {
-        max-width: 100%;
-        height: auto;
-      }
       &.right-column {
         justify-content: flex-end;
         text-align: right;
