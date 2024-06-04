@@ -63,7 +63,7 @@
                         <S.H2g>FRÍO INDUSTRIAL</S.H2g>
                         <img
                           src={snowflake}
-                          width="200px"
+                          width="100px"
                           alt="Icono de copo de nieve"
                         />
                       </>
@@ -106,7 +106,7 @@
                       <S.H2g>
                         FRÍO COMERCIAL <br /> Y CLIMA
                       </S.H2g>
-                      <img src={climate} width="200px" alt="Icono de clima" />
+                      <img src={climate} width="100px" alt="Icono de clima" />
                     </>
                   }
                   frontContent={
@@ -141,7 +141,7 @@
                 <S.H2g>MANTENIMIENTO</S.H2g>
                 <img
                   src={maintenance}
-                  width="200px"
+                  width="100px"
                   alt="Icono de mantenimiento"
                 />
                 <S.ABox3>

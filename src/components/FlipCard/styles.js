@@ -13,11 +13,11 @@ export const Container = styled.div`
   perspective: 1000px;
   background-color: #F9F9F9;
   height: 40%;
-  min-height: 550px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 350px;
   position: absolute;
   border-radius: 15px;
   padding: 1rem;
