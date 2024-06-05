@@ -56,7 +56,7 @@ const Header = () => {
             <S.Link onClick={handleGoToHome}>INICIO</S.Link>
           </S.NavLink>
           <S.NavLink>
-            <S.Link onClick={handleGoToSolutions}>SOLUCIONES</S.Link>
+            <S.Link onClick={handleGoToSolutions}>SERVICIOS</S.Link>
           </S.NavLink>
           <S.NavLink>
             <S.Link onClick={handleGoToFriosur}>EMPRESA</S.Link>

@@ -135,18 +135,16 @@ export const Text = styled(TextBox)`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
+  width: 95%;
+  text-align: left;
   padding: 2rem;
-  margin: 0 auto;
 
-  @media (max-width: 900px) {
-    width: 100%;
-    /* height: 50%; */
-    /* text-align: center; */
+  @media (max-width: 800px) {
+    width: 90%;
+    text-align: center;
   }
 
-  /* border: 2px dashed greenyellow; */
+  border: 2px dashed greenyellow;
 `
 export const Text2 = styled(Text)`
 padding: 0rem;
@@ -306,7 +304,7 @@ export const H1 = styled.a`
 export const H1solutions = styled(H1)`
   font-size: 48px;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   line-height: 60px;
   @media screen and (max-width: 900px) {
     font-size: 28px;
@@ -343,7 +341,7 @@ export const H2 = styled.a`
 export const H2Green = styled(H2)`
   font-size: 40px;
   text-align: center;
-  margin-bottom: 4rem;
+  
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {

@@ -39,39 +39,35 @@ const Solutions = () => {
 
         {/* <--------SECTION 2 -------> */}
         <S.Section>
-          <S.Box6>
-            <S.Text>
-              <S.H2Green bold>
-                SOLUCIONES DE <br /> CLIMATIZACIÓN INDUSTRIAL
-              </S.H2Green>
-            </S.Text>
-          </S.Box6>
+          <S.Text>
+            <S.H2Green bold>
+              SOLUCIONES DE <br /> CLIMATIZACIÓN INDUSTRIAL
+            </S.H2Green>
+          </S.Text>
         </S.Section>
         {/* <--------SECTION img-------> */}
         <S.SectionBackground2 background={Section2img}>
-          <S.Box4>
-            <S.Text2>
-              <S.H1solutions bold>
-                {' '}
-                Ofrecemos servicios completos de climatización para empresas de
-                todos los tamaños, incluyendo:{' '}
-              </S.H1solutions>
+          <S.Text2>
+            <S.H1solutions bold>
+              {' '}
+              Ofrecemos servicios completos de climatización para empresas de
+              todos los tamaños, incluyendo:{' '}
+            </S.H1solutions>
 
-              <S.H2solutions>
-                <b>
-                  Instalación y diseño de aire acondicionado Sistemas HVAC
-                  comerciales Refrigeración industrial de aire
-                </b>
-              </S.H2solutions>
-            </S.Text2>
-          </S.Box4>
+            <S.H2solutions>
+              <b>
+                Instalación y diseño de aire acondicionado <br /> Sistemas HVAC
+                comerciales <br /> Refrigeración industrial de aire
+              </b>
+            </S.H2solutions>
+          </S.Text2>
         </S.SectionBackground2>
 
         {/* <--------Sphere section -------> */}
         <S.SphereSection>
           <DoubleSection
             leftContent={<div />} // Empty div to utilize ExpandableText
-            rightContent={<img src={img1} width="300px" alt="" />}
+            rightContent={<img src={img1} width="200px" alt="" />}
             mode="mode1"
             leftInitialText={
               <S.Text>
@@ -101,12 +97,21 @@ const Solutions = () => {
           />
 
           <DoubleSection
-            leftContent={
-              <>
-                <img src={img2} width="300px" alt="" />
-              </>
+            leftContent={<img src={img2} width="200px" alt="" />}
+            rightContent={<div />}
+            mode="mode"
+            rightInitialText={
+              <S.Text>
+                <S.Atitle mode="mode2">MONTAJE</S.Atitle>
+                <S.Agreen mode="mode2">
+                  En Friosur, nos destacamos por ofrecer los mejores montajes de
+                  instalaciones frigoríficas por varias razones. Contamos con un
+                  equipo altamente cualificado y experimentado, que garantiza
+                  una ejecución precisa y eficiente en cada proyecto.
+                </S.Agreen>
+              </S.Text>
             }
-            rightContent={
+            rightFullText={
               <S.Text>
                 <S.Atitle mode="mode2">MONTAJE</S.Atitle>
                 <S.Agreen mode="mode2">
@@ -121,10 +126,25 @@ const Solutions = () => {
                 </S.Agreen>
               </S.Text>
             }
-            mode="mode2"
           />
           <DoubleSection
-            leftContent={
+            leftContent={<div />} // Empty div to utilize ExpandableText
+            rightContent={<img src={img3} width="200px" alt="" />}
+            mode="mode1"
+            leftInitialText={
+              <S.Text>
+                <S.Atitle mode="mode1">PUESTA EN MARCHA</S.Atitle>
+                <S.Agreen mode="mode1">
+                  Nuestro equipo de expertos no solo se encarga de instalar los
+                  sistemas con precisión, sino que también realiza pruebas
+                  exhaustivas para garantizar un funcionamiento óptimo desde el
+                  inicio del ciclo de una instalación. Además, ofrecemos un
+                  servicio de seguimiento post-instalación para asegurarnos a
+                  largo plazo.
+                </S.Agreen>
+              </S.Text>
+            }
+            leftFullText={
               <S.Text>
                 <S.Atitle mode="mode1">PUESTA EN MARCHA</S.Atitle>
                 <S.Agreen mode="mode1">
@@ -139,35 +159,38 @@ const Solutions = () => {
                 </S.Agreen>
               </S.Text>
             }
-            rightContent={
-              <>
-                <img src={img3} width="300px" alt="" />
-              </>
-            }
-            mode="mode1"
           />
+
           <DoubleSection
-            leftContent={
-              <>
-                <img src={img4} width="300px" alt="" />
-              </>
-            }
-            rightContent={
+            leftContent={<img src={img4} width="200px" alt="" />}
+            rightContent={<div />}
+            mode="mode"
+            rightInitialText={
               <S.Text>
                 <S.Atitle mode="mode2">MANTENIMIENTO</S.Atitle>
                 <S.Agreen mode="mode2">
-                  En Friosur, nos destacamos por ofrecer los mejores montajes de
-                  instalaciones frigoríficas por varias razones. Contamos con un
-                  equipo altamente cualificado y experimentado, que garantiza
-                  una ejecución precisa y eficiente en cada proyecto. Nos
-                  esforzamos por ofrecer montajes que destacan por su excelencia
-                  en cada aspecto: desde la planificación hasta la
-                  implementación, siempre asegurando la máxima eficiencia y
-                  rendimiento.
+                  En Friosur, nos comprometemos a garantizar el funcionamiento
+                  óptimo de tus equipos e instalaciones. Realizamos revisiones
+                  exhaustivas, con ajustes precisos y limpiezas meticulosa para
+                  prevenir cualquier posible fallo, maximizando la eficiencia
+                  energética.
                 </S.Agreen>
               </S.Text>
             }
-            mode="mode2"
+            rightFullText={
+              <S.Text>
+                <S.Atitle mode="mode2">MANTENIMIENTO</S.Atitle>
+                <S.Agreen mode="mode2">
+                  En Friosur, nos comprometemos a garantizar el funcionamiento
+                  óptimo de tus equipos e instalaciones. Realizamos revisiones
+                  exhaustivas, con ajustes precisos y limpiezas meticulosa para
+                  prevenir cualquier posible fallo, maximizando la eficiencia
+                  energética. En caso de incidencias, nuestro equipo técnico
+                  altamente capacitado actúa con eficacia para resolver
+                  cualquier problema en el menor tiempo posible.
+                </S.Agreen>
+              </S.Text>
+            }
           />
         </S.SphereSection>
         {/* <------- section 3 -------> */}

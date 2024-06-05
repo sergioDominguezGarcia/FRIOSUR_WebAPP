@@ -18,6 +18,10 @@ export const Section = styled.div`
     css`
       background-color: #f9f9f9;
     `}
+      @media (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Column = styled.div`
@@ -50,4 +54,4 @@ export const Column = styled.div`
   @media (max-width: 768px) {
     flex: 1 1 100%;
   }
-`
+`  

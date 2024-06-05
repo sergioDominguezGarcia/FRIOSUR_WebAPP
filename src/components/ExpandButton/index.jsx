@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
 
-const ExpandableText = ({ fullText, initialText }) => {
+const ExpandableText = ({ fullText, initialText, mode }) => {
   const [expanded, setExpanded] = useState(false)
   const [maxHeight, setMaxHeight] = useState('100px') // Initial height limit
   const textRef = useRef(null)
@@ -23,7 +23,7 @@ const ExpandableText = ({ fullText, initialText }) => {
       <Text ref={textRef} maxHeight={maxHeight}>
         {expanded ? fullText : initialText}
       </Text>
-      <ToggleExpandButton onClick={toggleExpand}>
+      <ToggleExpandButton onClick={toggleExpand} mode={mode}>
         {expanded ? 'Ver menos' : 'Ver más'}
       </ToggleExpandButton>
     </Container>
@@ -39,15 +39,20 @@ const Text = styled.div`
   overflow: hidden;
   max-height: ${(props) => props.maxHeight};
   transition: max-height 0.5s ease-out;
+  text-align: center;
 `
 
 const ToggleExpandButton = styled.button`
   margin-top: 10px;
   background: none;
   border: none;
-  color: #f0f0f0;
+  
+  color: ${(props) => (props.mode === 'mode1' ? '#f0f0f0' : '#698669')};
   cursor: pointer;
   align-self: flex-start;
+  @media (max-width: 780px) {
+    align-self: center;
+  }
 `
 
 export default ExpandableText

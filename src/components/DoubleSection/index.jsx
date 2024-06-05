@@ -20,6 +20,7 @@ export const DoubleSection = ({
           <ExpandableText
             initialText={leftInitialText}
             fullText={leftFullText}
+            mode={mode}
           />
         ) : (
           leftContent
@@ -30,6 +31,7 @@ export const DoubleSection = ({
           <ExpandableText
             initialText={rightInitialText}
             fullText={rightFullText}
+            mode={mode}
           />
         ) : (
           rightContent
