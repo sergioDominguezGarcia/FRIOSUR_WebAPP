@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, useEffect, useState } from 'react'
 import * as S from './styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -13,12 +13,20 @@ import img4 from '../../assets/images/img4.png'
 import Mask from '../../assets/images/Mask.png'
 import { useNavigate } from 'react-router-dom'
 
+import './styles.css'
+
 const Solutions = () => {
   const navigate = useNavigate()
   const handleGoToContact = () => {
     navigate('/contact')
     window.scrollTo(0, 0)
   }
+
+    const [animate, setAnimate] = useState(false)
+
+    useEffect(() => {
+      setAnimate(true)
+    }, [])
 
   return (
     <S.HomeContainer>
@@ -27,11 +35,13 @@ const Solutions = () => {
         {/* <--------SECTION 1 -------> */}
         <S.SectionBackground background={solutionsImg}>
           <S.Box4>
-            <S.Text>
+            <S.Text className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.Tittle bold> SERVICIOS </S.Tittle>
             </S.Text>
-            <S.SeparatorWhite />
-            <S.Text>
+            <S.SeparatorWhite
+              className={animate ? 'animate-slideInFromLeft' : ''}
+            />
+            <S.Text className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.A>
                 <b>OptimizadOs para tu negocio, servicio 24/7</b>
               </S.A>
@@ -254,4 +264,4 @@ const Solutions = () => {
   )
 }
 
-export default memo(Solutions)
+export default Solutions

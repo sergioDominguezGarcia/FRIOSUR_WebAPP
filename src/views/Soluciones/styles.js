@@ -136,16 +136,15 @@ export const TextBox = styled.div`
 export const Text = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  
+  flex-direction: column;  
   padding: 1rem;
   text-align: center;
   gap: 1rem;
-  @media (max-width: 800px) {
-
-  }
-  /* border: 2px dashed greenyellow; */
+    /* border: 2px dashed greenyellow; */
 `
+
+
+
 export const Text2 = styled(Text)`
 padding: 0rem;
 `
@@ -216,7 +215,7 @@ export const Oval = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 4rem;
+  padding: 2rem;
   border-radius: 50%;
   width: 70%;
   background-color: #698669;
