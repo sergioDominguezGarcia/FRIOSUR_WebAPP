@@ -27,7 +27,7 @@ export const SectionWithBackground = styled.div`
   height: auto;
   max-width: 100%;
   max-height: 80rem;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
   padding: 2.5rem;
   @media (max-width: 1326px) {
@@ -51,9 +51,9 @@ const BoxBase = styled.div`
 `
 
 export const Box = styled(BoxBase)`
-  margin-top: 12rem;
+  margin-top: 8rem;
   width: 40%;
-
+  /* border: 1px solid red; */
   @media (max-width: ${breakpoints.tablet}) {
     width: 90%;
     margin-top: 10rem;
@@ -69,7 +69,7 @@ export const Box = styled(BoxBase)`
 export const Box2 = styled(Box)`
   @media (max-width: 1326px) {
     width: 90%;
-    margin-top: 5rem;
+    margin-top: 3rem;
     
   }
   @media (max-width: 900px) {
@@ -208,7 +208,7 @@ export const TextBoxR = styled(TextBox)`
   @media (max-width: 1326px) {
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
   }
 `
 export const StyledLink = styled.a`
@@ -281,10 +281,10 @@ export const A = styled.a`
   font-style: normal;
   font-weight: 300;
   /* left: 4.4rem; */
-  line-height: 44px;
+  
   text-align: left;
   /* width: 50%; */
-  max-width: 80%;
+  
   /* border: 2px solid purple; */
   justify-content: center;
 

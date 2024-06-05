@@ -28,7 +28,12 @@ const MapComponent = () => {
   }
   return (
     <div className="svg-container">
-      <svg width="200mm" version="1.2" viewBox="0 0 29700 21000">
+      <svg
+        className="mapa"
+        width="200mm"
+        version="1.2"
+        viewBox="0 0 29700 21000"
+      >
         {/*  JAÉN  */}
         <path
           class="fil0 str0 "

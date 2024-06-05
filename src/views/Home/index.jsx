@@ -4,13 +4,11 @@
   import Footer from '../../components/Footer'
   import background from '../../assets/images/background.png'
   import FlipCard from '../../components/FlipCard'
-  import Slider from '../../components/Slider'
   import climate from '../../assets/images/climate.png'
   import maintenance from '../../assets/images/maintenance.png'
   import snowflake from '../../assets/images/snowflake.png'
-  import map from '../../assets/images/map.png'
   import Line from '../../assets/images/Line.png'
-  import clients from '../../assets/images/clients.png'
+
   import reseña from '../../assets/images/reseña.png'
   import { useNavigate } from 'react-router-dom'
   import MapComponent from '../../components/Map'
@@ -52,8 +50,9 @@
                 <S.A>
                   Enfocados en el <b>sector Alimentario</b>
                 </S.A>
+                <S.A>También abarcamos otros mercados,</S.A>{' '}
                 <S.A>
-                  También abarcamos otros mercados, ya sea a nivel
+                  ya sea a nivel
                   <b> Comercial </b> o <b> Industrial </b>
                 </S.A>
               </S.TextBoxR>
