@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  background: rgba(105, 134, 105, 1);
+  padding: 20px;
+  max-width: 1440px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #7da283c5;
+  white-space: nowrap;
+ 
+}
+.logos-slide  {
+  display: inline-block;
+  gap: 50px;
+  animation: 15s slide infinite linear;
+ 
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0px 50px 0px 50px;
+}

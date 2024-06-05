@@ -8,7 +8,7 @@
   import maintenance from '../../assets/images/maintenance.png'
   import snowflake from '../../assets/images/snowflake.png'
   import Line from '../../assets/images/Line.png'
-
+  import Slider from '../../components/Slider'
   import reseña from '../../assets/images/reseña.png'
   import { useNavigate } from 'react-router-dom'
   import MapComponent from '../../components/Map'
@@ -189,7 +189,7 @@
                   width="95%"
                   alt="Clientes que confían en Friosur"
                 /> */}
-                {/* <Slider /> */}
+                <Slider />
               </S.BoxReseña>
             </S.Boxx>
             {/* <--------SECTION 4 -------> */}

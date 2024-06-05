@@ -184,7 +184,7 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
   @media (max-width: 1326px) {
     justify-content: center;
@@ -203,7 +203,7 @@ export const TextBox = styled.div`
 export const TextBoxR = styled(TextBox)`
 
   justify-content: space-around;
-  gap: 1rem;
+  gap: 0rem;
   height: 70%;
   @media (max-width: 1326px) {
     justify-content: center;
@@ -250,7 +250,7 @@ export const StyledLink2 = styled(StyledLink)`
   box-shadow: none;
   /* margin-top: 6rem; */
   margin-bottom: 8rem;
-  font-size: 3rem;
+  font-size: 2rem;
   height: 7rem;
   width: auto;
   @media (max-width: 1326px) {
@@ -270,8 +270,8 @@ export const StyledLink2 = styled(StyledLink)`
   }
 `
 export const StyledLink3 = styled(StyledLink)`
-  width: auto;
-  height: 5rem;
+  width: 100%;
+  font-size: 20px;
   @media (max-width: 1326px) {
     font-size: 16px;
   }
