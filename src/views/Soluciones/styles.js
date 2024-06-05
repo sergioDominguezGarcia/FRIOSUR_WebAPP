@@ -44,6 +44,7 @@ export const SectionBackground = styled(SectionWithBackground)`
   align-content: center;
   justify-content: center;
   
+  
 `
 export const SectionBackground2 = styled(SectionBackground)`
   max-height: 70rem;
@@ -88,8 +89,9 @@ export const Boxx = styled(Box)`
 export const Box4 = styled(Box)`
   display: flex;
   justify-content: center;
-  
+  align-content: center;
   width: 100%;
+  flex-direction: column;
   /* min-width: 60vw; */
   /* height: 60vh; */
   /* border: 2px solid greenyellow; */
@@ -126,25 +128,23 @@ export const TextBox = styled.div`
   }
 
   @media (max-width: 870px) {
-    width: 90%;
+    
   }
   /* border: 2px dashed greenyellow; */
 `
 
-export const Text = styled(TextBox)`
+export const Text = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 95%;
-  text-align: left;
-  padding: 2rem;
-
+  
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
   @media (max-width: 800px) {
-    width: 90%;
-    text-align: center;
-  }
 
-  border: 2px dashed greenyellow;
+  }
+  /* border: 2px dashed greenyellow; */
 `
 export const Text2 = styled(Text)`
 padding: 0rem;
@@ -179,11 +179,10 @@ export const A = styled.a`
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
-  left: 4.4rem;
   line-height: 44px;
-  text-align: left;
-  max-width: 80%;
-  justify-content: center;
+  
+  
+  
   @media (max-width: 1340px) {
     flex-direction: row;
     max-width: 100%;
@@ -521,12 +520,17 @@ export const Agreen = styled(A)`
     font-size: 10px;
     line-height: 14px;
   }
-`
+  @media (max-width: 780px) {
+    text-align: center;
+  }
+  `
 export const Atitle = styled(A)`
   font-size: 35px;
   color: rgba(68, 104, 68, 1);
   font-weight: 650;
-  
+    @media (max-width: 780px) {
+    text-align: center;
+  }
   line-height: 35px;
   ${(props) =>
     props.mode === 'mode1' &&

@@ -33,25 +33,39 @@ export const Column = styled.div`
   justify-content: center;
   text-align: ${(props) => (props.mode === 'mode1' ? 'left' : 'right')};
 
-  ${(props) =>
-    props.mode === 'mode1' &&
-    css`
-      &.left-column {
+  @media (max-width: 780px) {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &.left-column {
+    ${(props) =>
+      props.mode === 'mode1' &&
+      css`
         justify-content: flex-start;
         text-align: left;
-      }
-    `}
+      `}
+    ${(props) =>
+      props.mode === 'mode2' &&
+      css`
+        justify-content: center;
+        text-align: center;
+      `}
+  }
 
-  ${(props) =>
-    props.mode === 'mode2' &&
-    css`
-      &.right-column {
+  &.right-column {
+    ${(props) =>
+      props.mode === 'mode1' &&
+      css`
+        justify-content: center;
+        text-align: center;
+      `}
+    ${(props) =>
+      props.mode === 'mode2' &&
+      css`
         justify-content: flex-end;
         text-align: right;
-      }
-    `}
-
-  @media (max-width: 768px) {
-    flex: 1 1 100%;
+      `}
   }
 `  

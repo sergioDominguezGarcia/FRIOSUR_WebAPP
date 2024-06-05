@@ -33,6 +33,7 @@ const ExpandableText = ({ fullText, initialText, mode }) => {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 const Text = styled.div`
@@ -40,16 +41,19 @@ const Text = styled.div`
   max-height: ${(props) => props.maxHeight};
   transition: max-height 0.5s ease-out;
   text-align: center;
+  white-space: pre-wrap;
 `
 
 const ToggleExpandButton = styled.button`
   margin-top: 10px;
   background: none;
   border: none;
-  
+  font-weight: bold;
+  text-decoration-line: underline;
   color: ${(props) => (props.mode === 'mode1' ? '#f0f0f0' : '#698669')};
   cursor: pointer;
-  align-self: flex-start;
+  align-self: center;
+
   @media (max-width: 780px) {
     align-self: center;
   }

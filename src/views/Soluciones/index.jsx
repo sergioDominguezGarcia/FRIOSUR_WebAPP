@@ -29,7 +29,9 @@ const Solutions = () => {
           <S.Box4>
             <S.Text>
               <S.Tittle bold> SERVICIOS </S.Tittle>
-              <S.SeparatorWhite />
+            </S.Text>
+            <S.SeparatorWhite />
+            <S.Text>
               <S.A>
                 <b>OptimizadOs para tu negocio, servicio 24/7</b>
               </S.A>
@@ -164,7 +166,6 @@ const Solutions = () => {
           <DoubleSection
             leftContent={<img src={img4} width="200px" alt="" />}
             rightContent={<div />}
-            mode="mode"
             rightInitialText={
               <S.Text>
                 <S.Atitle mode="mode2">MANTENIMIENTO</S.Atitle>
