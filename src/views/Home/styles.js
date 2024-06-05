@@ -203,7 +203,7 @@ export const TextBox = styled.div`
 export const TextBoxR = styled(TextBox)`
 
   justify-content: space-around;
-  
+  gap: 1rem;
   height: 70%;
   @media (max-width: 1326px) {
     justify-content: center;
@@ -223,6 +223,7 @@ export const StyledLink = styled.a`
   border-radius: 15px;
   max-height: 77px;
   padding: 1rem;
+  max-width: 20rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -232,6 +233,7 @@ export const StyledLink = styled.a`
   text-align: center;
   align-content: center;
   box-sizing: border-box;
+  margin: 1rem 0rem 1rem 0rem;
   @media (max-width: 1326px) {
     font-size: 1rem;
     max-width: 15rem;
