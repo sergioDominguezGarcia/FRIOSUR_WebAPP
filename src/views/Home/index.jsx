@@ -1,4 +1,4 @@
-  import { memo } from 'react'
+  import { memo, useEffect, useState } from 'react'
   import * as S from './styles'
   import Header from '../../components/Header'
   import Footer from '../../components/Footer'
@@ -14,12 +14,20 @@
   import reseña from '../../assets/images/reseña.png'
   import { useNavigate } from 'react-router-dom'
   import MapComponent from '../../components/Map'
+  import './styles.css'
   const Home = () => {
     const navigate = useNavigate()
     const handleGoToContact = () => {
       navigate('/contact')
       window.scrollTo(0, 0)
     }
+
+        const [animate, setAnimate] = useState(false)
+
+        useEffect(() => {
+          setAnimate(true)
+        }, [])
+
     return (
       <S.HomeContainer>
         <Header />
@@ -27,7 +35,7 @@
           {/* <--------SECTION 1 -------> */}
           <S.SectionWithBackground background={background}>
             <S.Box>
-              <S.TextBox>
+              <S.TextBox className={animate ? 'animate-slideInFromLeft' : ''}>
                 <S.Tittle>
                   {' '}
                   LA
@@ -39,7 +47,7 @@
               </S.TextBox>
             </S.Box>
             <S.Box2>
-              <S.TextBoxR>
+              <S.TextBoxR className={animate ? 'animate-slideInFromLeft' : ''}>
                 <S.StyledLink>SABER MÁS</S.StyledLink>
                 <S.A>
                   Enfocados en el <b>sector Alimentario</b>
@@ -159,7 +167,7 @@
               <S.StyledLink2 href="#solutions">SOLUCIONES</S.StyledLink2>
               {/* <--------MAPA INTERACTIVO -------> */}
               <S.H2Green bold>POSICIONAMIENTO</S.H2Green>
-              
+
               <MapComponent />
 
               <S.Img>
