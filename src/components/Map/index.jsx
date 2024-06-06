@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import './styles.css'
 import HUELVA from './img/HUELVA.png'
-import PRUEBA from './img/PRUEBA.png'
-import PRUE from './img/PRUE.png'
+
 const MapComponent = () => {
   const [hoveredArea, setHoveredArea] = useState(null)
   const [position, setPosition] = useState({ top: 0, left: 0 })
 
   const areasData = [
-    { id: 1, name: '', image: HUELVA,  width:'50px'},
-    { id: 2, name: '', image: PRUEBA },
-    { id: 3, name: '', image: PRUE },
+    { id: 1, name: '', image: HUELVA,  },
+    { id: 2, name: '',  },
+    { id: 3, name: '', },
     { id: 4, name: 'Área 4', image: '/path/to/image4.png' },
   ]
 
