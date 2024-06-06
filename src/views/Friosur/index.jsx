@@ -1,8 +1,8 @@
-import { memo } from 'react'
+import { memo, useEffect, useState } from 'react'
 import * as S from './styles'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-  import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import back3 from '../../assets/images/back3.png'
 import back4 from '../../assets/images/back4.png'
 import star from '../../assets/images/star.png'
@@ -11,11 +11,17 @@ import imgBottom from '../../assets/images/imgBottom.png'
 // import { useNavigate } from 'react-router-dom'
 
 const Friosur = () => {
-    const navigate = useNavigate()
-    const handleGoToContact = () => {
-      navigate('/contact')
-      window.scrollTo(0, 0)
-    }
+  const navigate = useNavigate()
+  const handleGoToContact = () => {
+    navigate('/contact')
+    window.scrollTo(0, 0)
+  }
+
+  const [animate, setAnimate] = useState(false)
+
+  useEffect(() => {
+    setAnimate(true)
+  }, [])
 
   return (
     <S.HomeContainer>
@@ -24,7 +30,7 @@ const Friosur = () => {
         {/* <--------SECTION 1 -------> */}
         <S.SectionWithBackground background={back3}>
           <S.Box4>
-            <S.Text>
+            <S.Text className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.Tittle bold> EMPRESA </S.Tittle>
               <S.SeparatorWhite />
               <S.A>Enfocados en el frío industrial de tu negocio</S.A>
@@ -124,7 +130,5 @@ const Friosur = () => {
     </S.HomeContainer>
   )
 }
-
-
 
 export default memo(Friosur)

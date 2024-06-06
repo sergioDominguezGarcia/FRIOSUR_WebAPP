@@ -72,8 +72,8 @@ export const Box6 = styled(Box4)`
   justify-content: center;
   width: 100%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   /* padding: 2rem; */
-
 `
 export const TextBox = styled.div`
   display: flex;
@@ -119,8 +119,8 @@ export const H2 = styled.a`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 78px;
+  font-size: 40px;
+  line-height: 80px;
   @media screen and (max-width: 1326px) {
     font-size: 30px;
     line-height: 30px;
@@ -210,7 +210,8 @@ export const A = styled.a`
 `
 export const Afrio = styled(A)`
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
+  line-height: 50px;
     @media (max-width: 900px) {
     font-size: 20px;
   }
