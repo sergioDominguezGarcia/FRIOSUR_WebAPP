@@ -396,7 +396,7 @@ export const BottomRow = styled.div`
   width: 100%;
   /* margin-top: 6rem; */
   /* border: 2px solid greenyellow; */
-  margin-top: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
   justify-content: center;
   @media screen and (max-width: 1060px) {
     /* margin-top: 4rem; */

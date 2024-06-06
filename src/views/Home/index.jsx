@@ -144,20 +144,24 @@
               </S.Box4>
             </S.UpperRow>
             <S.BottomRow>
-              <S.Box5>
-                <S.H2g>MANTENIMIENTO</S.H2g>
-                <img
-                  src={maintenance}
-                  width="100px"
-                  alt="Icono de mantenimiento"
-                />
-                <S.ABox3>
-                  <S.Acard>
-                    Asistencia técnica <b>24 horas</b> al día <b>365 días</b>{' '}
-                    del año
-                  </S.Acard>
-                </S.ABox3>
-              </S.Box5>
+              <FlipCard
+                headerContent={
+                  <>
+                    <S.H2g>MANTENIMIENTO</S.H2g>
+                    <img src={maintenance} width="100px" alt="Icono de clima" />
+                  </>
+                }
+                frontContent={
+                  <S.ABox2>
+                    <S.Acard>Asistencia técnica</S.Acard>
+                  </S.ABox2>
+                }
+                backContent={
+                  <S.ABox>
+                    <S.Acard>24 horas al día, 365 días del año.</S.Acard>
+                  </S.ABox>
+                }
+              />
             </S.BottomRow>
           </S.Section>
           {/* <--------SECTION 3 -------> */}
