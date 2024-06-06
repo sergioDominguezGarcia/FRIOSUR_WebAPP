@@ -57,3 +57,13 @@
   height: 50px;
   margin: 0px 50px 0px 50px;
 }
+
+@media (max-width: 600px) {
+  .logos:before,
+  .logos:after {
+    width: 100px; /* Adjust as needed for smaller screens */
+  }
+.logos-slide img {
+  margin: 0px 10px 0px 10px;
+}
+}
