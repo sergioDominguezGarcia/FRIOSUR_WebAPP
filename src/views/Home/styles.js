@@ -391,12 +391,11 @@ export const UpperRow = styled.div`
   /* border: 2px solid purple; */
 `
 export const BottomRow = styled.div`
-  /* padding-bottom: 2rem; */
   display: flex;
   width: 100%;
   /* margin-top: 6rem; */
   /* border: 2px solid greenyellow; */
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 1rem 0rem 3rem 0rem;
   justify-content: center;
   @media screen and (max-width: 1060px) {
     /* margin-top: 4rem; */
