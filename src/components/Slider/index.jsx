@@ -13,24 +13,33 @@ import L11 from './logos/L11.png'
 
 export const Slider = () => {
   return (
-    <div class="content" >
-      
-    <div class="logos">
-      <div class="logos-slide">
-        <img src={L1} alt="logo" />
-        <img src={L2} alt="logo" />
-        <img src={L3} alt="logo" />
-        <img src={L4} alt="logo" />
-        <img src={L5} alt="logo" />
-        <img src={L6} alt="logo" />
-        <img src={L7} alt="logo" />
-        <img src={L8} alt="logo" />
-        <img src={L9} alt="logo" />
-        <img src={L10} alt="logo" />
-        <img src={L11} alt="logo" />
-
+    <div class="content">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src={L1} alt="logo" />
+          <img src={L2} alt="logo" />
+          <img src={L3} alt="logo" />
+          <img src={L4} alt="logo" />
+          <img src={L5} alt="logo" />
+          <img src={L6} alt="logo" />
+          <img src={L7} alt="logo" />
+          <img src={L8} alt="logo" />
+          <img src={L9} alt="logo" />
+          <img src={L10} alt="logo" />
+          <img src={L11} alt="logo" />
+          <img src={L1} alt="logo" />
+          <img src={L2} alt="logo" />
+          <img src={L3} alt="logo" />
+          <img src={L4} alt="logo" />
+          <img src={L5} alt="logo" />
+          <img src={L6} alt="logo" />
+          <img src={L7} alt="logo" />
+          <img src={L8} alt="logo" />
+          <img src={L9} alt="logo" />
+          <img src={L10} alt="logo" />
+          <img src={L11} alt="logo" />
+        </div>
       </div>
-    </div>
     </div>
   )
 }

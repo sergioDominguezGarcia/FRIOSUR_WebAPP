@@ -7,7 +7,7 @@
 .content {
   background: rgba(105, 134, 105, 1);
   padding:20px 0px ;
-  /* max-width: 1440px; */
+  max-width: 100vw;
 }
 
 @keyframes slide {
@@ -24,7 +24,27 @@
   padding: 60px 0;
   background: #ffffff;
   white-space: nowrap;
- 
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 .logos-slide  {
   display: inline-block;
