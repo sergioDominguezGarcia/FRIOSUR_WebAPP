@@ -15,7 +15,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
@@ -49,7 +49,7 @@
 .logos-slide  {
   display: inline-block;
   gap: 50px;
-  animation: 15s slide infinite linear;
+  animation: 35s slide infinite linear;
  
 }
 
