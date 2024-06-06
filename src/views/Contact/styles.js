@@ -15,7 +15,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 8rem;
   padding: 1rem;
   align-items: center;
   max-width: 1440px;
@@ -58,29 +58,30 @@ export const H1 = styled.h1`
 export const TextWrap = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+
   /* align-items: center; */
-  justify-content: center;
-  /* align-items: center;ç */
-  /* width: 95%; */
+  justify-content: space-around;
+
+  width: 80vw;
   /* border: 3px solid greenyellow; */
 
 `;
 
 export const Column1 = styled.div`
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: left;
   /* border: 3px solid greenyellow; */
-  /* align-items: center; */
+  padding: 2rem ;
 `;
 export const Column2 = styled.div`
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
+  padding: 2rem ;
   /* border: 3px solid greenyellow; */
-  padding-left: rem;
+  
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -92,9 +93,10 @@ export const Text = styled.a`
   font-weight: 200;
   text-align: left;
   margin-top: 0rem;
+  max-width: 500px;
   font-size: 24px;
   line-height: 31px;
-
+  /* border: 1px solid red; */
   color: black;
   text-decoration: none;
 

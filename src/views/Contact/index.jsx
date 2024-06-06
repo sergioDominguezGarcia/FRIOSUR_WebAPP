@@ -27,7 +27,7 @@ const Contact = () => {
                 <b>
                   lunes a viernes,
                   <br />
-                  de 8:00 a 13:30 y de 16:00 a 19:00.{" "}
+                  de 7:30 a 15:30.{" "}
                 </b>
                 <br />
                 <br />
@@ -47,28 +47,13 @@ const Contact = () => {
                 Para más información, sobre{" "}
                 <b>
                   Frío Industrial,
-                  <br /> Mantenimiento y Refrigeración Industrial,
-                </b>{" "}
-                rellena el
-                <br />
+                  <br /> Mantenimiento y Refrigeración Industrial, <br />
+                </b>
+                 rellena el              
                 siguiente formulario. Estaremos <b>encantados de ayudarte.</b>
               </S.Text>
             <ContactUs />
-              {/* <S.FormContact>      
-              </S.FormContact> */}
 
-              {/* <S.MailForm>
-                <S.InputWrap>
-                  <S.Input placeholder="NOMBRE"></S.Input>
-                  <S.Input placeholder="EMAIL"></S.Input>
-                </S.InputWrap>
-                <S.TextArea placeholder="MENSAJE..."></S.TextArea>
-                <label>
-                  <input type="checkbox" id="cbox1" value="first_checkbox" />{" "}
-                  Acepto los términos y condiciones legales
-                </label>
-                <S.CustomButton>ENVIAR</S.CustomButton>
-            </S.MailForm> */}
             </S.Column2>
           </S.TextWrap>
 
