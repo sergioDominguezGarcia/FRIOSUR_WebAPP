@@ -153,12 +153,12 @@
                 }
                 frontContent={
                   <S.ABox2>
-                    <S.Acard>Asistencia técnica</S.Acard>
+                    <S.Acard> <b>Asistencia técnica</b> </S.Acard>
                   </S.ABox2>
                 }
                 backContent={
                   <S.ABox>
-                    <S.Acard>24 horas al día, 365 días del año.</S.Acard>
+                    <S.Acard> <b>24 horas</b>   al día, <b>365</b> días del año.</S.Acard>
                   </S.ABox>
                 }
               />

@@ -11,7 +11,7 @@ export const Body = styled.div`
 `
 export const Container = styled.div`
   perspective: 1000px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   height: 40%;
   min-height: 300px;
   display: flex;
@@ -23,6 +23,7 @@ export const Container = styled.div`
   padding: 1rem;
   position: relative;
   @media (max-width: 900px) {
+    max-width: 290px;
     height: 40%;
   }
 `
@@ -48,6 +49,9 @@ export const Card = styled.div`
   justify-content: center;
   backface-visibility: hidden;
   box-sizing: border-box;
+  @media (max-width: 900px) {
+    padding-bottom: 1rem;
+  }
 `
 export const Front = styled(Card)`
   position: absolute;

@@ -87,7 +87,7 @@ export const Box3 = styled(BoxBase)`
   /* border: 2px solid red; */
   @media (max-width: ${breakpoints.mobile}) {
     width: 90%;
-    margin-top: 12rem;
+    margin-top: 3rem;
   }
 
 
@@ -110,10 +110,10 @@ export const Box4 = styled(Box3)`
 
 @media (max-width: ${breakpoints.mobile}) {
   padding: 2rem;
-  margin-top: 16rem;
+  margin-top: 2rem;
 }
     @media (max-width: 560px) {
-    margin-top: 20rem;
+    margin-top: 0rem;
   }
 /* border: 2px solid pink; */
 `
@@ -325,17 +325,17 @@ export const Acard = styled(A)`
 
   @media screen and (max-width: 900px) {
     font-size: 15px;
-    line-height: 30px;
+    line-height: 20px;
     margin-top: 0rem;
   }
 `
 export const ABox = styled.div`
   padding: 1.5rem;
-     margin-top: 1rem;
+  margin-top: 1rem;
   
   @media (max-width: 900px) {
     padding: 1.5rem;
-    margin-top: 0rem;
+    
   }
     @media (max-width: 560px) {
     /* margin-top: 4rem; */
@@ -403,7 +403,8 @@ export const BottomRow = styled.div`
   }
 
   @media screen and (max-width: 900px) {
-    margin-top: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 `
 export const H1 = styled.a`
