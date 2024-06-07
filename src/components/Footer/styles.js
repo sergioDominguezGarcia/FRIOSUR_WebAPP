@@ -32,10 +32,11 @@ export const Container1 = styled.div`
 
 export const Logo = styled.div`
   display: flex;
-  width: 200px;
+  width: 100%;
+  min-width: 150px;
   img {
     width: 70%;
-    margin: 0.5rem;
+    margin: 0.7rem;
   }
   @media (max-width: 768px) {
 
@@ -60,7 +61,8 @@ export const MediaLogo = styled.div`
   height: 44px;
   width: 80px;
   img {
-    width: 60%;
+    width: 40px;
+    height: 40px;
   }
   @media (max-width: 768px) {
     /* height: 30px; */
@@ -104,7 +106,7 @@ export const Navbar = styled.a`
   height: 100%;
   list-style: none;
   width: auto;
-  margin-bottom: 2rem;
+  
   @media (max-width: 768px) {
 
   }
@@ -112,7 +114,7 @@ export const Navbar = styled.a`
 export const SeparatorWhite = styled.div`
   width: 80%;
   border-top: 1px solid #ffffff;
-
+  margin-top: 1rem;
   margin-bottom: 1rem;
 `
 
@@ -147,16 +149,16 @@ export const InfoWrap = styled.div`
 export const Ubi = styled.a`
   text-align: left;
   font-weight: 500;
-  margin-top: 0rem;
+  margin-top: 1.5rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   height: auto;
   width: auto;
   cursor: pointer;
   transition: 0.5s all ease;
 
   @media (max-width: 840px) {
-    font-size: 10px;
+    font-size: 15px;
   }
 `
 
@@ -169,13 +171,13 @@ export const Hour = styled.a`
   border-radius: 10px;
   color: #fff;
   text-decoration: none;
-  /* margin-bottom: 2rem; */
+  margin: 1rem;
   height: auto;
   width: 100%;
   cursor: pointer;
   transition: 0.5s all ease;
 
   @media (max-width: 840px) {
-    font-size: 10px;
+    font-size: 13px;
   }
 `

@@ -448,11 +448,41 @@ export const H2g = styled(H2)`
   color: #698669;
   font-size: 20px;
 `
+export const Text = styled(TextBox)`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  /* margin:  34rem 0rem 4rem 0rem; */
 
+  align-items: center;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+  }
+`
+export const Afrio = styled(A)`
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+`
+
+export const SeparatorGreen = styled.div`
+  border-top: 2px solid #446844;
+  width: 60%;
+  margin: 4rem 0rem 4rem 0rem;
+`
+export const SeparatorWhite = styled(SeparatorGreen)`
+  border-top: 2px solid #ffffff;
+  margin: 1rem 0rem 1rem 0rem;
+  width: 35%;
+`
 
 export const H2Green = styled(H2)`
-  font-size: 50px;
-  
+  font-size: 40px;
+  line-height: 65px;
   margin-bottom: 1em;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
@@ -461,8 +491,8 @@ export const H2Green = styled(H2)`
   }
 `  
 export const HBox = styled.div`
-  margin: 4rem;
-  gap: 0.7rem;
+  /* margin: 4rem; */
+  
   display: flex;
   flex-flow: row wrap;
   width: 70%;

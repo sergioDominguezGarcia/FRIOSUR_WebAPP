@@ -101,11 +101,11 @@ export const Text = styled(TextBox)`
   flex-direction: column;
   width: 80%;
   /* margin:  34rem 0rem 4rem 0rem; */
-  
+    /* border: 1px solid red; */
   align-items: center;
   margin: 0 auto;
   @media (max-width: 900px) {
-    
+    width: 100%;
   }
 `
 export const TextFrio = styled(Text)`
@@ -178,10 +178,13 @@ export const StarBox = styled.div`
   padding: 4rem;
   display: flex;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+    @media screen and (max-width: 900px) {
+    padding: 2rem;
+  }
 `
 
 
@@ -301,13 +304,13 @@ export const StyledLink3 = styled.a`
   border-radius: 15px;
   max-height: 77px;
   margin: 40px;
-  padding: 1.5rem;
+  padding: 1rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 10px;
-  letter-spacing: 0.16em;
+  line-height: 20px;
+  /* letter-spacing: 0.16em; */
   text-align: center;
   align-content: center;
   box-sizing: border-box;

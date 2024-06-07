@@ -6,6 +6,7 @@ import background from '../../assets/images/background.png'
 import FlipCard from '../../components/FlipCard'
 import climate from '../../assets/images/climate.png'
 import maintenance from '../../assets/images/maintenance.png'
+import backHome from '../../assets/images/backHome.png'
 import snowflake from '../../assets/images/snowflake.png'
 import Line from '../../assets/images/Line.png'
 import Slider from '../../components/Slider'
@@ -200,19 +201,33 @@ const Home = () => {
               <Slider />
             </S.BoxReseña>
           </S.Boxx>
+          <S.SectionWithBackground background={backHome}>
+            
+              <S.Text>
+                <S.Tittle bold> EN CONTINUO DESARROLLO </S.Tittle>
+                <S.SeparatorWhite />
+                <S.Afrio>
+                  <b></b>
+                    {' '}
+                    Haciendo frente a las nuevas tecnologías que aparecen en el
+                    mercado actual
+                  
+                </S.Afrio>
+              </S.Text>
+            
+          </S.SectionWithBackground>
+
           {/* <--------SECTION 4 -------> */}
           <S.BoxReseña>
-            <img src={reseña} width="80%" alt="Reseñas de clientes" />
+            <img src={reseña} width="60%" alt="Reseñas de clientes" />
           </S.BoxReseña>
 
           {/* <--------SECTION 5 -------> */}
           <S.Boxx>
             <S.HBox>
-              <S.H2Green bold="600"> CONTACTA </S.H2Green>
-              <S.H2Green>HOY MISMO</S.H2Green>
-              <S.H2Green>CON NOSOTROS </S.H2Green>
-              <S.H2Green> Y PIDE </S.H2Green>
-              <S.H2Green bold="600"> MÁS INFORMACIÓN</S.H2Green>
+              <S.H2Green> <b>CONTACTA </b>  
+                HOY MISMO
+              CON NOSOTROS Y PIDE  <b> MÁS INFORMACIÓN</b></S.H2Green>
             </S.HBox>
             <S.StyledLink3 onClick={handleGoToContact}>
               MÁS INFORMACIÓN

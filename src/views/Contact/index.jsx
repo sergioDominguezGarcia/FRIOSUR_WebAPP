@@ -47,9 +47,8 @@ const Contact = () => {
                 Para más información, sobre{" "}
                 <b>
                   Frío Industrial,
-                  <br /> Mantenimiento y Refrigeración Industrial, <br />
-                </b>
-                 rellena el              
+                  <br /> Mantenimiento y Refrigeración Industrial, </b>
+                  rellena el              
                 siguiente formulario. Estaremos <b>encantados de ayudarte.</b>
               </S.Text>
             <ContactUs />

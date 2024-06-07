@@ -106,10 +106,11 @@ export const Box6 = styled(Box4)`
   /* border: 1px solid red; */
 `
 export const BoxSolutions = styled(Boxx)`
-
+  width: 100%;
+  padding: 2rem;
   @media screen and (max-width: 900px) {
     height: auto;
-  
+    padding: 0rem;
   }
 `
 export const TextBox = styled.div`
@@ -203,13 +204,17 @@ export const Section = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  padding: 1rem;
 `
 export const SectionOval = styled.div`
-  
   justify-content: center;
   width: 100%;
+  padding: 1rem;
   background-color: #f9f9f9;
   display: flex;
+    @media (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 `
 export const Oval = styled.div`
   display: flex;
@@ -220,6 +225,9 @@ export const Oval = styled.div`
   width: 70%;
   background-color: #698669;
   flex-wrap: wrap;
+  @media (max-width: 900px) {
+    width: 90%;
+  }
   ;
 `
 
@@ -270,20 +278,25 @@ export const StyledLink4 = styled(StyledLink)`
   color: #446844;
   border: 3px solid #446844;
   box-shadow: none;
-  /* margin-top: 6rem; */
+  margin-top: 4rem;
   margin-bottom: 8rem;
-  font-size: 2rem;
-  height: 4rem;
+  font-size: 1em;
+  height: 100%;
+  padding: 10px;
+      font-weight: bold;
   width: auto;
   &:hover {
     background: #446844;
     color: #ffffff;
   }
   @media (max-width: 1326px) {
-    font-size: 10px;
-    height: 20%;
-    width: 25%;
-    line-height: 15px;
+    font-size: 16px;
+    height: 100%;
+    font-weight: bold;
+    width: auto;
+    line-height: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 `
 export const H1 = styled.a`
@@ -312,6 +325,10 @@ export const H1solutionsW = styled(H1solutions)`
   color: #446844;
   text-align: center;
   padding: 0rem 8rem 0rem 8rem;
+    @media screen and (max-width: 1300px) {
+    padding: 2rem 0rem 2rem 0rem ;
+    font-size: 28px;
+  }
 `
 export const H2 = styled.a`
   color: #ffffff;
@@ -339,7 +356,8 @@ export const H2 = styled.a`
 export const H2Green = styled(H2)`
   font-size: 40px;
   text-align: center;
-  
+  line-height: 45px;
+  flex-wrap: wrap;
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {
@@ -358,6 +376,11 @@ export const H2solutions = styled(H2Green)`
 `
 export const H2oval = styled(H2solutions)`
   font-size: 20px;
+    @media screen and (max-width: 900px) {
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 40px;
+  }
 `
 
 export const HBox = styled.div`
@@ -429,8 +452,9 @@ export const Li2 = styled(Li)`
 `
 export const List = styled.ul`
   width: 90%;
-  margin-top: 0rem;
 
+  padding: 3rem;
+  text-align: left;
   /* border: 2px dashed greenyellow; */
 `
 export const List2 = styled(List)`

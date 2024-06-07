@@ -64,7 +64,9 @@ export const TextWrap = styled.div`
 
   width: 80vw;
   /* border: 3px solid greenyellow; */
-
+  @media screen and (max-width: 768px) {
+  width: 100%;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -74,6 +76,9 @@ export const Column1 = styled.div`
   justify-content: left;
   /* border: 3px solid greenyellow; */
   padding: 2rem ;
+    @media screen and (max-width: 768px) {
+  padding: 2rem 0rem ;
+  }
 `;
 export const Column2 = styled.div`
   /* width: 50%; */
@@ -84,6 +89,7 @@ export const Column2 = styled.div`
   
   @media screen and (max-width: 768px) {
     flex-direction: column;
+
   }
 `
 
