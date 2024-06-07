@@ -216,6 +216,7 @@ export const A = styled.a`
   line-height: 44px;
   text-align: left;
   max-width: 100%;
+  /* font-weight: 200; */
   justify-content: center;
   @media (max-width: 1340px) {
     flex-direction: row;
@@ -292,7 +293,7 @@ export const SeparatorGreen = styled.div`
 `
 export const SeparatorWhite = styled(SeparatorGreen)`
   border-top: 2px solid #ffffff;
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 1rem 0rem 2rem 0rem;
   width: 35%;
 `
 export const Tittle = styled.a`

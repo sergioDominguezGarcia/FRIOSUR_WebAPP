@@ -33,7 +33,7 @@ const Friosur = () => {
             <S.Text className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.Tittle bold> EMPRESA </S.Tittle>
               <S.SeparatorWhite />
-              <S.A>Enfocados en el frío industrial de tu negocio</S.A>
+              <S.A  > <b>Enfocados en el frío industrial de tu negocio</b> </S.A>
             </S.Text>
           </S.Box4>
         </S.SectionWithBackground>
