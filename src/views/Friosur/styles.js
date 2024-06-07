@@ -72,6 +72,7 @@ export const SectionBox = styled.div`
   justify-content: center;
   width: 100%;
   margin: 8rem 2rem;
+  padding:0 2rem;
   @media (max-width: 420px) {
     margin: 4rem 0rem;
   }
@@ -186,6 +187,10 @@ export const H2Boxfrio = styled(H2Box)`
   justify-content: center;
   text-align: center;
   width: 100%;
+    @media screen and (max-width: 900px) {
+    gap: 40px;
+    padding: 1.5rem;
+  }
 `
 export const StarBox = styled.div`
   padding: 4rem;
@@ -195,6 +200,10 @@ export const StarBox = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  @media screen and (max-width: 900px) {
+    gap: 40px;
+    padding: 0rem;
+  }
 `
 
 export const A = styled.a`
