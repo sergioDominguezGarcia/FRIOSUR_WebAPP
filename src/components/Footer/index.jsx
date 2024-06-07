@@ -61,7 +61,7 @@ const Footer = () => {
             Pol. Industrial “El Manchon”,
             <br />
             c/ San Roque 40,
-            41940 Tomares, Sevilla.
+            41940 <br />Tomares, Sevilla.
           </S.Ubi>
         </S.InfoWrap>
       </S.Container2>
