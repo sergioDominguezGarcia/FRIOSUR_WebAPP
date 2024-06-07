@@ -136,11 +136,11 @@ export const Link = styled.a`
   font-weight: 400;
   color: #fff;
   height: auto;
-
+  letter-spacing: 0.2rem;
   width: auto;
   cursor: pointer;
   transition: 0.5s all ease;
-  font-size: 12px;
+  font-size: 15px;
   @media (max-width: 768px) {
     font-size: 10px;
   }

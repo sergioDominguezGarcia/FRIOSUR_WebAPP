@@ -10,7 +10,7 @@ const ExpandableText = ({ fullText, initialText, mode }) => {
     if (expanded) {
       setMaxHeight(`${textRef.current.scrollHeight}px`)
     } else {
-      setMaxHeight('170px') // Collapsed height limit
+      setMaxHeight('155px') // Collapsed height limit
     }
   }, [expanded])
 

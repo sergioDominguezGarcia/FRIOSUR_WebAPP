@@ -62,10 +62,21 @@ export const Box4 = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  /* min-width: 60vw; */
   margin: 14rem 2rem 8rem 2rem;
-  /* border: 2px solid greenyellow; */
+  @media (max-width: 420px) {
+    margin: 8rem 1rem 3rem 1rem;
+  }
 `
+export const SectionBox = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 8rem 2rem;
+  @media (max-width: 420px) {
+    margin: 4rem 0rem;
+  }
+`
+
 export const Box6 = styled(Box4)`
   height: auto;
   display: flex;
@@ -80,7 +91,7 @@ export const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  gap: 1rem;
+  /* gap: 1rem; */
   width: 100%;
   /* border: 1px solid red; */
   @media (max-width: 1325px) {
@@ -91,22 +102,23 @@ export const TextBox = styled.div`
   }
 
   @media (max-width: 870px) {
-    width: 90%;
+    width: 100%;
   }
-
 `
 export const Text = styled(TextBox)`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   /* margin:  34rem 0rem 4rem 0rem; */
-    /* border: 1px solid red; */
+  padding: 1.5rem;
   align-items: center;
   margin: 0 auto;
-  @media (max-width: 900px) {
-    width: 100%;
+  @media (max-width: 420px) {
+      padding: 0rem;
   }
+
+
 `
 export const TextFrio = styled(Text)`
   text-align: center;
@@ -115,7 +127,7 @@ export const TextFrio = styled(Text)`
 `
 
 export const H2 = styled.a`
-  color: #ffffff;  
+  color: #ffffff;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -127,23 +139,24 @@ export const H2 = styled.a`
   }
 
   @media screen and (max-width: 1060px) {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
   }
 
   @media screen and (max-width: 900px) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 25px;
   }
 `
 export const H2Green = styled(H2)`
   font-size: 50px;
- 
-  margin-bottom: 4rem;
+
+  /* margin-bottom: 4rem; */
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {
     font-size: 20px;
+    line-height: 20px;
   }
 `
 export const HBox = styled.div`
@@ -172,21 +185,17 @@ export const H2Boxfrio = styled(H2Box)`
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 90%;
+  width: 100%;
 `
 export const StarBox = styled.div`
   padding: 4rem;
   display: flex;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 4rem;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-    @media screen and (max-width: 900px) {
-    padding: 2rem;
-  }
 `
-
 
 export const A = styled.a`
   color: #ffffff;
@@ -194,15 +203,15 @@ export const A = styled.a`
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
-  left: 4.4rem;
+  /* left: 4.4rem; */
   line-height: 44px;
   text-align: left;
-  max-width: 80%;  
+  max-width: 100%;
   justify-content: center;
   @media (max-width: 1340px) {
     flex-direction: row;
-    max-width: 100%; 
-    margin-top: 1rem;
+    max-width: 100%;
+
     font-size: 36px;
     line-height: 35px;
   }
@@ -214,20 +223,21 @@ export const A = styled.a`
 export const Afrio = styled(A)`
   text-align: center;
   font-size: 30px;
-  line-height: 50px;
-    @media (max-width: 900px) {
+  line-height: 40px;
+  @media (max-width: 900px) {
     font-size: 20px;
   }
 `
 export const Agreen = styled(A)`
-  font-size: 30px;
+  font-size: 40px;
   color: rgba(68, 104, 68, 1);
   font-weight: 550;
   text-align: center;
-  line-height: 36px;
+  line-height: 55px;
   text-align: center;
   @media screen and (max-width: 900px) {
-    font-size: 15px;
+    font-size: 23px;
+      line-height: 30px;
   }
 `
 export const Section = styled.div`
@@ -235,7 +245,7 @@ export const Section = styled.div`
   width: 100%;
   background-color: rgba(105, 134, 105, 1);
   flex-flow: column;
-  
+
   justify-content: space-around;
   /* align-content: center; */
   align-items: center;
@@ -243,8 +253,9 @@ export const Section = styled.div`
 export const Section3 = styled(Section)`
   display: flex;
   background-color: #ffffff;
-  flex-flow: column;  
+  flex-flow: column;
   margin: 0 auto;
+  padding: 2rem;
   justify-content: center;
   @media screen and (max-width: 900px) {
     width: 98%;
@@ -259,10 +270,10 @@ export const Img = styled.div`
 `
 
 export const Img3 = styled(Img)`
-  margin:  1rem 0rem 1rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
 `
 export const Img4 = styled(Img)`
-  margin:  1rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
 `
 
 export const SeparatorGreen = styled.div`
@@ -295,6 +306,7 @@ export const Tittle = styled.a`
 export const StyledLink3 = styled.a`
   background: #446844;
   width: auto;
+
   color: #ffffff;
   cursor: pointer;
   /* max-width: 455px; */
@@ -302,17 +314,17 @@ export const StyledLink3 = styled.a`
   border: 3px solid #d9d9d9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  max-height: 77px;
-  margin: 40px;
-  padding: 1rem;
+  /* max-height: 77px; */
+  margin-top: 4rem;
+  padding: 1.5rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 20px;
-  /* letter-spacing: 0.16em; */
+  letter-spacing: 0.1em;
   text-align: center;
-  align-content: center;
+
   box-sizing: border-box;
   @media (max-width: 1326px) {
     font-size: 1rem;

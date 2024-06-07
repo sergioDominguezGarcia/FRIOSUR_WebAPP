@@ -28,8 +28,7 @@ export const SectionWithBackground = styled.div`
   max-width: 100%;
   max-height: 80rem;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 2.5rem;
+  padding-bottom: 1.5rem;
   @media (max-width: 1326px) {
     flex-direction: column;
     padding-bottom: 1.5rem;

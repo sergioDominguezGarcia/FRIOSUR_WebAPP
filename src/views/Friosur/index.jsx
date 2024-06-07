@@ -62,7 +62,7 @@ const Friosur = () => {
         <S.Section3>
           <S.H2Green bold>EN CONTINUO DESARROLLO</S.H2Green>
           <S.Img3>
-            <img src={imgBottom} width="50%" alt="" />
+            <img src={imgBottom} width="60%" alt="" />
           </S.Img3>
           <S.Box6>
             <S.H2Boxfrio>
@@ -84,7 +84,7 @@ const Friosur = () => {
         </S.Section3>
         {/* background imageeeeeeeeeeeeeeeee */}
         <S.SectionWithBackground background={back4}>
-          <S.Box4>
+          <S.SectionBox>
             <S.Text>
               <S.Tittle bold> EJECUCIÓN TOTAL </S.Tittle>
               <S.SeparatorWhite />
@@ -93,7 +93,7 @@ const Friosur = () => {
                 instalaciones en su <b> nueva obra.</b>
               </S.Afrio>
             </S.Text>
-          </S.Box4>
+          </S.SectionBox>
         </S.SectionWithBackground>
 
         <S.Section3>

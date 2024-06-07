@@ -79,7 +79,7 @@ const Solutions = () => {
         <S.SphereSection>
           <DoubleSection
             leftContent={<div />} // Empty div to utilize ExpandableText
-            rightContent={<img src={img1} width="200px" alt="" />}
+            rightContent={<img src={img1} width="250px" alt="" />}
             mode="mode1"
             leftInitialText={
               <S.Text>
@@ -109,7 +109,7 @@ const Solutions = () => {
           />
 
           <DoubleSection
-            leftContent={<img src={img2} width="200px" alt="" />}
+            leftContent={<img src={img2} width="250px" alt="" />}
             rightContent={<div />}
             mode="mode"
             rightInitialText={
@@ -141,7 +141,7 @@ const Solutions = () => {
           />
           <DoubleSection
             leftContent={<div />} // Empty div to utilize ExpandableText
-            rightContent={<img src={img3} width="200px" alt="" />}
+            rightContent={<img src={img3} width="250px" alt="" />}
             mode="mode1"
             leftInitialText={
               <S.Text>
@@ -174,7 +174,7 @@ const Solutions = () => {
           />
 
           <DoubleSection
-            leftContent={<img src={img4} width="200px" alt="" />}
+            leftContent={<img src={img4} width="250px" alt="" />}
             rightContent={<div />}
             rightInitialText={
               <S.Text>
