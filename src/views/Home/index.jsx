@@ -40,8 +40,8 @@ const Home = () => {
                 LA
                 <S.Tittle bold> SOLUCIÓN </S.Tittle>
               </S.Tittle>
-              <S.Tittle>QUE MEJOR</S.Tittle>
-              <S.Tittle>SE ADAPTA A</S.Tittle>
+              <S.Tittle> QUE MEJOR</S.Tittle>
+              <S.Tittle> SE ADAPTA A</S.Tittle>
               <S.Tittle bold> TU NEGOCIO </S.Tittle>
             </S.TextBox>
           </S.Box>
@@ -49,10 +49,7 @@ const Home = () => {
             <S.TextBoxR className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.StyledLink>SABER MÁS</S.StyledLink>
               <S.A>
-                Enfocados en el <b>sector Alimentario</b>
-              </S.A>
-              <S.A>También abarcamos otros mercados,</S.A>{' '}
-              <S.A>
+                Enfocados en el <b>sector Alimentario</b>  También abarcamos otros mercados,
                 ya sea a nivel
                 <b> Comercial </b> o <b> Industrial </b>
               </S.A>

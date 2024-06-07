@@ -55,7 +55,7 @@ export const Box = styled(BoxBase)`
   width: 40%;
   /* border: 1px solid red; */
   @media (max-width: ${breakpoints.tablet}) {
-    width: 90%;
+    width: 100%;
     margin-top: 10rem;
     padding: 0;
   }
@@ -64,16 +64,24 @@ export const Box = styled(BoxBase)`
     width: 100%;
     margin-top: 5rem;
   }
+
+  @media (max-width: 560px) {
+    width: 100vw;
+    margin-top: 5rem;
+  }
 `
 
 export const Box2 = styled(Box)`
   @media (max-width: 1326px) {
-    width: 90%;
+    width: 100%;
     margin-top: 3rem;
     
   }
   @media (max-width: 900px) {
     margin-top: 1rem;
+  }
+    @media (max-width: 560px) {
+    margin-top: 0rem;
   }
 `
 export const Box3 = styled(BoxBase)`
@@ -167,6 +175,7 @@ export const Tittle = styled.a`
   font-weight: ${(props) => (props.bold ? '900' : '400')};
   font-size: 3rem;
   line-height: 80px;
+  letter-spacing: 0.02em;
   /* width: 40%; */
   /* border: 2px solid purple; */
   @media (max-width: 1326px) {
@@ -191,17 +200,17 @@ export const TextBox = styled.div`
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    gap: 1.5rem;
   }
   @media (max-width: 900px) {
+    gap: 0.5rem;
   }
-  @media (max-width: 870px) {
+  @media (max-width: 480px) {
   }
   /* border: 2px dashed greenyellow; */
 `
 
 export const TextBoxR = styled(TextBox)`
-
   justify-content: space-around;
   gap: 0rem;
   height: 70%;
@@ -209,6 +218,15 @@ export const TextBoxR = styled(TextBox)`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0rem 0.5rem;
   }
 `
 export const StyledLink = styled.a`
@@ -237,6 +255,11 @@ export const StyledLink = styled.a`
   @media (max-width: 1326px) {
     font-size: 1rem;
     max-width: 15rem;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+    margin-top: 0rem;
   }
   &:hover {
     background: #ffffff;
