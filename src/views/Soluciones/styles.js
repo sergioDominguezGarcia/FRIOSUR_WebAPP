@@ -312,7 +312,7 @@ export const H1 = styled.a`
   }
 `
 export const H1solutions = styled(H1)`
-  font-size: 48px;
+  font-size: 40px;
   color: #ffffff;
   text-align: center;
   line-height: 60px;
@@ -353,7 +353,7 @@ export const H2 = styled.a`
   }
 `
 export const H2Green = styled(H2)`
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   line-height: 45px;
   flex-wrap: wrap;

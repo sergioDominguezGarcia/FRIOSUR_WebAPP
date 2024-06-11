@@ -67,10 +67,10 @@ const Solutions = () => {
             </S.H1solutions>
 
             <S.H2solutions>
-              <b>
+              
                 Instalación y diseño de aire acondicionado <br /> Sistemas HVAC
                 comerciales <br /> Refrigeración industrial de aire
-              </b>
+              
             </S.H2solutions>
           </S.Text2>
         </S.SectionBackground2>

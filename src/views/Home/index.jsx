@@ -183,11 +183,9 @@ const Home = () => {
             <S.H1>CLIENTES</S.H1>
             <S.HBox>
               <S.H2Green>
-                Que confian en <b></b>
-              </S.H2Green>
+                Que confian en </S.H2Green> <br />
               <S.H2Green bold="600"> FRIOSUR </S.H2Green>
-              <S.H2Green> y reseñas </S.H2Green>
-              <S.H2Green>de intalaciones</S.H2Green>
+
             </S.HBox>
             <S.BoxReseña>
               {/* <img
