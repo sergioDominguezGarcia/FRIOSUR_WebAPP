@@ -307,7 +307,7 @@ export const A = styled.a`
   font-style: normal;
   font-weight: 300;
   /* left: 4.4rem; */
-  
+  line-height: 45px;
   text-align: left;
   /* width: 50%; */
   
