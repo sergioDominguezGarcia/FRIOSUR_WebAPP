@@ -184,7 +184,7 @@ export const Tittle = styled.a`
     /* align-items: stretch; */
   }
   @media (max-width: 900px) {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 50px;
   }
 `
@@ -194,6 +194,7 @@ export const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
+  padding: 1rem;
   width: 100%;
   @media (max-width: 1326px) {
     justify-content: center;
@@ -510,7 +511,7 @@ export const H2Green = styled(H2)`
   color: rgba(68, 104, 68, 1);
   font-weight: ${(props) => (props.bold ? '900' : '600')};
   @media screen and (max-width: 900px) {
-    font-size: 30px;
+    font-size: 20px;
   }
 `  
 export const HBox = styled.div`

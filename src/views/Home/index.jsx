@@ -214,7 +214,7 @@ const Home = () => {
 
           {/* <--------SECTION 4 -------> */}
           <S.BoxReseña>
-            <img src={reseña} width="60%" alt="Reseñas de clientes" />
+            <img src={reseña} width="70%" alt="Reseñas de clientes" />
           </S.BoxReseña>
 
           {/* <--------SECTION 5 -------> */}
