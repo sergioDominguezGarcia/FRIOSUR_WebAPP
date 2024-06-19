@@ -147,6 +147,9 @@ export const Text = styled.div`
 
 export const Text2 = styled(Text)`
 padding: 0rem;
+display: flex;
+justify-content: flex-start;
+
 `
 export const Tittle = styled.a`
   color: #ffffff;
@@ -363,6 +366,15 @@ export const H2Green = styled(H2)`
     font-size: 20px;
   }
 `
+export const ContentList = styled.div`
+  justify-content: left;
+  text-align: left;
+  padding: 4rem;
+
+`
+
+
+
 export const H2solutions = styled(H2Green)`
   font-size: 30px;
   line-height: 45px;
@@ -424,7 +436,7 @@ export const Img2 = styled(Img)`
   }
 `
 export const Li = styled.li`
-  margin-top: 2rem;
+  margin: 2rem;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -450,9 +462,8 @@ export const Li2 = styled(Li)`
   }
 `
 export const List = styled.ul`
-  width: 90%;
 
-  padding: 3rem;
+  padding-left: 6rem;
   text-align: left;
   /* border: 2px dashed greenyellow; */
 `

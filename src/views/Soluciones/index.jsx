@@ -53,7 +53,7 @@ const Solutions = () => {
         <S.Section>
           <S.Text>
             <S.H2Green bold>
-              SOLUCIONES DE <br /> CLIMATIZACIÓN INDUSTRIAL
+              SOLUCIONES DE <br /> REFRIGERACIÓN INDUSTRIAL
             </S.H2Green>
           </S.Text>
         </S.Section>
@@ -61,17 +61,27 @@ const Solutions = () => {
         <S.SectionBackground2 background={Section2img}>
           <S.Text2>
             <S.H1solutions bold>
-              {' '}
-              Ofrecemos servicios completos de climatización para empresas de
-              todos los tamaños, incluyendo:{' '}
+              Ofrecemos servicios integrales de refrigeración industrial para
+              diversas industrias, incluyendo:
             </S.H1solutions>
-
+            <S.ContentList>
             <S.H2solutions>
-              
-                Instalación y diseño de aire acondicionado <br /> Sistemas HVAC
-                comerciales <br /> Refrigeración industrial de aire
-              
+              Diseño e instalación de sistemas de refrigeración:
             </S.H2solutions>
+            <S.List>
+              <S.Li>Cámaras de congelación.</S.Li>
+              <S.Li>Cámaras de conservación.</S.Li>
+              <S.Li>Túneles de congelación y pre enfriamiento rápido.</S.Li>
+              <S.Li>Secaderos</S.Li>
+              <S.Li>Cámaras de maduración</S.Li>
+              <S.Li>Puertas</S.Li>
+            </S.List>
+            <S.H2solutions>
+              Soluciones personalizadas de refrigeración para entornos
+              industriales
+            </S.H2solutions>
+            
+            </S.ContentList>
           </S.Text2>
         </S.SectionBackground2>
 
