@@ -65,22 +65,21 @@ const Solutions = () => {
               diversas industrias, incluyendo:
             </S.H1solutions>
             <S.ContentList>
-            <S.H2solutions>
-              Diseño e instalación de sistemas de refrigeración:
-            </S.H2solutions>
-            <S.List>
-              <S.Li>Cámaras de congelación.</S.Li>
-              <S.Li>Cámaras de conservación.</S.Li>
-              <S.Li>Túneles de congelación y pre enfriamiento rápido.</S.Li>
-              <S.Li>Secaderos</S.Li>
-              <S.Li>Cámaras de maduración</S.Li>
-              <S.Li>Puertas</S.Li>
-            </S.List>
-            <S.H2solutions>
-              Soluciones personalizadas de refrigeración para entornos
-              industriales
-            </S.H2solutions>
-            
+              <S.H2solutions>
+                Diseño e instalación de sistemas de refrigeración:
+              </S.H2solutions>
+              <S.List>
+                x<S.Li>Cámaras de congelación.</S.Li>
+                <S.Li>Cámaras de conservación.</S.Li>
+                <S.Li>Túneles de congelación y pre enfriamiento rápido.</S.Li>
+                <S.Li>Secaderos</S.Li>
+                <S.Li>Cámaras de maduración</S.Li>
+                <S.Li>Puertas</S.Li>
+              </S.List>
+              <S.H2solutions>
+                Soluciones personalizadas de refrigeración para entornos
+                industriales
+              </S.H2solutions>
             </S.ContentList>
           </S.Text2>
         </S.SectionBackground2>
@@ -217,23 +216,45 @@ const Solutions = () => {
         {/* <------- section 3 -------> */}
         <S.Section3>
           <S.BoxSolutions>
-            <S.H1solutions>NOS ENCARGAMOS DE:</S.H1solutions>
+            <S.H1solutions>Compromiso de eficacia en:</S.H1solutions>
             <S.Text>
               <S.List>
                 <S.Li>
-                  Las maniobras necesarias del autómata, que cumpa con la
-                  legislación actual
+                  Diseño y planificación: Desarrollamos un plan detallado que
+                  abarca todas las necesidades específicas del cliente,
+                  asegurando una integración eficiente y óptima de los sistemas
+                  de refrigeración.
                 </S.Li>
-                <S.Li>Compresores</S.Li>
-                <S.Li>Evaporadores</S.Li>
-                <S.Li>Tuberías</S.Li>
-                <S.Li>Valvulería</S.Li>
-                <S.Li>Paneles frigoríficos</S.Li>
-                <S.Li>Puertas</S.Li>
                 <S.Li>
-                  Maniobras necesarias del automata, que cumpla con la
-                  legislación actual.
+                  Instalación de equipos de refrigeración: Instalamos todos los
+                  componentes necesarios para una solución de frío industrial
+                  efectiva, incluyendo compresores, evaporadores, condensadores
+                  y sistemas de control.
                 </S.Li>
+                <S.Li>
+                  Paneles y puertas frigoríficas: Proveemos e instalamos paneles
+                  y puertas frigoríficas de alta calidad para asegurar un
+                  aislamiento térmico adecuado y mantener la eficiencia del
+                  sistema de refrigeración.
+                </S.Li>
+                <S.Li>
+                  Sistemas de control y monitoreo: Implementamos avanzados
+                  sistemas de control y monitoreo para gestionar y supervisar el
+                  rendimiento del sistema de refrigeración, asegurando su
+                  funcionamiento óptimo y eficiente.
+                </S.Li>
+                <S.Li>
+                  Instalaciones eléctricas: Nos encargamos de las líneas
+                  eléctricas necesarias para el funcionamiento seguro y
+                  eficiente de los sistemas de refrigeración industrial.
+                </S.Li>
+                <S.Li>
+                  Mantenimiento preventivo y correctivo: Ofrecemos servicios de
+                  mantenimiento regular para garantizar la longevidad y
+                  eficiencia de los sistemas instalados, así como reparaciones
+                  rápidas y efectivas en caso de cualquier eventualidad."
+                </S.Li>
+                
               </S.List>
             </S.Text>
           </S.BoxSolutions>
