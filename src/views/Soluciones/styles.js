@@ -26,7 +26,7 @@ export const SectionWithBackground = styled.div`
   flex-direction: row;
   height: auto;
   max-width: 100%;
-  max-height: 80rem;
+  max-height: 38rem;
   justify-content: space-between;
   padding-bottom: 1.5rem;
   @media (max-width: 1326px) {
@@ -48,7 +48,6 @@ export const SectionBackground = styled(SectionWithBackground)`
 export const SectionBackground2 = styled(SectionBackground)`
   max-height: 70rem;
   padding: 4rem;
-
 `
 
 export const Box = styled.div`
@@ -91,6 +90,7 @@ export const Box4 = styled(Box)`
   align-content: center;
   width: 100%;
   flex-direction: column;
+    margin: 14rem 2rem 8rem 2rem;
   /* min-width: 60vw; */
   /* height: 60vh; */
   /* border: 2px solid greenyellow; */
@@ -201,7 +201,7 @@ export const A = styled.a`
 export const Section = styled.div`
   display: flex;
   width: 80%;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
@@ -212,9 +212,9 @@ export const SectionOval = styled.div`
   justify-content: center;
   width: 100%;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   display: flex;
-    @media (max-width: 900px) {
+  @media (max-width: 900px) {
     margin-bottom: 2rem;
   }
 `

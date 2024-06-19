@@ -4,7 +4,6 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import DoubleSection from '../../components/DoubleSection'
 import solutionsImg from '../../assets/images/solutionsImg.png'
-import ExpandableText from '../../components/ExpandButton'
 import Section2img from '../../assets/images/Section2img.png'
 import img1 from '../../assets/images/img1.png'
 import img2 from '../../assets/images/img2.png'
@@ -33,7 +32,7 @@ const Solutions = () => {
       <Header />
       <S.Content>
         {/* <--------SECTION 1 -------> */}
-        <S.SectionBackground background={solutionsImg}>
+        <S.SectionWithBackground background={solutionsImg}>
           <S.Box4>
             <S.Text className={animate ? 'animate-slideInFromLeft' : ''}>
               <S.Tittle bold> SERVICIOS </S.Tittle>
@@ -47,7 +46,7 @@ const Solutions = () => {
               </S.A>
             </S.Text>
           </S.Box4>
-        </S.SectionBackground>
+        </S.SectionWithBackground>
 
         {/* <--------SECTION 2 -------> */}
         <S.Section>
@@ -216,7 +215,7 @@ const Solutions = () => {
         {/* <------- section 3 -------> */}
         <S.Section3>
           <S.BoxSolutions>
-            <S.H1solutions>Compromiso de eficacia en:</S.H1solutions>
+            <S.H1solutions>Compromiso de eficacia en</S.H1solutions>
             <S.Text>
               <S.List>
                 <S.Li>
@@ -254,7 +253,6 @@ const Solutions = () => {
                   eficiencia de los sistemas instalados, así como reparaciones
                   rápidas y efectivas en caso de cualquier eventualidad."
                 </S.Li>
-                
               </S.List>
             </S.Text>
           </S.BoxSolutions>
@@ -272,9 +270,8 @@ const Solutions = () => {
           <S.Oval>
             <S.H2oval>
               Una solución optimizada para tu negocio, un servicio 24/7, <br />{' '}
-              que te asegura la conservación de tu género y que no pierdas
-              dinero <br />
-              cuando estos cambios ocurran.
+              que te asegura la conservación de tu género <br />y garantiza la
+              operatividad de tu negocio
             </S.H2oval>
           </S.Oval>
         </S.SectionOval>
@@ -295,4 +292,4 @@ const Solutions = () => {
   )
 }
 
-export default Solutions
+export default memo(Solutions)

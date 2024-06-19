@@ -22,7 +22,7 @@ export const SectionWithBackground = styled.div`
   flex-direction: row;
   height: auto;
   max-width: 100%;
-  max-height: 80rem;
+  max-height: 40rem;
   justify-content: space-between;
   gap: 1rem;
   /* padding: 2.5rem; */

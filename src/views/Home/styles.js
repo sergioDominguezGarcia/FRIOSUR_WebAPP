@@ -130,7 +130,7 @@ export const Box5 = styled(BoxBase)`
   flex-direction: column;
   margin-bottom: 3rem;
   max-width: 30%;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 15px;
   text-align: center;
   /* border: 2px solid pink; */
