@@ -10,7 +10,7 @@ const ExpandableText = ({ fullText, initialText, mode }) => {
     if (expanded) {
       setMaxHeight(`${textRef.current.scrollHeight}px`)
     } else {
-      setMaxHeight('155px') // Collapsed height limit
+      setMaxHeight('100%') // Collapsed height limit
     }
   }, [expanded])
 
@@ -20,12 +20,10 @@ const ExpandableText = ({ fullText, initialText, mode }) => {
 
   return (
     <Container>
-      <Text ref={textRef} maxHeight={maxHeight}>
-        {expanded ? fullText : initialText}
+      <Text ref={textRef}>
+        {fullText}
       </Text>
-      <ToggleExpandButton onClick={toggleExpand} mode={mode}>
-        {expanded ? 'Ver menos' : 'Ver más'}
-      </ToggleExpandButton>
+
     </Container>
   )
 }
